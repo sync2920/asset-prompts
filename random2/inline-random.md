@@ -1,44 +1,45 @@
 # 画像生成AIに直接投げるランダムプロンプト（第2弾・拡張版）
 
-LLMに一度通さず、**生成AIのプロンプト欄にそのまま貼って、生成のたびに中身が変わる**形式。
-[prompt.md](prompt.md) の拡張スロット（ムード12・シチュエーション24・時間帯・季節・天気・視点・L2.5）を、
-そのまま貼れるように「シーン束13種」へまとめ直した直接投げ版。
+別のメタプロンプトを経由せず、**生成先へ1ブロックのまま貼って、生成のたびに中身を変える**形式。
+[prompt.md](prompt.md) の場面案を、直接投げでも矛盾しにくい24枚の **scene card** へまとめ直した。
+①と③では同じ1〜24のカードを同じ順番で使い、②はそのうち6枚だけを示すサンプル。
 
-> prompt.md はスロットを個別に振る正典、こちらは束にした簡略版。
-> したがって項目数は一致しない（例: カメラは prompt.md が8、こちらが6）。
-> 場面を増やしたいときは prompt.md のEスロットから束を足す。
+> prompt.md は、有効候補を絞ってから服・光・時間・カメラ等を組み立てる正典。
+> こちらは、それらをscene card内で確定させた直接投げ用の簡略版。
 
 | 形式 | 対象 | ランダムの実体 |
 |---|---|---|
-| ① `{a\|b\|c}` 版 | SD WebUI(A1111/Forge) + Dynamic Prompts、ComfyUI + 対応ノード | 1枚ごとに1つ抽選（本物のランダム） |
+| ① `{a\|b\|c}` 版 | SD WebUI(A1111/Forge) + Dynamic Prompts、ComfyUI + 対応ノード | 拡張機能の乱数で1枚ごとに1つ抽選 |
 | ② `{a, b, c}` 版 | Midjourney | 全組み合わせを別ジョブとして一括生成 |
 | ③ 自己完結文章版 | ChatGPT / Gemini / nano-banana 系 | モデル自身に選ばせる |
 
 ---
 
-## 設計の肝：スロットを「束」にしてある
+## 設計の肝：顔造作は独立、場面条件はscene cardに閉じる
 
-顔・体型・髪は何と組み合わせても破綻しないので独立スロットのまま。
-一方、ムード＋服装＋場所＋仕草＋光を独立にランダム化すると
-「温泉旅館でテーラードブレザー」みたいな事故が必ず起きる。
+顔は、**輪郭・目・眉・鼻・口・顎だけを記した中立な顔造作8種**から選ぶ。
+年齢、顔のアクセント、体型、髪色、髪型はそれぞれ独立。顔造作に表情・視線・メイク・髪を含めないため、
+scene cardが求める演技や仕草と競合しない。
 
-なので **ムード＋服装＋場所＋仕草＋光を1つの「シーン束」にまとめて13種**用意し、
-そこから1つ抽選する形にした。さらに**時間帯・季節・天気・視点**を独立スロットとして追加。
+一方、時間帯・季節・天気・視点・カメラ・主な焦点は、場面から切り離すと矛盾しやすい。
+そこで **場面・仕草・光・環境条件・構図を1枚のscene cardにまとめて24種**用意した。
+①のDynamic Promptsは意味を読んで矛盾を直せないため、これらを独立スロットには戻さない。
+服装指定のないカードでは、場面・季節に合う無地の普段着を使う。
 
-束の番号は①②③で共通:
-1-3 きっかけ / 4-5 生活の手元 / 6-7 気配のツーショット / 8-9 天気の変わり目 /
-10-11 マジックリアリズム / **12-13 大人っぽい（L2.5）**
+scene cardの番号は①②③で共通:
+1-4 きっかけ / 5-9 生活の手元 / 10-14 気配のツーショット / 15-18 天気の変わり目 /
+19-22 マジックリアリズム / **23-24 大人っぽい（L2.5）**
 
 ※第一弾(random/)の基本トーン（上品/スタイリッシュ/だらしない/元気/気だるげ/レトロ）は
 第二弾から削除済み。第二弾は「きっかけ/生活の手元/気配のツーショット/天気の変わり目/
 マジックリアリズム/大人っぽい」の6群のみ。両方を使うことで重複せずに幅が広がる。
 
-組み合わせ数 = 顔タイプ10 × 顔特徴8 × 体型8 × 髪色4 × 髪型10 × シーン束13 × 時間8 × 季節8 × 天気8 × 視点5 × カメラ6
-= **約51億通り**
+直接投げ版のラベル付き抽選状態数 =
+年齢4 × 顔造作8 × 顔アクセント8 × 体型8 × 髪色4 × 髪型10 × scene card 24
+= **1,966,080状態**。
 
-> ⚠️ シーン束の中に時間帯・季節・天気がすでに含まれているものがある。
-> その場合、独立スロットK/L/Mは束の指定を上書きせず補強する方向で解釈させるため、
-> ③自己完結版には「シーン束に時間・天気の指定がある場合はそちらを優先し、独立スロットはそれに合うものを選ぶ」と書いてある。
+これは抽選ラベルの状態数であり、画像上の違いが同じ数だけ現れる、または均等に分散するという保証ではない。
+顔アクセントの「なし」4枠は、アクセントを付けない確率を高くするための重み付け。
 
 ---
 
@@ -60,10 +61,14 @@ a photo of a {red|green|blue} car
 ### 本体プロンプト
 
 ```
-Professional fashion editorial photograph. A 23-year-old adult Japanese woman, fully clothed in modest everyday clothing. Her face is at the level cast in Japanese TV commercials and dramas — girl-next-door idol looks, with occasional mature-beauty types mixed in. Well-balanced features, clear skin that still looks natural and un-retouched. Face type: {classic idol-type features|a round soft face with full cheeks|downturned eyes with a soft sweet expression|upturned cat-like eyes with a small sharp chin|K-idol polished styling|striking mixed-look features on Japanese bone structure|a bright healthy look with wide-set round eyes|an easy open face with a small snaggletooth|classic symmetrical beauty|cool composed mature beauty}, {large round eyes|double eyelids with long lashes|downturned eyes|upturned cat eyes|single-lid calm eyes|wide-set round eyes|crescent smiling eyes|a small snaggletooth when she smiles}, {a slender petite build|a healthy natural build with relaxed posture|tall and long-limbed with an elongated silhouette|petite with a natural figure|an athletic toned build|a soft natural build|a lean editorial model build|a fine-boned frame}, {jet-black|dark brown|beige|ash} {short bob with blunt bangs|medium layered hair with airy movement|long glossy straight hair center-parted|a loose wavy perm with soft volume around the cheeks|a high ponytail with loose strands at the temples|a messy top bun with loose ends|a wolf cut with choppy layers framing her face|a long blunt one-length cut|a half-up style|medium-length hair pulled behind one ear}.
-{A moment of sudden flutter, her fingers stopped mid-motion in her hair as she notices the camera, half-lowered eyes catching the lens, standing in a doorway with warm afternoon light behind her|A moment of sudden flutter, tipping her face up to put in eye drops, lashes about to blink, window light across her face|A moment of sudden flutter, struggling with a necklace clasp, holding her hair up and asking for help with a glance, seen from behind|A quiet ritual, tasting miso soup from a small dish with eyes closed, steam rising from the pot beside her, a kitchen lit by low morning sun through a window|A quiet ritual, drawing something on a fogged winter window with her finger, the outside visible only through the lines she draws|The camera is someone beside her, holding out a melting ice cream bar toward the lens with one hand while digging in her bag with the other, not looking at the camera, a summer street in dappled shade|The camera is someone beside her, running toward the lens with a self-timer, a few steps before she arrives, hair beginning to blur, laughing, an evening park|The threshold of weather, looking down at the first raindrop on dry asphalt then up at the sky, a still-dry strand of hair, an empty street just before the downpour|The threshold of weather, standing at an unattended crossing where the tracks dissolve in heat shimmer, waiting at the lowered barrier, midsummer white haze|A perfectly ordinary photo with one small impossible thing: a normal morning breakfast table, but the steam from the tea rises as a tiny cumulus cloud, floating|A perfectly ordinary photo with one small impossible thing: a sunny sidewalk, but her shadow on the ground is holding an umbrella while she walks empty-handed|Mature and composed, a white blouse and a long pleated skirt, standing by a tall studio window, backlight glowing at the fabric's edge, the rest of the studio in clean white shadow|Mature and composed, a matte silk-blend dress with a high neckline, seated on a chair, morning light from a hotel window, the fabric falling quietly, a quiet and refined mood, the room softly lit and bright}.
-{early dawn with the sky barely blue|morning with low slanting light|midday with the sun high|early afternoon|late afternoon golden hour|evening blue hour|night with artificial light|deep night mostly dark}, {early spring still cold but light returning|spring with cherry-blossom softness|rainy season damp and green|summer hot and bright|late summer with humid haze|autumn with crisp air and warm colors|late autumn with bare branches|winter cold and quiet}, {clear sky|overcast|rain|just after rain with wet surfaces|snow|fog|strong wind|heat shimmer}, {a third-person observer watching from across the street|a passerby's fleeting glance as she walks past|the camera is someone beside her, the viewpoint of intimacy|a high static surveillance angle slightly distant|her own gaze in a mirror selfie or held-at-arm's-length shot}, {85mm portrait lens, shallow depth of field, tight upper-body framing|35mm documentary framing, full body with the environment visible|low-angle wide shot emphasizing perspective and sky|slightly high angle at intimate distance|sharp side profile with the background heavily blurred|3:4 vertical portrait, subject off-center on the rule of thirds}.
-Photorealistic raw photo, natural skin texture with visible pores, authentic candid feel, cinematic color grading, sharp focus on the eyes, 8k resolution, highly detailed.
+Professional fashion editorial photograph. A {23|24|25|26}-year-old adult Japanese woman, fully clothed.
+Face anatomy: {a soft round face with full cheeks, large round eyes with narrow double lids, gently arched brows, a low straight nose with a rounded tip, a small mouth with softly full lips, and a short rounded chin|a balanced oval face, almond-shaped eyes with natural creases, straight medium-thickness brows, a slim straight nose, a defined cupid's bow, and a gently tapered jaw|a heart-shaped face with a slightly broad forehead, wide-set downturned eyes with shallow creases, softly curved brows, a short narrow nose, a fuller lower lip, and a small pointed chin|a softly square face, long monolid eyes, straight low-set brows, a straight nose with a low bridge and defined tip, a wider mouth, and a softly defined square jaw|a long narrow oval face, deep-set hooded eyes, slightly arched brows, a longer straight nose, thin well-defined lips, and a narrow rounded chin|a face with broad high cheekbones and a shorter lower half, narrow almond-shaped eyes with subtle double lids, horizontal brows, a compact nose with a rounded tip, a wide mouth, and a softly tapered jaw|a compact V-shaped face, upturned eyes with clear creases, gently angled brows, a high narrow nose bridge, a defined upper lip with a fuller lower lip, and a sharp small chin|a naturally asymmetric oval face, one eyelid slightly heavier than the other, brows at subtly different heights, a straight nose with a soft off-center tip, a slightly uneven lip line, and a gently defined jaw}.
+Facial accent: {a small beauty mark under one eye|a small beauty mark near one corner of the mouth|faint freckles across the nose and upper cheeks|a single dimple visible only if the selected scene naturally includes a smile|no additional facial accent|no additional facial accent|no additional facial accent|no additional facial accent}.
+Build: {a slender petite build|a healthy natural build with relaxed posture|tall and long-limbed with an elongated silhouette|petite with a natural figure|an athletic toned build|a soft natural build|a lean editorial model build|a fine-boned frame}.
+Hair: {jet-black|dark brown|beige brown|soft ash brown} {short bob with blunt bangs|medium layered hair with airy movement|long glossy straight hair center-parted|a loose wavy perm with soft volume around the cheeks|a high ponytail with loose strands at the temples|a messy top bun with loose ends|a wolf cut with choppy layers framing her face|a long blunt one-length cut|a half-up style|medium-length hair pulled behind one ear}.
+Unless the selected scene card specifies an outfit, she wears plain, unpatterned everyday clothing appropriate to that scene, season, and weather.
+Scene card: {Her fingers stop halfway to tucking her hair behind one ear as she notices the camera, her half-lowered eyes catching the lens in a doorway. Clear late-spring afternoon, warm side light, intimate 50mm waist-up framing, focus shared by her face and the paused hand|She tips her face up to use eye drops, lashes just about to blink beside a window. Quiet overcast morning in early summer, soft neutral window light, 85mm close portrait, focus on the eyes and small bottle|She struggles with a necklace clasp, one hand resting at the nape while she asks for help with a glance. Autumn evening inside her apartment, warm neutral room light, medium rear three-quarter framing, focus on the clasp and her glance|She has just removed her glasses and holds them half-folded while her unfocused bare eyes search for the lens. Calm winter morning by a window, soft overcast daylight, intimate 85mm upper-body portrait, focus on her eyes and the glasses|She tastes miso soup from a small dish with her eyes naturally closed, a thin line of steam rising from the pot. Cold winter morning in a lived-in kitchen, low neutral sunlight, 50mm side-profile medium shot, focus on her face and steam|She draws an unfinished shape on a condensation-covered window, the outside visible only through the traced lines. Overcast winter afternoon, cool natural daylight, 50mm side view with the window and upper body visible, focus on fingertip and clear lines|She presses an iron across a white shirt as a brief burst of steam catches the light. Rainy-season morning in a tidy room, neutral window light, 50mm medium-wide documentary framing, focus on hands, iron, and steam|She pours hot water in a slow circle over hand-drip coffee during the bloom. Clear early-autumn morning in a quiet kitchen, warm neutral daylight, 50mm medium shot from beside the counter, focus on her hands and swelling grounds|She wipes the leaves of a houseplant one by one with a soft cloth. Mild spring afternoon, clean green-tinted window light, 50mm medium shot from across the room, focus on careful fingertips and leaf texture|From the viewpoint of someone beside her, she holds a melting ice-cream bar toward the lens while searching her bag without looking at the camera. Bright midsummer midday in dappled shade, 35mm close documentary framing, focus shared by her hand and face|She runs toward a self-timer a few steps before arriving, hair beginning to blur as she laughs. Clear summer evening in a park, camera fixed at waist height, 35mm full-body environmental frame, focus on motion and approaching figure|From the viewpoint of someone beside her, she offers one earphone, its cord setting the distance between them. Late-afternoon train seat in early autumn, soft neutral window light, 50mm intimate two-person viewpoint, focus on the earphone and her face|Across a cafe table, she holds out a spoonful one step before saying “ah” and starts laughing before it reaches the lens. Clear spring afternoon, soft cafe window light, 50mm seated medium shot, focus on the spoon and natural smile|She sleeps in the passenger seat while the car waits at a red light; the signal remains a small localized reflection outside the clean neutral cabin. Summer night, 85mm side-profile portrait, focus on her resting face, natural color balance without a red wash|She looks from the first raindrop on dry asphalt up toward the sky, her hair still dry. Late-summer afternoon just before a shower, overcast sky, 35mm full-body street documentary frame from across the road, focus on her movement and the first dark spot|She waits at an unattended crossing where the rails dissolve into heat shimmer. Clear midsummer noon, lowered barrier, high white daylight, 35mm environmental full-body frame, focus on the figure, tracks, and visible heat distortion|Her figure emerges from several meters away on a tree-lined road in dense fog, streetlights softened into pale spheres. Late-autumn dawn, long-lens full-body environmental frame, focus on her silhouette and the layered fog rather than a close facial portrait|She has ducked under an awning as hail bounces from the pavement, surprise halfway into laughter. Early-spring afternoon under a stormy overcast sky, 35mm medium-wide documentary frame, focus on her reaction and the white pellets|At an ordinary breakfast table, steam from a cup rises as one tiny floating cumulus cloud. Clear autumn morning, neutral window light, 50mm tabletop medium frame from across the table, focus shared by her face, cup, and impossible cloud|She walks empty-handed on a sunny sidewalk while only her shadow holds an umbrella. Clear spring midday, slightly high 35mm full-body frame with the complete shadow visible, focus on the relationship between her and the shadow|Beside a goldfish bowl in a bright daytime room, only the water inside the bowl contains a star-filled night sky. Quiet summer afternoon, neutral window light, 50mm medium composition including her and the entire bowl, focus shared by her reaction and the water|Inside an old elevator, one unfamiliar extra button appears on the floor panel and her fingertip pauses above it. Autumn evening under clean neutral interior light, close over-the-shoulder 50mm framing, focus on fingertip, button, and partial profile|Mature and composed in a white blouse and long pleated skirt, she stands beside a tall studio window as backlight glows along the fabric's edge. Clear spring morning, clean white studio shadows, 85mm three-quarter portrait, focus on her face and the garment silhouette|Mature and composed in a matte silk-blend high-neck dress, she sits beside a hotel window as the fabric falls quietly. Calm autumn morning, soft overcast daylight and a bright room, 85mm seated three-quarter portrait, focus on her face and the dress's clean lines}.
+Photorealistic raw photo in natural color with realistic neutral color balance, natural skin texture with visible pores, authentic candid feel, clean frame edges, 3:4 vertical composition, highly detailed. Never black-and-white, monochrome, grayscale, or sepia. No red, orange, or magenta light leak, colored edge fog, or colored haze.
 ```
 
 ### ネガティブプロンプト（固定）
@@ -72,22 +77,24 @@ Photorealistic raw photo, natural skin texture with visible pores, authentic can
 > 詳細と対策は [safe.md](../random/safe.md)。
 
 ```
-anime, illustration, painting, stylized, CGI, 3D render, plastic skin, doll-like face, mannequin, distorted anatomy, exaggerated proportions, deformed hands, extra fingers, fused fingers, extra limbs, harsh flash, blown highlights, heavy makeup, watermark, text, logo, low resolution, blurry
+anime, illustration, painting, stylized, CGI, 3D render, plastic skin, doll-like face, mannequin, distorted anatomy, exaggerated proportions, deformed hands, extra fingers, fused fingers, extra limbs, harsh flash, blown highlights, heavy makeup, black and white, monochrome, grayscale, sepia, red light leak, orange light leak, magenta light leak, colored edge fog, colored haze, watermark, text, logo, low resolution, blurry
 ```
 
 ### 回し方
 
 - **Batch count を 8〜16 に上げて、Seed は -1（ランダム）** → 1クリックで全部違う子が出る
-- L2.5の束（最後2つ = 束12・13）だけ回したい → シーン束から他を消す
-- 特定ムードだけ回したい → 該当する束だけ残す（束の番号は「設計の肝」の対応表を参照）
-- 季節を固定したい → 季節スロットから1つだけ残す
+- L2.5のカード（最後2つ = 23・24）だけ回したい → scene cardから他を消す
+- 特定の場面群だけ回したい → 該当するscene cardだけ残す（番号は「設計の肝」の対応表を参照）
+- 特定の顔造作だけ回したい → Face anatomyの候補を1つだけ残す
+- 季節を固定したい → その季節のscene cardだけ残す。独立した季節スロットは追加しない
 
 ### 便利な追加構文
 
 ```
-{2::A|1::B}        A が B の2倍出やすくなる（L2.5の束を厚くしたい時など）
+{2::A|1::B}        A が B の2倍出やすくなる（特定のscene cardや顔造作を厚くしたい時など）
 {1-2$$A|B|C}       1〜2個を選んで連結
 __jp2_scene__      wildcards/jp2_scene.txt から1行ランダム抽選
+__jp2_face__       wildcards/jp2_face.txt に顔造作候補を外出しして管理する場合はこちら
 ```
 
 ---
@@ -95,88 +102,113 @@ __jp2_scene__      wildcards/jp2_scene.txt から1行ランダム抽選
 ## ② `{a, b, c}` 版 — Midjourney
 
 Midjourney の `{}` は**抽選ではなく全組み合わせを別ジョブとして生成する**（Permutation Prompts）。
-組み合わせ数がそのままジョブ数になり、上限40。**束の中のカンマは `\,` でエスケープが必須**。
+組み合わせ数がそのままジョブ数になり、上限40。**card内のカンマは `\,` でエスケープが必須**。
 
-スロットを増やすとジョブ数が掛け算で爆発するので、実用上はシーン束の1スロットだけにするのが安全。
-第2弾は束が13あるので、そのままでは13ジョブになる。以下はよく回す6束（1・12・4・6・8・10）に絞った版（6ジョブ）。
+スロットを増やすとジョブ数が掛け算で増えるので、実用上はscene cardの1スロットだけにするのが安全。
+以下は24枚をすべて収録した版ではなく、scene card **1・5・10・15・19・23だけを使う6scene sample**。
+顔造作・年齢・体型・髪のPermutationスロットは、このサンプルには含めていない。
 
 ```
-Professional fashion editorial photograph, a 23-year-old adult Japanese woman fully clothed in modest everyday clothing, natural skin texture, {her fingers stopped mid-motion in her hair as she notices the camera\, half-lowered eyes catching the lens\, warm afternoon light behind her in a doorway, a white blouse and a long pleated skirt\, standing by a tall studio window\, backlight glowing at the fabric's edge\, the rest of the studio in clean white shadow, tasting miso soup from a small dish with eyes closed\, steam rising from the pot beside her\, a kitchen lit by low morning sun, holding out a melting ice cream bar toward the lens with one hand while digging in her bag with the other\, not looking at the camera\, a summer street in dappled shade, looking down at the first raindrop on dry asphalt then up at the sky\, a still-dry strand of hair\, an empty street just before the downpour, a normal morning breakfast table\, but the steam from the tea rises as a tiny cumulus cloud floating}, cinematic color grading, sharp focus on the eyes --ar 3:4 --style raw --no anime, illustration, 3d render, plastic skin, deformed hands, extra fingers, text, watermark
+Professional fashion editorial photograph, an adult Japanese woman fully clothed in plain unpatterned clothing appropriate to the selected scene and season, natural skin texture, natural color and neutral color balance, {her fingers stop halfway to tucking her hair behind one ear as she notices the camera\, clear late-spring afternoon\, warm side light\, intimate waist-up framing, she tastes miso soup from a small dish with her eyes naturally closed\, cold winter morning in a lived-in kitchen\, low neutral sunlight\, side-profile medium shot, from the viewpoint of someone beside her she holds a melting ice-cream bar toward the lens while searching her bag\, bright midsummer midday in dappled shade\, close documentary framing, she looks from the first raindrop on dry asphalt up toward the sky\, late-summer afternoon just before a shower\, full-body street frame, at an ordinary autumn breakfast table the steam from a cup rises as one tiny floating cumulus cloud\, neutral morning window light\, tabletop medium frame, mature and composed in a white blouse and long pleated skirt beside a tall studio window\, clear spring morning\, clean white shadows\, three-quarter portrait}, clean frame edges --ar 3:4 --style raw --no anime, illustration, 3d render, plastic skin, deformed hands, extra fingers, black-and-white, monochrome, grayscale, sepia, red light leak, orange light leak, magenta light leak, colored edge fog, colored haze, text, watermark
 ```
 
-- 13束全部回したい場合は `\,` エスケープを維持したまま束を追加する（13ジョブになる）
-- 顔・体型・髪も変えたい場合は、そのぶんジョブ数が掛け算になる点に注意（6シーン × 3髪型 = 18ジョブ）
+- 24枚全部を回したい場合は、①または③と同じ順番で残り18枚を追加する（24ジョブになる）
+- 顔造作・体型・髪もPermutationへ足す場合は、そのぶんジョブ数が掛け算になる点に注意（6scene × 3顔造作 = 18ジョブ）
 - Midjourney は Seed 未指定なら毎回ランダムなので、同じプロンプトを再送するだけでも人物は変わる
+- `--c 15〜40`（chaos）を足すとグリッド4枚のあいだのばらつきが増える。`--weird` は写実が崩れやすいので非推奨
 
 ---
 
 ## ③ 自己完結文章版 — ChatGPT / Gemini / nano-banana 系
 
-これらは画像生成の前にモデルがプロンプトを読解するので、**「リストから1つランダムに選べ」という指示自体が効く**。1回貼るだけでよい。
-
-> シーン束に時間・季節・天気の指定がすでに含まれている場合、独立スロットの【時間】【季節】【天気】はそれに合うものを選ぶ（矛盾しないもの。束の指定を優先）。
+画像生成前のチャット推論で候補をサイレント抽選し、**選択済みの内容だけ**を画像生成ツールへ渡す1ブロック直投げ版。
+候補一覧を別メッセージへ分ける必要はない。
 
 ```
 以下の条件で写真を1枚生成してください。
 
-各リストから毎回ランダムに1つずつ選んでください。選んだ番号は言わず、画像だけ出してください。
-直前の生成と同じ番号は選ばないこと。
-シーン束に時間・季節・天気の指定がすでに含まれている場合は、それを優先し、【時間】【季節】【天気】は矛盾しないものを選ぶこと。
+【サイレント抽選と画像生成ツールへの受け渡し】
+1. 会話内に【顔造作】1〜8と【scene card】1〜24の2つのshuffle bagを持つ。各bagを偏りなく並べ替えて先頭から1つずつ使い、使い切ったら全候補で新しいbagを作る。同じ依頼で複数枚作る場合も1枚ごとに1つ消費する。
+2. 会話履歴や使用済み番号が参照できない場合は、【顔造作】8候補と【scene card】24候補をそれぞれ等確率として1つ選ぶ。リストの先頭を優先しない。
+3. 【年齢】【顔のアクセント】【体型】【髪色】【髪型】は互いに独立した候補として、各リストから1つずつ偏りなく選ぶ。これらは直前と同じでもよい。
+4. scene cardには時刻・季節・天気・視点・カメラ・主な焦点が含まれている。競合する別条件を追加しない。表情と視線もscene cardに従う。
+5. 内部で選択を完了してから、選択済みの要素と【共通】だけを自然な一つの完成プロンプトへ書き直して画像生成ツールに渡す。候補一覧、未選択候補、番号、抽選手順、説明文は画像生成ツールへ渡さない。
+6. 選んだ番号や完成プロンプトは表示せず、生成した画像だけを返す。
 
-被写体: 23歳の日本人女性（成人）、全身きちんと着衣、非性化された自然なシーン。顔は必ず、日本のCMやドラマに起用されるレベルの可愛い顔立ち（アイドル・女優系）を基準に、時々美人寄りも混ぜる。目鼻立ちのバランスが良く、肌は綺麗だが加工しすぎない自然な質感。場面のどこかに、成人であることが読み取れる要素を1つ入れる（仕事帰り／ひとり暮らしの部屋／運転席／休日の自宅 など）。
+被写体: 23〜26歳の日本人女性（成人）。全身きちんと着衣した自然な生活または撮影シーン。肌は加工しすぎない自然な質感。顔造作は輪郭・目・眉・鼻・口・顎だけに反映し、性格・表情・メイク・髪を顔造作から推測しない。
 
-【顔タイプ】1.正統派アイドル系 2.丸顔であどけない 3.たれ目で甘い 4.猫目で小悪魔っぽい 5.韓国アイドル風 6.ハーフっぽく華やか 7.健康的で元気 8.八重歯がチャーミング 9.正統派美人 10.涼しげな大人っぽい美人
+【年齢】1.23歳 2.24歳 3.25歳 4.26歳
 
-【顔の特徴】1.大きな丸い目 2.二重で長いまつ毛 3.たれ目 4.つり目 5.一重で涼しげ 6.離れ気味の丸い目 7.笑うと三日月 8.八重歯
+【顔造作】※各案は輪郭・目・眉・鼻・口・顎だけを指定
+1. 柔らかな丸顔とふっくらした頬。狭い二重の大きな丸い目、緩いアーチ眉、低くまっすぐで先端の丸い鼻、小さく柔らかな厚みのある口、短く丸い顎
+2. 均整の取れた卵型の輪郭。自然な二重のアーモンド形の目、まっすぐで中程度の太さの眉、細くまっすぐな鼻、上唇の山が明瞭な口、緩く先細りの顎
+3. 額がやや広いハート形の輪郭。やや離れた少したれ目で浅い二重、柔らかな曲線眉、短く細い鼻、下唇に自然な厚みのある口、小さく尖った顎
+4. 柔らかな四角形の輪郭。横長の一重の目、低くまっすぐな眉、低めの鼻筋と明瞭な鼻先、広めの口、柔らかく角の出た顎
+5. 縦長で細い卵型の輪郭。奥行きがありまぶたのかぶさる目、少し弧を描く眉、長くまっすぐな鼻、薄く輪郭の明瞭な唇、細く丸い顎
+6. 高く広い頬骨と短めの下顔面。細いアーモンド形で控えめな二重の目、水平な眉、先端の丸いコンパクトな鼻、広めの口、柔らかく先細りの顎
+7. コンパクトなV字形の輪郭。自然な二重のつり目、緩く角度のついた眉、高く細い鼻筋、下唇に厚みのある輪郭の明瞭な口、小さく鋭い顎
+8. 自然な左右差のある卵型の輪郭。片方だけわずかに重いまぶた、微妙に高さの違う眉、先端がごく軽く中心からずれたまっすぐな鼻、わずかに非対称な口元、自然に輪郭の出る顎
 
-【体型】1.小柄 2.標準 3.高身長 4.小柄 5.引き締まった体型 6.自然体 7.モデル体型 8.華奢な骨格
+【顔のアクセント】
+1.目の下の小さなほくろ
+2.口元の小さなほくろ
+3.鼻から上頬にかけてのごく薄いそばかす
+4.選んだscene cardに自然な笑顔がある場合だけ見える片えくぼ。笑顔のないsceneでは表情を変えず、見えなくてよい
+5.特になし
+6.特になし
+7.特になし
+8.特になし
 
-【髪色】1.黒 2.ダークブラウン 3.ベージュ 4.アッシュ
+【体型】1.小柄 2.標準 3.高身長 4.小柄で自然な体つき 5.引き締まった体型 6.自然体 7.モデル体型 8.華奢な骨格
 
-【髪型】1.ショートボブ 2.ミディアムレイヤー 3.ロングストレート 4.ゆるふわパーマ 5.ポニーテール 6.お団子 7.ウルフカット 8.ロングのワンレン 9.ハーフアップ 10.ミディアムで片耳にかけた髪
+【髪色】1.黒 2.ダークブラウン 3.ベージュブラウン 4.柔らかなアッシュブラウン
 
-【シーン束】※以下は一括で1つ選ぶこと（ムード・服・場所・仕草・光がセット）
+【髪型】1.ショートボブ 2.ミディアムレイヤー 3.ロングストレート 4.ゆるいウェーブ 5.ポニーテール 6.ルーズなお団子 7.ウルフカット 8.ロングのワンレン 9.ハーフアップ 10.ミディアムで片耳にかけた髪
+
+【scene card】※場面・仕草・光・時刻・季節・天気・視点・カメラ・主な焦点を一括で1つ選ぶ
 ※基本トーン（上品/スタイリッシュ/だらしない/元気/気だるげ/レトロ）は第一弾(random/)にあるので、第二弾ではそれ以外のムードを中心に構成。
-1. きっかけ。髪を耳にかけようとした指が途中で止まる。こちらの視線に気づいて半分伏せた目だけがカメラへ。午後の光が入る扉口
-2. きっかけ。目薬をさすため上を向いた顔と、まばたきするまつ毛。窓辺の光
-3. きっかけ。ネックレスの留め金に苦戦し、後ろ髪を持ち上げたまま助けを求めて見る背中越しの構図
-4. 生活の手元。味噌汁の味見。小皿に取ってひと口、目を閉じて味を確かめる横顔と、鍋から立つ細い湯気。朝の台所
-5. 生活の手元。結露した冬の窓に指で何か書きかけ、外の景色が線の中にだけ見える
-6. 気配のツーショット。溶けかけのアイスを「持ってて」とカメラに向かって差し出す手。財布を探す伏し目。カメラは受け取る側の視点。夏の木陰
-7. 気配のツーショット。セルフタイマーに向かって走り込んでくる数歩手前。ブレ始めた髪と笑い声の顔。夕方の公園
-8. 天気の変わり目。夕立の一粒目。乾いたアスファルトを見下ろし、空を見上げる。まだ乾いている髪。降り出す直前の街
-9. 天気の変わり目。陽炎の無人踏切。線路の先が熱で溶け、遮断機の前で待つ。真夏の白いもや
-10. マジックリアリズム。普通の朝の食卓。ただ紅茶の湯気が積雲のかたちで浮かんでいる
-11. マジックリアリズム。快晴の歩道。本人は手ぶらなのに、足元の影だけが傘を差している
-12. 大人っぽい。白いブラウスにロングプリーツスカート。高いスタジオ窓辺に立ち、逆光が布の縁で光る。残りは白い影
-13. 大人っぽい。マットなシルク混じりのハイネックドレス。椅子に座り、ホテルの窓からの朝の光が当たる。布は静かに垂れ、上品で落ち着いた空気。部屋は明るい
+1. きっかけ。髪を耳にかけようとした指が途中で止まり、半分伏せた目だけがカメラへ。晩春の晴れた午後、扉口の暖かな横光。親しい距離の50mm・腰上構図で、顔と止まった手の両方に焦点
+2. きっかけ。目薬をさすため顔を上げ、まつ毛がまばたきする直前。初夏の曇った静かな朝、窓辺の柔らかな中立光。85mmの顔寄りで目と小瓶に焦点
+3. きっかけ。ネックレスの留め金に苦戦し、片手をうなじに置いたまま助けを求めて見る。秋の夕方、ひとり暮らしの室内と暖かな中立光。背後斜めからの中景で留め金と視線に焦点
+4. きっかけ。眼鏡を外して半分畳んだ手と、ピントの合わない裸眼がこちらを探す。冬の曇った朝、窓辺の柔らかな光。85mm上半身寄りで目と眼鏡に焦点
+5. 生活の手元。味噌汁を小皿で味見し、自然に目を閉じた横顔と鍋から立つ細い湯気。寒い冬の朝の台所、低い中立な朝日。50mmの横顔中景で顔と湯気に焦点
+6. 生活の手元。結露した窓に指で書きかけ、外の景色が線の中にだけ見える。冬の曇った午後、冷たい自然光。窓と上半身が入る50mm横位置で指先と透明な線に焦点
+7. 生活の手元。白シャツにアイロンをかけ、短いスチームが窓光を受ける。梅雨の朝の整った室内、曇天の中立光。50mmの中広角ドキュメンタリーで手・アイロン・湯気に焦点
+8. 生活の手元。ハンドドリップの蒸らしで、湯をゆっくり円に注ぎ、膨らむ粉を見つめる。初秋の晴れた朝の台所、暖かな中立光。カウンター脇からの50mm中景で手と粉に焦点
+9. 生活の手元。観葉植物の葉を一枚ずつ柔らかな布で拭く。穏やかな春の午後、窓越しの清潔な緑がかった光。部屋の向かいからの50mm中景で指先と葉の質感に焦点
+10. 気配のツーショット。隣にいる人の視点。溶けかけのアイスをレンズへ差し出し、カメラを見ずに鞄を探す。真夏の明るい正午の木陰、35mmの近いドキュメンタリーで手と顔に焦点
+11. 気配のツーショット。セルフタイマーへ数歩手前から走り込み、髪がぶれ始めて自然に笑う。晴れた夏の夕方の公園、腰高に固定した35mm全身環境構図で動きに焦点
+12. 気配のツーショット。隣にいる人へイヤホンを片方だけ差し出し、コードの長さが距離を決める。初秋の午後遅い列車内、柔らかな中立の窓光。親しい二人称視点の50mmでイヤホンと顔に焦点
+13. 気配のツーショット。カフェのテーブル越しにスプーンを差し出し、「あーん」と言う前に笑って続かない。晴れた春の午後、柔らかな窓光。向かい側からの50mm着席中景でスプーンと自然な笑顔に焦点
+14. 気配のツーショット。信号待ちの助手席で眠る横顔。赤信号は車外の小さな局所反射に留め、車内と肌は中立色。夏の夜、85mm横顔寄りで休んだ顔に焦点。画面全体を赤くしない
+15. 天気の変わり目。乾いたアスファルトの最初の雨粒から空を見上げ、髪はまだ乾いている。晩夏の夕立直前の曇った午後。通りの向かいからの35mm全身ドキュメンタリーで動きと最初の濃い点に焦点
+16. 天気の変わり目。陽炎で線路の先が揺れる無人踏切、下りた遮断機の前で待つ。真夏の快晴の正午、高く白い日光。35mm全身環境構図で人物・線路・熱の揺らぎに焦点
+17. 天気の変わり目。濃霧の並木道、淡い球にほどけた街灯の間から数メートル先の姿が現れる。晩秋の明け方。望遠の全身環境構図で、顔寄りではなく人物の輪郭と霧の層に焦点
+18. 天気の変わり目。雹を避けて軒下へ入り、驚きが笑いへ変わる途中。早春の荒れた曇り空、地面で跳ねる白い粒。35mmの中広角ドキュメンタリーで反応と雹に焦点
+19. マジックリアリズム。普通の朝食卓で、カップの湯気だけが小さな積雲になって浮かぶ。秋の晴れた朝、中立の窓光。向かい側からの50mm食卓中景で顔・カップ・雲に焦点
+20. マジックリアリズム。快晴の歩道を手ぶらで歩くが、足元の影だけが傘を差している。春の正午。完全な影まで入る少し高い35mm全身構図で、本人と影の関係に焦点
+21. マジックリアリズム。昼の明るい部屋、金魚鉢の水の中にだけ星空が入っている。静かな夏の午後、中立の窓光。人物と鉢全体が入る50mm中景で、反応と水面の両方に焦点
+22. マジックリアリズム。古いエレベーターの階数盤に一つだけ知らないボタンがあり、指がその上で止まる。秋の夕方、清潔な中立の室内光。肩越しの50mm寄りで指先・ボタン・横顔の一部に焦点
+23. 大人っぽい。白いブラウスとロングプリーツスカートで高いスタジオ窓辺に立ち、逆光が布の縁で光る。春の晴れた朝、清潔な白い影。85mmの膝上構図で顔と服の輪郭に焦点
+24. 大人っぽい。マットなシルク混のハイネックドレスでホテルの窓辺の椅子に座り、布が静かに垂れる。秋の穏やかな曇り朝、明るい部屋。85mmの着席膝上構図で顔と服の端正な線に焦点
 
-【時間】1.明け方 2.朝 3.真昼 4.午後 5.夕方 6.宵 7.夜 8.深夜
-
-【季節】1.早春 2.春 3.梅雨 4.夏 5.残暑 6.秋 7.晩秋 8.冬
-
-【天気】1.晴れ 2.曇り 3.雨 4.雨上がり 5.雪 6.霧 7.強風 8.陽炎
-
-【視点】1.離れた観察者 2.通りすがりの一瞬 3.カメラは隣にいる誰か 4.高い位置の監視カメラ 5.彼女自身（鏡 selfie）
-
-【カメラ】1.85mmポートレート、浅い被写界深度、上半身寄り 2.35mmドキュメンタリー、環境が写る全身 3.ローアングルの広角、パースと空を強調 4.やや俯瞰、近い距離感 5.横顔にピント、背景は大きくボケ 6.3:4縦位置、三分割で人物をオフセンター
-
-【共通】実写のRAW写真調。毛穴が見える自然な肌の質感、作り込みすぎないスナップの空気感、シネマティックな色調、目にシャープなピント、3:4縦位置。アニメ調・イラスト・3DCG・プラスチックのような肌・人形顔・強いフラッシュ・透かし・文字・破綻した手指は避ける。
+【共通】服装指定のないscene cardでは、場面・季節・天気に合う無地の普段着にする。実写のRAW写真調、自然なカラー写真、中立で現実的な色バランス、毛穴が見える自然な肌、作り込みすぎないスナップの空気感、清潔な画面端、3:4縦位置。白黒・モノクロ・グレースケール・単色セピアにはしない。赤・橙・マゼンタの光漏れ、画面端の色モヤ、色付きの霞を入れない。アニメ調・イラスト・3DCG・プラスチックのような肌・人形顔・強いフラッシュ・透かし・文字・破綻した手指は避ける。
 ```
 
 > ⚠️ 冒頭に「成人女性」「全身着衣」「非性化されたシーン」と**肯定文で**書くこと。
 > 「未成年を出すな」「裸体を出すな」と書くと逆に弾かれる。詳細は [safe.md](../random/safe.md)。
 
-**連投したいとき**は末尾に `これを4枚、毎回違う組み合わせで。` を足す。
+**連投したいとき**は末尾に `これを4枚。1枚ごとに【顔造作】と【scene card】のshuffle bagを1つずつ消費し、選択済み要素だけで別々に生成。` を足す。
 
 ### 注意
 
-LLM系は乱数が偏りやすく、放っておくとリストの1番や無難な選択肢ばかり選ぶ。効く対策：
+LLM系の選択は、実装された乱数器の一様性を保証するものではない。上のshuffle bagは、
+会話内で顔造作とscene cardの使用回数を揃え、リスト先頭への収束を減らすための運用。
 
-- `直前の生成と同じ番号は選ばないこと` を入れておく（上のプロンプトには入れてある）
-- `シーンは7番で、他はランダム` のように軸を1つ指定して残りを振る
-- `SEED=4821 として、各リストの項目数で割った余りで番号を決めて` と数式で決めさせる
-- 束12・13（大人っぽい）を多く出したい → `シーン束は12・13から多めに選んで` と指示する
+- `scene cardは7番固定、他はサイレント抽選` のように軸を1つ固定してもよい
+- 23・24（大人っぽい）を多く出したい → `scene cardは23・24を2倍の重みでbagへ入れる`
+- 特定の顔造作だけで回したい → `【顔造作】は2番固定、他はサイレント抽選`
+- 統計的な均等性を測る場合は、生成結果ではなく実際に選ばれた番号を別の検証用チャットで記録する。本番の「画像だけ返す」運用とは分ける
 
 ### Geminiで弾かれるときの注意（実測）
 
@@ -188,14 +220,14 @@ Geminiは文脈を見ず、プロンプト内の語彙を合算スコアで判�
 
 **Geminiで弾かれたら:**
 1. 新しいチャットで試す（セッションの累積をリセット）
-2. それでも弾かれるなら、シーン束を1-11だけに減らす（L2.5の束12・13を外す）
-3. さらに減らすなら、シーン束を3-4個だけ残す
+2. それでも弾かれるなら、scene cardを1-22だけに減らす（L2.5の23・24を外す）
+3. さらに減らすなら、scene cardを3-4個だけ残す
 
 ---
 
 ## L2.5（大人っぽい）の使い方
 
-シーン束の12・13が「大人っぽい」の束。色気は服の仕立てと光だけで出す。
+scene cardの23・24が「大人っぽい」のカード。色気は服の仕立てと光だけで出す。
 
 **ChatGPTとGeminiは「厳しさの軸」が違う（重要）:**
 どちらが厳しいかではなく、判定の仕方が違う。両方で通すには両方の条件を同時に満たす必要がある。
@@ -242,14 +274,14 @@ Geminiは文脈を見ず、プロンプト内の語彙を合算スコアで判�
 
 ### Geminiで弾かれたときの切り分け（実測値）
 
-| 束 | 弾かれた語 | 通った言い換え |
+| card | 弾かれた語 | 通った言い換え |
 |---|---|---|
-| 12（白いブラウス） | 透け感のある / 形体をほのかに暗示 / 織りが入射光を散乱 | 白いブラウス / 逆光が布の縁で光る のみ |
-| 13（ハイネックドレス） | ラグジュアリーブライダル / シャゼロング / ドレープ | ハイネックドレス / 椅子に座り / 布は静かに垂れ のみ |
+| 23（白いブラウス） | 透け感のある / 形体をほのかに暗示 / 織りが入射光を散乱 | 白いブラウス / 逆光が布の縁で光る のみ |
+| 24（ハイネックドレス） | ラグジュアリーブライダル / シャゼロング / ドレープ | ハイネックドレス / 椅子に座り / 布は静かに垂れ のみ |
 
 ### 弾かれたら
 
-1. まず 束12・13 を外して残りの11束で回す
+1. まず scene card 23・24 を外して残りの22枚で回す
 2. ChatGPTなら光学言い回し版（expression/01準拠）に戻せるが、Geminiでは上記の安全語彙版を使う
 3. それでも弾かれるなら、そのサービスは人物写真に厳しい。`safe.md` の「それでも弾かれたときの切り分け」参照
 
@@ -257,6 +289,6 @@ Geminiは文脈を見ず、プロンプト内の語彙を合算スコアで判�
 
 ## どれを使うべきか
 
-- **手元にSD/ComfyUI環境がある** → ①。1枚ごとに本当にランダムで、バッチ16枚を放置できる。文句なしにこれが最良
+- **手元にSD/ComfyUI環境がある** → ①。候補抽選をチャットAIへ任せず、バッチで回したい場合に最も扱いやすい
 - **Midjourney** → ②。ただし「抽選」ではなく「全部生成」なのでジョブ数に注意。人物のブレだけなら同じプロンプトを再送するだけでもいい
-- **ChatGPT / Gemini しかない** → ③。ランダム性は本物ではなくモデルの気分次第だが、実用上は十分ばらける
+- **ChatGPT / Gemini しかない** → ③。shuffle bagで会話内の使用回数は揃えられるが、選択や画像の均等分散はサービス側から保証されない

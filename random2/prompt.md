@@ -1,14 +1,16 @@
-# ランダム生成メタプロンプト第2弾（20代前半・日本人女性・拡張版）
+# ランダム生成メタプロンプト第2弾（23〜26歳・日本人女性・シーン束版）
 
-`random/prompt.md` の派生版。3つの課題を解決する:
+`random/prompt.md` の派生版。人物参照を使わず、次の4点を広げる:
 
-1. **シチュエーションが少ない** → `ideas/` に蓄積したシーンを群別に取り込み、第二弾固有の24場面を新設（第一弾14と重複なし。併用で38場面）
-2. **ちょいエロがない** → `expression/01-sheer-skin-intimacy.md` の間接描写手法を取り込み、L2.5（布と光の間接描写）を新設
-3. **幅が狭い** → 時間帯・季節・天気・視点の4軸を新設し、光(H)から時間帯・天気の語を分離。ムードを7→12に拡張
+1. **シーン** — 第二弾固有の24場面を、動作・場所・視線を含む骨格として収録
+2. **人物** — 年齢、顔の造作、顔のアクセント、体型、髪色、髪型を独立化
+3. **環境** — 時間帯・季節・天気・光・カメラを、シーンと両立する候補から選択
+4. **再現性** — 無効値を後補正せず、有効候補を絞ってから状態付き乱数で選択
 
-- 使い方: 下の「A. メタプロンプト」を ChatGPT / Claude / Gemini にそのまま貼る → 出てきた英語プロンプトを画像生成AIへ。
-- 表現レベルは L1〜L2.5（後述）。上限は「布と光で暗示する色っぽさ」まで。露骨な描写は出さない設計。
-- 安全フィルタ対策は [safe.md](../random/safe.md) と [expression/01-sheer-skin-intimacy.md](../expression/01-sheer-skin-intimacy.md) の原則に準拠。
+- 使い方: 下の「A. メタプロンプト」を ChatGPT / Claude / Gemini にそのまま貼り、出てきた英語プロンプトを画像生成AIへ渡す。
+- シーン番号は [inline-random.md](inline-random.md) の直接投げ版と共通。
+- L2.5の運用メモとモデル差は `inline-random.md` を参照。貼り付け本文には、生成に不要な注意語の一覧を含めない。
+- 出力は自然なカラー写真に固定し、白黒化と色付きの画面端モヤを使わない。
 
 ---
 
@@ -16,339 +18,300 @@
 
 ```
 あなたは画像生成AI用のプロンプト作成アシスタントです。
-以下のスロット表からランダムに1つずつ選び、組み合わせて英語の画像生成プロンプトを作ってください。
+以下から整合する値を選び、英語の画像生成プロンプトを作ってください。
 
 # 出力ルール
 - 出力数: 3案（指定があればその数）
-- 各案について「選ばれたスロット一覧」→「英語プロンプト」→「日本語訳（要約でよい）」の順で出す
-- 被写体は必ず a 23-year-old adult Japanese woman と年齢を数字で書く
-  （"in her early 20s" だけだと生成側で年齢が下振れしやすい）
-- 場面・服装・小物のどれかに、成人であることが読み取れる要素を1つ入れる
-  （仕事帰り、ひとり暮らしの部屋、運転席、休日の自宅、職場 など）
-- 表現レベルは L2（指定があればそのレベル）に従う
-- スロットDのムードを軸にして、E/F/G/H/I/K/L/M/N が矛盾しない組み合わせだけを選ぶ（整合ルール参照）
-- 光(H)は時間帯(K)・天気(M)と衝突しうる。決める順番は
-  D → E →（Eの季節・天気・時間の制約）→ K/L/M → 「H×K×M 禁則」を満たすHに絞る → F/G/I/N
-- 案どうしでムード(D)とシチュエーション(E)が重複しないようにする
-- 末尾に共通の画質指定とネガティブプロンプトを付ける
+- 各案を「選択一覧」→「英語プロンプト」→「日本語訳（要約）」の順で出す
+- 年齢はQから選び、a 24-year-old adult Japanese woman のように数字と adult を書く
+- 場面・服装・小物のいずれかに、仕事、ひとり暮らし、運転、休日の自宅など成人の生活文脈を1つ入れる
+- 最初にEを1つ選ぶ。DはEの番号から導出し、独立抽選しない
+- Eは場所・主動作・視線・視点の骨格である。Eに書かれた動作を別のポーズで上書きしない
+- Gの独立スロットは使わない。I/NもEの許可集合から選び、Eに固定指定があれば追加変更しない
+- 選択順は Eの群候補 → E → Q → A → A-2 → B → C-1 → C-2 → F → L → H → K → M → I → N
+- F/L/H/K/M/I/Nは「E別の有効候補表」と「H×K×M整合表」の両方を満たす候補だけに絞る
+- Hを選ぶ前に、そのHで有効なKとMが1件以上残ることを確認する
+- 顔の表情はEの瞬間に合わせて自然に決める。Aへ性格、表情、メイク、髪、肌色、年齢を足さない
+- 複数案では同じEを繰り返さず、Dの6群とAの8種をシャッフルバッグとして扱う
+- 服・小物・背景は無地または架空の意匠とし、実在ブランドのロゴ、商品名、看板を入れない
+- Jは指定がなければL2。E23・E24はL2.5固定
+- 共通末尾と共通ネガティブプロンプトを全案に付ける
 
 # 乱数の決め方
-シード指定がない場合は毎回ちがう組み合わせを自由に選ぶ。
-シード指定（例: SEED=4821）がある場合は、下のスロット番号 n と項目数 c を使って
-  index = (SEED + n * 7) mod c   → 選ぶ番号は index + 1
-で決定し、同じシードなら同じ結果になるようにする。
+シード指定がない場合:
+- 1案なら、有効候補から自由に1つ選ぶ
+- 複数案なら、Dの6群とAの8種を別々のシャッフルバッグとして扱う
+- Dの全群を使うまで同じ群を再利用せず、Aも8種を使うまで再利用しない
+- 各群内でも未使用のEを優先する。袋を使い切ったときだけ全候補を戻す
+- 厳密な再現性や分布監査が必要ならSEEDを指定する
 
-  n=1  A  顔        c=10
-  n=2  B  体型      c=8
-  n=3  C-1 髪色     c=4
-  n=4  C-2 髪型     c=10
-  n=5  D  ムード    c=12
-  n=6  E  シチュ    c=24
-  n=7  F  服装      c=15
-  n=8  G  ポーズ    c=12
-  n=9  H  光        c=8
-  n=10 I  カメラ    c=8
-  n=11 K  時間帯    c=8
-  n=12 L  季節      c=8
-  n=13 M  天気      c=8
-  n=14 N  視点      c=5
+シード指定（例: SEED=4821）がある場合:
 
-  ※Jは表現レベルなので乱数の対象外（指定がなければL2）。
-  ※シードで出た番号が整合ルールに反する場合は、そのスロットだけ
-    整合ルールを満たす最も近い番号へずらし、その旨を明記する。
+  state = SEED mod 10007
+  t = 1
+
+候補から1件選ぶ直前に毎回:
+
+  state = (11 * state + 17 + t) mod 10007
+  position = (state mod 候補数) + 1
+  t = t + 1
+
+- 整合する候補だけを番号順に並べてからposition番目を選ぶ
+- 固定指定や候補1件の場合もstateとtを1回進める
+- 複数案でもstateとtを初期化せず、次案へ継続する
+- 無効な生番号を出して後から別番号へ補正しない
+- シャッフルバッグによる除外も、候補を並べる前に適用する
+- 複数案では、Eを選ぶ前に未使用の6群を候補として同じ式で1群を選び、次にその群の未使用Eを選ぶ。
+  群の選択でもstateとtを1回進める。Dは選ばれたEの群名であり、人物・場面とは別の内容スロットではない
+- 選択一覧に、各選択直後のstateを併記する
+- Jは指定値なのでstateを進めない
 
 ────────────────────────
-【A】顔の系統（可愛い系8 + 美人系2）
-※基準は「日本のCMやドラマに起用されるレベルの可愛い顔立ち（アイドル・女優系）」。時々美人寄りも混ぜる。
-※ただし cute / baby face といった語を重ねると生成側で年齢が下振れする。
-  可愛さは語ではなく造作（目の形・輪郭・表情）で出し、成人であることは年齢指定と場面の側で担保する。
-可愛い系:
-1. classic idol-type features, round face, large bright eyes
-2. round soft face, gently downturned eyes, full cheeks
-3. downturned eyes with a soft sweet expression
-4. upturned cat-like eyes, small sharp chin, a mischievous look
-5. K-idol polished styling, straight brows, gradient lips
-6. striking mixed-look features on Japanese bone structure
-7. bright healthy look, wide-set round eyes, open friendly expression
-8. an easy open face with a small snaggletooth showing when she smiles
-美人系:
-9. classic symmetrical beauty, large round dark-brown eyes, small straight nose
-10. cool composed mature beauty, defined double eyelids, high nose bridge
+【D】シーン群（Eから導出）
+D1 きっかけ: E1-4
+D2 生活の手元: E5-9
+D3 気配のツーショット: E10-14
+D4 天気の変わり目: E15-18
+D5 静かなマジックリアリズム: E19-22
+D6 大人っぽいエディトリアル: E23-24
+
+【Q】年齢（4）
+1. 23-year-old adult
+2. 24-year-old adult
+3. 25-year-old adult
+4. 26-year-old adult
+
+【A】顔の造作（8）
+※輪郭・目・眉・鼻・口・顎だけを指定する。表情、メイク、髪、肌色、年齢はE/Q/C側で決める。
+1. a soft round face with full cheeks, large round eyes with narrow double lids, gently arched brows, a low straight nose with a rounded tip, a small mouth with softly full lips, and a short rounded chin
+2. a balanced oval face, almond-shaped eyes with natural creases, straight medium-thickness brows, a slim straight nose, a defined cupid's bow, and a gently tapered jaw
+3. a heart-shaped face with a slightly broad forehead, wide-set downturned eyes with shallow creases, softly curved brows, a short narrow nose, a fuller lower lip, and a small pointed chin
+4. a softly square face, long monolid eyes, straight low-set brows, a straight nose with a low bridge and defined tip, a wider mouth, and a softly defined square jaw
+5. a long narrow oval face, deep-set hooded eyes, slightly arched brows, a longer straight nose, thin well-defined lips, and a narrow rounded chin
+6. a face with broad high cheekbones and a shorter lower half, narrow almond-shaped eyes with subtle double lids, horizontal brows, a compact nose with a rounded tip, a wide mouth, and a softly tapered jaw
+7. a compact V-shaped face, upturned eyes with clear creases, gently angled brows, a high narrow nose bridge, a defined upper lip with a fuller lower lip, and a sharp small chin
+8. a naturally asymmetric oval face, one eyelid slightly heavier than the other, brows at subtly different heights, a straight nose with a soft off-center tip, a slightly uneven lip line, and a gently defined jaw
+
+【A-2】顔のアクセント（8）
+1. a small beauty mark under one eye
+2. a small beauty mark near her mouth
+3. faint natural freckles across the nose and upper cheeks
+4. a single dimple visible only if E naturally includes a smile; do not add a smile only to show it
+5. 特になし（本文に足さない）
+6. 特になし（本文に足さない）
+7. 特になし（本文に足さない）
+8. 特になし（本文に足さない）
 
 【B】体型（8）
 1. slender petite build
-2. healthy natural build, average proportions, relaxed posture
-3. tall and long-limbed, around 168cm, elongated silhouette
-4. petite with a natural figure
-5. athletic toned build, sporty frame
-6. soft natural build, relaxed posture
+2. healthy natural build with average proportions
+3. tall and long-limbed, around 168 cm, with an elongated silhouette
+4. compact petite build with natural proportions
+5. athletic toned build with a sporty frame
+6. soft natural build
 7. lean editorial model build
-8. fine-boned frame, narrow wrists and ankles
+8. fine-boned frame with narrow wrists and ankles
 
-【C-1】髪色（4）
+【C-1】髪色（4）※Aから完全に独立
 1. jet-black
 2. dark brown
-3. beige
-4. ash
+3. natural beige brown
+4. natural ash brown
 
-【C-2】髪型（10）
+【C-2】髪型（10）※Aから完全に独立
 1. short bob with blunt bangs
-2. medium layered hair, airy movement
-3. long straight hair, glossy, center-parted
-4. loose wavy perm, soft volume around the cheeks
+2. medium layered hair with airy movement
+3. long straight hair, glossy and center-parted
+4. loose wavy hair with soft volume
 5. high ponytail with loose strands at the temples
 6. messy top bun with loose ends
-7. wolf cut with choppy layers framing the face
+7. wolf cut with choppy face-framing layers
 8. long blunt one-length cut
 9. half-up style
-10. medium-length hair pulled behind one ear, no bangs
+10. medium-length hair pulled behind one ear, with no bangs
 
-【D】ムード（12）★軸になるスロット
-1. 上品・清楚 / elegant and composed, quiet refinement, understated
-2. スタイリッシュ・モード / editorial and graphic, confident stylish attitude
-3. 大人っぽい・落ち着いた色気 / calm and self-possessed, fully clothed, warm low-key lighting
-4. だらしない・オフ / off-duty and unkempt in a charming way, unposed candid
-5. 元気・カジュアル / bright energetic casual, natural laughter, movement
-6. 気だるげ・アンニュイ / languid and detached, sleepy morning mood
-7. レトロ・フィルム / nostalgic film-photo mood, 90s Japanese snapshot feel
-8. 不意のときめき / a moment of sudden flutter — a paused gesture, an accidental glance, distance closing in half a second
-9. 生活の手元 / the quiet ritual of an everyday task — hands and a tool in close focus, absorption
-10. 気配のツーショット / the camera is someone beside her — a shared ice cream, a self-timer run, a glance meant for one person only
-11. 天気の変わり目 / the threshold of weather changing — first raindrop, fog rolling in, heat shimmer, the air turning
-12. 静かなマジックリアリズム / a perfectly ordinary photo with one small impossible thing in it
+【E】シーン骨格（24）
+※主動作・視線・場所を一括で使う。別の汎用ポーズを追加しない。
 
-【E】シチュエーション（24）※Dのムードに合う群から選ぶ
-※基本トーン（上品/スタイリッシュ/だらしない/元気/気だるげ/レトロ）の場面は第一弾(random/)にあるので、
-第二弾ではそれ以外のムード（不意のときめき/生活の手元/気配のツーショット/天気の変わり目/マジックリアリズム）に絞る。
-※末尾の [屋内]/[屋外] と (L…, M…, K…) は、その場面が成立する条件。指定がないものは任意。
-　これが H の選択を縛る（「H×K×M 禁則」の屋内/屋外の列と突き合わせる）。
-── 不意のときめき（D8専用）
-1. 髪を耳にかける指が途中で止まる、こちらの視線に気づいて [任意]
-2. 目薬をさすため上を向いた顔と、まばたきするまつ毛 [任意]
-3. ヘアゴムをくわえて髪を束ねる、無防備な首元の数秒間 [任意]
-4. ネックレスの留め金に苦戦し、髪を持ち上げたまま助けを求める背中越しの視線 [屋内]
-5. 試着室のカーテンから顔と着替え途中の肩先だけ出して「どう？」と聞く [屋内]
-6. 眼鏡を外した素顔、ピントの合わない裸眼がこちらを探す [任意]
-── 生活の手元（D9専用）
-7. 味噌汁の味見、目を閉じて味を確かめる横顔と湯気 [屋内]
-8. アイロンのスチームが窓の光でかたちになる白シャツ [屋内]
-9. 結露した窓に指で何か書きかけ、外が線の中にだけ見える [屋内] (L1/L7/L8)
-10. ハンドドリップの蒸らし、粉がふくらむ30秒を見つめる目 [屋内]
-11. 観葉植物の葉を一枚ずつ布で拭く指先 [屋内]
-── 気配のツーショット（D10専用）
-12. 溶けかけのアイスを「持ってて」と差し出す手、レンズ=受け取る側 [屋外] (L4/L5)
-13. セルフタイマーに向かって走り込んでくる数歩手前のブレた髪 [屋外]
-14. イヤホンを片方だけ差し出してくる、コードの長さが二人の距離を決める [任意]
-15. 「あーん」の一歩手前、スプーンを差し出して笑ってしまい続かない [任意]
-16. 信号待ちの助手席で眠る横顔に赤が差す静けさ [屋内=車内] (K6/K7/K8)
-── 天気の変わり目（D11専用）
-17. 夕立の一粒目、乾いたアスファルトを見下ろし空を見上げる [屋外] (L4/L5, M2)
-18. 陽炎の無人踏切、線路の先が溶けて遮断機の前で待つ [屋外] (L4/L5, M8)
-19. 濃霧の並木道、街灯の光が球体になり数メートル先から現れる [屋外] (L1/L6/L7/L8, M6)
-20. 雹に駆け込んだ軒下、地面で跳ねる白い粒と驚きが笑いに変わる途中 [屋外] (L1/L3/L6, M3)
-── マジックリアリズム（D12専用）
-21. 普通の朝の食卓、ただ紅茶の湯気が積雲のかたちで浮かんでいる [屋内] (K2)
-22. 快晴の歩道、本人は手ぶらなのに足元の影だけが傘を差している [屋外] (M1)
-23. 昼の部屋の窓辺、金魚鉢の水の中にだけ星空が入っている [屋内] (K3/K4)
-24. 古いエレベーターの階数盤に一つだけ知らないボタン、指がその上で止まる [屋内]
+── D1 きっかけ
+1. 仕事の休憩中、髪を耳にかける指が途中で止まり、こちらの視線に気づく。午後の光が入る扉口
+2. 休日の自宅の窓辺で目薬をさすため上を向き、まばたきする直前
+3. 外出前の自室でネックレスの留め金に苦戦し、髪を持ち上げたまま助けを求める
+4. 休日の部屋で眼鏡を外した直後、半分たたんだ眼鏡を持ち、裸眼でこちらを探す
 
-【F】服装（15）※Dのムードに合うものを選ぶ
-1. crisp white linen shirt tucked into wide beige trousers
-2. simple black knit dress with a thin gold necklace
-3. oversized gray sweatshirt with relaxed track pants, thick socks slipping down
-4. a light blouse layered over a camisole, long pleated skirt
+── D2 生活の手元
+5. ひとり暮らしの朝の台所で味噌汁を味見し、目を閉じて味を確かめる
+6. 冬の自室で結露した窓に指で何かを書き、線の中にだけ外が見える
+7. 休日の部屋で白いシャツにアイロンをかけ、スチームが窓の光に浮かぶ
+8. 朝の台所でハンドドリップの蒸らしを見つめ、湯を小さな円に注ぐ
+9. 自宅で観葉植物の葉を一枚ずつ布で拭き、指先と葉に集中する
+
+── D3 気配のツーショット
+10. 夏の木陰で溶けかけのアイスを「持っていて」とレンズへ差し出す。カメラは受け取る側
+11. 夕方の公園でセルフタイマーへ走り込む数歩手前。固定カメラへ近づく
+12. 隣り合って座り、イヤホンを片方だけレンズへ差し出す。カメラは隣の人
+13. カフェで「あーん」とスプーンをレンズへ差し出す一歩手前に笑い、動きが止まる。カメラは向かいの人
+14. 夜の信号待ちの助手席で眠る横顔。カメラは運転席側
+
+── D4 天気の変わり目
+15. 夏の仕事帰り、乾いたアスファルトへ落ちた夕立の一粒目を見てから空を見上げる
+16. 真夏の無人踏切で、陽炎に溶ける線路の先を見ながら遮断機の前で待つ
+17. 濃霧の並木道で、街灯が光の球に見える数メートル先から歩いて現れる
+18. 雹を避けて軒下へ入り、地面で跳ねる白い粒への驚きが笑いに変わる途中
+
+── D5 静かなマジックリアリズム
+19. 休日の朝食卓で、紅茶の湯気だけが小さな積雲の形になって浮かぶ
+20. 晴れた歩道を手ぶらで歩くが、足元の影だけが傘を差している
+21. 昼の自室の窓辺で、金魚鉢の水の中だけに星空が見える
+22. 仕事先の古いエレベーターで、階数盤に一つだけ知らないボタンを見つけ、指を直前で止める
+
+── D6 大人っぽいエディトリアル（J=L2.5）
+23. 白いブラウスとロングプリーツスカートで高いスタジオ窓辺に立つ。布の縁に逆光が入り、室内は明るい白い影
+24. マットなシルク混のハイネックドレスでホテルの窓辺の椅子に座る。朝の光と静かな布の落ち方
+
+【F】服装（15）
+1. a crisp white linen shirt tucked into wide beige trousers
+2. a simple black knit dress with a thin gold necklace
+3. an oversized gray sweatshirt with relaxed track pants
+4. a white blouse with a long pleated skirt
 5. faded blue denim overalls over a striped tee
-6. oversized white dress shirt with sleeves rolled past the elbow
-7. ribbed tank top and loose sweatpants, hair tie on the wrist
-8. summer sundress with a delicate small pattern, thin straps
-9. tailored black blazer over a plain white tee, structured
-10. loose cotton yukata worn casually, sash slightly relaxed
-11. cropped cardigan and high-waisted vintage denim
-12. soft jersey loungewear set, slightly oversized
-13. muted midi dress with a knit cardigan on top
-14. long wool coat over a fine-gauge turtleneck and trousers
-15. a matte silk-blend dress with a high neckline, the fabric falling quietly ※L2.5用（Gemini通過実測済み）
+6. an oversized white dress shirt with straight-leg trousers
+7. a ribbed sleeveless top with loose full-length trousers
+8. a summer sundress with a delicate small pattern
+9. a tailored black blazer over a plain white tee and trousers
+10. a loose cotton yukata worn casually with a neatly secured sash
+11. a cropped cardigan with high-waisted vintage denim
+12. a soft jersey loungewear set
+13. a muted midi dress with a knit cardigan
+14. a long wool coat over a fine-gauge turtleneck and trousers
+15. a matte silk-blend dress with a high neckline
 
-【G】ポーズ・仕草（12）
-1. leaning against a wall, one knee bent, looking off-frame
-2. mid-stride walking toward the camera, hair caught in motion
-3. sitting on the floor hugging her knees, chin resting on them
-4. stretching her arms overhead, torso lengthening, eyes closed
-5. taking a quiet mirror selfie with a smartphone
-6. glancing back over her shoulder at the camera ※L2.5時は "glancing back at the camera, torso turned away" に言い換える
-7. holding a mug with both hands close to her face
-8. lying on her stomach on a bed, feet crossed in the air ※L2.5時は使わない
-9. tying her hair up, arms raised, looking down
-10. crouching low, elbows on knees, relaxed and unposed
-11. a gesture paused mid-motion — fingers stopped in her hair, a glance caught off-guard
-12. reaching toward the camera to hand something over, the camera is someone beside her
-
-【H】光の質（8）※時間帯(K)・天気(M)とは独立。必ず「H×K×M 禁則」を確認する
-1. warm low-angle backlight, rim light along the hair
-2. flat even diffused daylight, cool and almost shadowless
-3. hard direct sunlight, crisp high-contrast shadows
-4. daylight filtered through lace curtains, gentle falloff
-5. warm tungsten interior light, deep shadows
-6. colored artificial light reflecting on wet surfaces
-7. cold fluorescent light with a slight green cast
-8. a single dim warm source, high contrast, mostly shadow
+【H】光の質（8）
+1. warm low-angle backlight with a natural rim along the hair
+2. flat even diffused daylight, cool and nearly shadowless
+3. hard direct sunlight with crisp high-contrast shadows
+4. daylight filtered through a white curtain with gentle falloff
+5. warm tungsten interior light with deep natural shadows
+6. restrained neutral artificial light diffused by fog or reflected on wet surfaces
+7. cold fluorescent interior light with a slight green cast
+8. a single dim warm interior source with most detail held in shadow
 
 【I】カメラ・構図（8）
 1. 85mm portrait lens, shallow depth of field, tight upper-body framing
 2. 35mm documentary framing, full body with environment
 3. low-angle wide shot emphasizing sky and perspective
-4. slightly high angle looking down, intimate distance
-5. side profile in sharp focus, background heavily blurred
-6. full-length mirror reflection composition ※N5とセットで使う
+4. slightly high angle at a natural conversational distance
+5. side profile in sharp focus with a softly blurred background
+6. full-length mirror reflection composition
 7. 3:4 vertical portrait, subject off-center on the rule of thirds
-8. film-grain snapshot look, slightly off-kilter framing
+8. film-grain snapshot framing, slightly off-kilter
 
-【K】時間帯（8）※EシチュエーションとHに矛盾しないものを選ぶ
-1. early dawn, the sky barely blue
-2. morning, low slanting light
-3. midday, sun high
+【K】時間帯（8）
+1. early dawn
+2. morning
+3. midday
 4. early afternoon
-5. late afternoon golden hour
-6. evening, blue hour
-7. night, artificial light
-8. deep night, mostly dark
+5. late afternoon
+6. evening blue hour
+7. night
+8. deep night
 
 【L】季節（8）
-1. early spring, still cold but light returning
-2. spring, cherry-blossom softness
-3. rainy season (tsuyu), damp and green
-4. summer, hot and bright
-5. late summer, humid haze
-6. autumn, crisp air and warm colors
-7. late autumn, bare branches
-8. winter, cold and quiet
+1. early spring
+2. spring
+3. rainy season
+4. summer
+5. late summer
+6. autumn
+7. late autumn
+8. winter
 
 【M】天気（8）
 1. clear sky
 2. overcast
 3. rain
-4. just after rain, wet surfaces
+4. just after rain with wet surfaces
 5. snow
 6. fog
 7. strong wind
-8. heat shimmer (kagerou)
+8. heat shimmer
 
-【N】視点（5）※カメラが誰の目か
-1. third-person observer — a documentary camera watching from across the street
-2. passerby — a fleeting glance as she walks past
-3. the camera is someone beside her — a friend, a partner, the viewpoint of intimacy
-4. surveillance — a high static angle, slightly distant
-5. her own gaze — a mirror selfie or a held-at-arm's-length shot
+【N】視点（6）
+1. a third-person documentary observer
+2. a passerby's fleeting glance
+3. the camera is someone beside or opposite her
+4. a high static observational camera
+5. her own gaze in a mirror or held-at-arm's-length shot
+6. a static self-timer camera waiting for her
 
-【J】表現レベル（指定がなければ L2）
-- L1: 完全に健全。雰囲気は表情と光のみで表現
-- L2: 大人っぽさ・落ち着いた色気。全身着衣のまま、
-      身体ではなく「照明・陰影・レンズ」の語彙でムードを作る（逆光、低いタングステン光、深い影など）
-- L2.5: 大人っぽさ・落ち着いた色気。着衣のまま、服の仕立てと光で出す。
-        身体部位を主語にせず、布と光の語彙でムードを作る。
-        使える語・使えない語は「L2.5の語彙ガイド」を厳守する（ChatGPTとGeminiで通る語が違う）。
-        詳細は inline-random.md の「L2.5の使い方」参照。
+【J】表現レベル
+- L1: 清潔な日常写真。雰囲気は場面、表情、自然光で作る
+- L2: 成人の落ち着いた映画的写真。全身着衣のまま照明、陰影、レンズで作る
+- L2.5: 成人の上品なファッション写真。全身着衣のまま仕立て、布、明るい窓光で作る
 
 ────────────────────────
-# 整合ルール（ランダムでも破綻させないため）
-※D1-D7（上品/スタイリッシュ/だらしない/元気/気だるげ/レトロ）の場面は第一弾(random/)にあるので、
-第二弾のEスロットにはD8-D12専用の場面のみ収録。D1-D7を使いたい場合は第一弾と併用する。
-D3だけは、第二弾ではEを使わずL2.5専用の運用に特化させている。
+# E別の有効候補表
+※「任意」はその列の全候補。固定値も1件の候補としてstateを進める。
+※Eの文章に視点や構図が明記されている場合、その意味を変えない候補だけを使う。
 
-**決める順番（これを守れば H/K/M は衝突しない）**
-D を決める → E を決める → E の [屋内/屋外] と (L…, M…, K…) の制約を確定させる
-→ 残った K/L/M を選ぶ → 「H×K×M 禁則」を満たす H だけに絞って選ぶ → F/G/I/N を選ぶ
+| E | F | L | H | K | M | I | N |
+|---|---|---|---|---|---|---|---|
+| 1 | 1/2/4/8/9/11/13 | 2/4/5/6 | 1/4 | 4/5 | 1/2/4 | 1/4/5/7 | 3 |
+| 2 | 1/3/4/6/12/13 | 任意 | 4 | 2/4 | 任意 | 1/4/5 | 3 |
+| 3 | 2/4/8/13/15 | 任意 | 4/5 | 2/4/5/6 | 任意 | 1/4/5 | 3 |
+| 4 | 1/3/4/6/9/12/13 | 任意 | 2/4/7 | 2-6 | 任意 | 1/4/5 | 3 |
+| 5 | 1/3/6/7/12 | 任意 | 4/5/7 | 2 | 任意 | 1/4/5/7 | 1/3 |
+| 6 | 3/6/12/13/14 | 1/7/8 | 2/4 | 2-5 | 2/3/5/6 | 1/4/5/7 | 1/3 |
+| 7 | 3/7/12/13 | 任意 | 4/7 | 2-5 | 任意 | 1/4/7 | 1/3 |
+| 8 | 1/3/6/7/12/13 | 任意 | 4/5 | 2 | 任意 | 1/4/5/7 | 1/3 |
+| 9 | 1/3/6/7/12/13 | 1-6 | 2/4 | 2-5 | 任意 | 1/4/5/7 | 1/3 |
+| 10 | 5/8/11 | 4/5 | 1/2/3 | 3-5 | 1/2 | 2/4/7 | 3 |
+| 11 | 2/5/8/11/13 | 2/4/5/6 | 1/2 | 5/6 | 1/2/4 | 2/7/8 | 6 |
+| 12 | 1/2/5/8/9/11/13 | 任意 | 1/2/4/5 | 2-7 | 1/2/4 | 1/4/7 | 3 |
+| 13 | 1/2/4/8/11/13 | 任意 | 2/4/5/7 | 2-7 | 任意 | 1/4/7 | 3 |
+| 14 | 1/2/9/11/13/14 | 任意 | 5/7/8 | 7 | 1-6 | 5 | 3 |
+| 15 | 2/9/14 | 4/5 | 2 | 4/5 | 2 | 2/3/8 | 1/2 |
+| 16 | 1/5/8/9/11 | 4/5 | 3 | 3/4 | 8 | 2/3/8 | 1/2 |
+| 17 | 2/9/14 | 1/6/7/8 | 2/6 | 1/6/7 | 6 | 2/5/8 | 1/2 |
+| 18 | 9/13/14 | 1/3/6 | 2/6 | 4/5/6 | E固定の雹 | 2/3/8 | 1/2 |
+| 19 | 1/3/6/12/13 | 任意 | 4 | 2 | 任意 | 1/4/7 | 1/3 |
+| 20 | 1/2/5/8/9/11/13 | 2/4/5/6 | 3 | 3/4 | 1 | 2/3/7 | 1/2 |
+| 21 | 1/2/4/6/13/15 | 任意 | 4 | 3/4 | 任意 | 1/4/7 | 1/3 |
+| 22 | 1/2/9/13/14/15 | 任意 | 7/8 | 6-8 | 任意 | 1/4/7 | 1/3 |
+| 23 | 4固定 | 2/4/5/6 | 4 | 2-5 | 1/2/4 | 1/5/7 | 1/3 |
+| 24 | 15固定 | 1/6/7/8 | 4 | 2 | 1/2/4 | 1/5/7 | 3 |
 
-- D1 上品 → 第一弾のEを使用。第二弾ではD8-D12から選ぶ
-- D2 スタイリッシュ → 第一弾のEを使用。第二弾ではD8-D12から選ぶ
-- D4 だらしない → 第一弾のEを使用。第二弾ではD8-D12から選ぶ
-- D5 元気 → 第一弾のEを使用。第二弾ではD8-D12から選ぶ
-- D6 気だるげ → 第一弾のEを使用。第二弾ではD8-D12から選ぶ
-- D7 レトロ → 第一弾のEを使用。第二弾ではD8-D12から選ぶ
-- D3 大人っぽい（L2.5運用）→ E 指定なし（L2.5語彙ガイドの場面文を使う）,
-    F 15 または 2/6/13, G 1/6/7, H 1/4/5, I 1/5, N 3, レベル L2.5
-    ※屋内が基本。H1 を使う場合は「窓辺の逆光」として屋内で成立させる
-- D8 不意のときめき → E 1-6, F 2/4/6/8/9, G 11, H 1/4/5/7, I 1/4/5, N 3, レベル L2
-- D9 生活の手元 → E 7-11, F 1/3/6/7/12, G 7/9/12, H 4/5/7, I 1/4/5, N 1/3, レベル L1〜L2
-- D10 気配のツーショット → E 12-16, F 5/8/11/12, G 2/11/12, H 1/2/4/6, I 2/4/7, N 3, レベル L1〜L2
-- D11 天気の変わり目 → E 17-20, F 2/9/14, G 1/2/10, H 1/2/3/6, I 2/3/8, N 1/2, レベル L1〜L2
-    ※Eごとの季節・天気の制約が最優先。そこから成立する H は1〜2個に絞られる
-    ※E側が視線を決める群なので、Gは視線を指定しない体のポーズから選ぶ（G6は使わない）
-- D12 マジックリアリズム → E 21-24, F 任意, G 任意, H 1/2/3/4/5/7, I 1/2/6/7, N 1/2, レベル L1〜L2
-
-- K・L・M は上で指定しない。E の制約と下の禁則表から決まる
-- 上のリストに無い組み合わせでも、明らかに矛盾しなければ可
-
-# H×K×M 禁則（光は時間帯・天気を内包しないので、ここで衝突を潰す）
-| H | 成立する K | 成立する M | 屋内/屋外 |
+# H×K×M整合表
+| H | K | M | 場所 |
 |---|---|---|---|
-| 1 warm low-angle backlight | 2, 5 | 1, 4, 8 | 屋外中心 |
-| 2 flat even diffused daylight | 2-6 | 2, 3, 6 | 両方 |
-| 3 hard direct sunlight | 3, 4 | 1, 8 | 屋外 |
-| 4 daylight through lace curtains | 2-6 | 任意 | 屋内 |
-| 5 warm tungsten interior | 5-8 | 任意 | 屋内 |
-| 6 colored artificial light on wet surfaces | 6, 7, 8 | 3, 4, 5 | 屋外（窓越しなら屋内も可） |
-| 7 cold fluorescent | 任意 | 任意 | 屋内 |
-| 8 single dim warm source | 6, 7, 8 | 任意 | 屋内 |
+| 1 | 2/5 | 1/4/8 | 屋外または窓際 |
+| 2 | 2-6 | 2/3/6 | 屋内外 |
+| 3 | 3/4 | 1/8 | 屋外 |
+| 4 | 2-6 | 任意 | 屋内 |
+| 5 | 5-8 | 任意 | 屋内 |
+| 6 | 6-8 | 3/4/5/6 | 屋外または窓越し |
+| 7 | 任意 | 任意 | 屋内 |
+| 8 | 6-8 | 任意 | 屋内 |
 
-- 屋外の H に対して K1（明け方）を選ぶ場合は、光を「まだ弱い」方向に補正する
-- E側に (L…, M…, K…) の制約があるときは、E の制約を最優先し、H はそれに合うものへ差し替える
+- E18のMは場面固定の雹として扱い、H2またはH6のK条件だけを確認する
+- Eの固定内容が最優先。表に共通部分がないH/K/Mは候補へ入れない
 
-# L2.5の語彙ガイド（表現レベルL2.5指定時のみ使用）
-大人っぽさを服の仕立てと光だけで出すための語彙。身体部位を主語にしない。
+# 共通末尾
+photorealistic raw photo, a natural color photograph with distinct plausible colors in the subject
+and environment, natural skin texture with visible pores, authentic candid feel, restrained
+cinematic color grading, sharp focus on the intended subject, highly detailed, 3:4 vertical,
+clean uncolored frame edges
 
-【重要: ChatGPTとGeminiは「厳しさの軸」が違う】
-どちらが厳しいかではなく、判定の仕方が違う。両方で通すには両方の条件を同時に満たす必要がある。
-- ChatGPT: 文脈を読む。シーン全体が何を狙っているかで判定するため、表現の総合的な強度に敏感。
-  健全な文脈（撮影現場・エディトリアル・生活の一場面）に置けば、光学的な言い回しも通ることが多い。
-  （expression/01 の「ChatGPT画像が最も表現に敏感」はこの軸の話）
-- Gemini: 文脈を読まない。プロンプト内の語彙を合算スコアで判定するため、単語1つで即弾きされる。
-  expression/01 の光学言い回し（透け感/暗示/散乱/ブライダル/chaise longue/ドレープ）はここで落ちる。
-→ 結論: 「Geminiの語彙フィルタを通る語だけ」を「ChatGPTの文脈判定を通る健全な文脈」に置く。
-
-【Gemini通過済みの語彙（実測）】
-- 逆光で布の縁が光る: "backlight glowing at the fabric's edge"
-- 顎のラインを光がなぞる: "morning light tracing the line of her jaw"
-- ハイネックで露出を抑える: "a matte silk-blend dress with a high neckline"
-- 布が静かに垂れる: "the fabric falling quietly"
-- 白いブラウス: "a white blouse and a long pleated skirt"
-
-【常時禁止（レベル問わず使わない）】
-sensual / seductive / sheer / translucent / lingerie / bare legs / unmade bed /
-透け / 透け感 / 色気 / 脱げかけ
-
-【L2.5指定時のみ回避（L1/L2では使ってよい）】
-単体では健全だが、L2.5の文脈語（布・光・大人っぽい）と同居するとGeminiの合算スコアが閾値を超える。
-- hint / suggest / 暗示（形態暗示の意図で使うと弾かれる）
-- scatter / weave scattering / 散乱（光の物理描写も弾かれる）
-- bridal / ブライダル、chaise longue / シャゼロング、drape / ドレープ
-- body's line / contour / shoulder / collarbone（部位関連語）
-- ベッド / bed、薄暗い、振り返る、ドキッ（Gemini実測の検出語）
-
-【L2.5での言い換え表】
-| 元の表現 | L2.5での言い換え |
-|---|---|
-| glancing back over her shoulder | glancing back at the camera, torso turned away |
-| a blunt one-length cut at collarbone level | a long blunt one-length cut |
-| shoulder-length hair | medium-length hair |
-| lying on a bed | seated on a chair |
-| dim / 薄暗い | softly lit and bright |
-
-【組み合わせ禁止】
-夜 + 薄手 + ベッド/寝そべり を同時に使わない（expression/01 で「安定しないことを確認」済み）。
-
-# 共通の末尾（全案に付ける）
-photorealistic raw photo, natural skin texture with visible pores, authentic candid feel,
-cinematic color grading, sharp focus on the eyes, 8k resolution, highly detailed, 3:4 vertical
-
-# 共通ネガティブプロンプト（全案に付ける）※内容語は入れない。安全側はポジティブ文で担保する
+# 共通ネガティブプロンプト
 anime, illustration, painting, stylized, CGI, 3D render, plastic skin, doll-like face, mannequin,
 distorted anatomy, exaggerated proportions, deformed hands, extra fingers, fused fingers, extra limbs,
-harsh flash, blown highlights, heavy makeup, watermark, text, logo, low resolution, blurry
+harsh flash, blown highlights, heavy makeup, black-and-white, monochrome, grayscale, sepia-only,
+near-achromatic rendering, red light leak, orange light leak, magenta light leak, red haze,
+orange haze, magenta haze, red fogging, orange fogging, magenta fogging, colored edge fog,
+watermark, text, logo, brand logo, product label, store signage, low resolution, blurry
 ```
 
-> ⚠️ ネガティブに `minor` `nudity` 等を書くと、フィルタは否定を解釈せずその語自体を検出して弾く。
-> 詳細と対策は [safe.md](../random/safe.md)。
+> モデル別のL2.5運用上の注意は [inline-random.md](inline-random.md) を参照。生成用コードブロックには、注意対象となる語彙の一覧を持ち込まない。
 
 ---
 
@@ -356,134 +319,130 @@ harsh flash, blown highlights, heavy makeup, watermark, text, logo, low resoluti
 
 **そのまま回す**
 
-> 上のメタプロンプトを貼って）→ `3案作って`
+> `上のメタプロンプトを貼って、3案作って`
 
-**軸を固定してガチャ**
+**同じ人物でシーンだけ変える**
 
-> `ムードは D3 固定、服装と光だけランダムで5案。レベルは L2.5。`
+> `Q=2, A=5, A-2=7, B=2, C-1=1, C-2=3 は固定。Eは未使用群を優先して6案。`
 
-**不意のときめきだけで回す**
+**天気の変わり目**
 
-> `ムードは D8 固定、シチュエーション E1-6 から5案。視点は N3。`
+> `E15-18を1つずつで4案。Eの天気指定を優先。`
 
-**天気の変わりめを主役に**
+**再現性を持たせる**
 
-> `ムード D11、シチュエーション E17-20 を1つずつで4案。天気MはEの制約に従う。`
-
-**同じ子で服とシーンだけ変える（キャラ固定）**
-
-> `A=2, B=3, C-1=1, C-2=4 は固定。E/F/G/H/I/K/L/M/N だけランダムで6案。`
-
-**再現性が欲しい**
-
-> `SEED=4821 で3案。` → 同じシードを渡せば同じ組み合わせが戻る
+> `SEED=4821で3案。各選択後のstateも表示。`
 
 ---
 
 ## C. 出力サンプル
 
-### C-1. 標準ルート（D11 / L2）
+### C-1. 天気の変わり目（D4 / E15 / L2）
 
-選択: A=7, B=2, C-1=2, C-2=5, D=11, E=17, F=9, G=2, H=2, I=2, K=4, L=4, M=2, N=1
+選択: E=15 → D=4, Q=1, A=4, A-2=7, B=2, C-1=2, C-2=5, F=9, L=4, H=2, K=4, M=2, I=2, N=1
 
-整合の確認: E17 は [屋外] (L4/L5, M2) 制約 → L=4, M=2 で適合。
-H=2 は K2-6・M2/3/6・屋内外どちらも可 → K=4, M=2, 屋外 で適合。
-G=2（歩みの途中）は E17 が決める視線と衝突しない。
+整合: E15の候補内で、H2 × K4 × M2が整合。Eの「一粒目を見る」動作を使い、別のGは追加しない。
 
 **English**
 
 ```
-Photorealistic raw photo. A 23-year-old adult Japanese woman, fully clothed in modest everyday
-clothing, on her way home from work. Bright healthy look, wide-set round eyes and an open friendly
-expression, a healthy natural build with relaxed posture, dark brown hair in a high ponytail with
-loose strands at the temples. The threshold of weather changing. She wears a tailored black blazer
-over a plain white tee, caught mid-stride on an empty street and stopping, her hair still carrying
-the motion and not a strand of it wet yet, looking down at the first raindrop darkening the dry
-asphalt and then up at the sky. Flat even diffused daylight,
-cool and almost shadowless. Early afternoon, high summer, overcast in the minute before the
-downpour. A documentary camera watching from across the street. 35mm documentary framing, full body
-with the environment visible. Photorealistic raw photo, natural skin texture with visible pores,
-authentic candid feel, cinematic color grading, sharp focus on the eyes, 8k resolution, highly
-detailed, 3:4 vertical.
+Photorealistic raw photo of a 23-year-old adult Japanese woman on her way home from work.
+She has a softly square face, long monolid eyes, straight low-set brows, a straight nose with a low
+bridge and defined tip, a wider mouth, and a softly defined square jaw. She has a healthy natural
+build with average proportions and dark brown hair in a high ponytail with loose strands at the
+temples. She wears a tailored black blazer over a plain white tee and trousers.
+
+On a summer street in early afternoon, she notices the first raindrop darkening the dry asphalt,
+then looks up at the overcast sky. Her movement pauses naturally in that exact moment. Flat even
+diffused daylight is cool and nearly shadowless. A third-person documentary observer photographs
+her with 35mm full-body framing that includes the street and changing sky.
+
+Photorealistic raw photo, a natural color photograph with distinct plausible colors in the subject
+and environment, natural skin texture with visible pores, authentic candid feel, restrained
+cinematic color grading, sharp focus on the intended subject, highly detailed, 3:4 vertical,
+clean uncolored frame edges.
 
 Negative prompt: anime, illustration, painting, stylized, CGI, 3D render, plastic skin, doll-like
 face, mannequin, distorted anatomy, exaggerated proportions, deformed hands, extra fingers, fused
-fingers, extra limbs, harsh flash, blown highlights, heavy makeup, watermark, text, logo, blurry.
+fingers, extra limbs, harsh flash, blown highlights, heavy makeup, black-and-white, monochrome,
+grayscale, sepia-only, near-achromatic rendering, red light leak, orange light leak, magenta light
+leak, red haze, orange haze, magenta haze, red fogging, orange fogging, magenta fogging, colored
+edge fog, watermark, text, logo, brand logo, product label, store signage, low resolution, blurry.
 ```
 
 **日本語訳**
 
-実写のRAW写真。23歳の成人日本人女性、きちんと着衣、仕事帰り。健康的で明るい顔立ち、離れ気味の丸い目、ダークブラウンの髪を高い位置でポニーテールにし、こめかみに後れ毛。天気の変わり目。テーラードの黒ブレザーに白T、人けのない通りを歩いていて足を止めた瞬間、髪にはまだ歩きの動きが残り、一本も濡れていない。乾いたアスファルトに落ちた最初の一粒を見下ろしてから、空を見上げる。フラットで影のほとんどない拡散光。午後の早い時間、真夏、降り出す直前の曇り空。カメラは通りの向かいから見ている観察者。35mmドキュメンタリー、環境が写る全身。
+23歳の成人日本人女性が仕事帰りの夏道で、乾いたアスファルトに落ちた夕立の一粒目を見てから空を見上げる。柔らかい四角形の輪郭、一重の切れ長の目、ダークブラウンの高いポニーテール。黒いブレザーと白T、パンツ姿。曇天の拡散光で、通りの向かいから35mmの全身ドキュメンタリーとして撮る。自然なカラーで画面端に色かぶりを付けない。
 
-### C-2. L2.5ルート（D3 / L2.5）
+### C-2. L2.5（D6 / E24）
 
-選択: A=9, B=8, C-1=1, C-2=3, D=3, E=なし, F=15, G=7, H=4, I=1, K=2, L=6, M=4, N=3
+選択: E=24 → D=6, Q=3, A=2, A-2=1, B=8, C-1=1, C-2=3, F=15固定, L=6, H=4, K=2, M=4, I=1, N=3
 
-整合の確認: D3 は E を使わずL2.5語彙ガイドの場面文で組む。H=4 は K2-6・天気任意・屋内で成立 → K=2, M=4 で適合。
-使用語彙はすべて「Gemini通過済み」のリストからのみ。
+整合: E24の固定服と動作を保持。H4 × K2 × M4が整合し、E24の許可集合内だけで選択。
 
 **English**
 
 ```
-Professional fashion editorial photograph. A 23-year-old adult Japanese woman, fully clothed in
-modest everyday clothing, in her own apartment on a day off. Classic symmetrical beauty, large
-round dark-brown eyes and a small straight nose, a fine-boned frame with narrow wrists, jet-black
-long straight hair, glossy and center-parted. Calm and self-possessed. She wears a matte silk-blend
-dress with a high neckline, seated by a tall window and holding a mug with both hands close to her
-face. Daylight filtered through lace curtains falls with a gentle falloff, the morning light tracing
-the line of her jaw; backlight glows at the fabric's edge and the fabric falls quietly. The rest of
-the room is softly lit and bright, sitting in clean white shadow. Morning, autumn, the air just
-after rain. The camera is someone beside her. 85mm portrait lens, shallow depth of field, tight
-upper-body framing. Photorealistic raw photo, natural skin texture with visible pores, authentic
-candid feel, cinematic color grading, sharp focus on the eyes, 8k resolution, highly detailed,
-3:4 vertical.
+Professional fashion editorial photograph of a 25-year-old adult Japanese woman in a bright hotel
+room after rain. She has a balanced oval face, almond-shaped eyes with natural creases, straight
+medium-thickness brows, a slim straight nose, a defined cupid's bow, and a gently tapered jaw, with
+a small beauty mark under one eye. She has a fine-boned frame and jet-black long straight hair,
+glossy and center-parted.
+
+Fully clothed in a matte silk-blend dress with a high neckline, she sits naturally on a chair by a
+tall window. Morning daylight filtered through a white curtain falls gently across the quiet folds
+of the fabric. The camera is someone nearby, using an 85mm portrait lens with shallow depth of field
+and tight upper-body framing.
+
+Photorealistic raw photo, a natural color photograph with distinct plausible colors in the subject
+and environment, natural skin texture with visible pores, authentic candid feel, restrained
+cinematic color grading, sharp focus on the intended subject, highly detailed, 3:4 vertical,
+clean uncolored frame edges.
 
 Negative prompt: anime, illustration, painting, stylized, CGI, 3D render, plastic skin, doll-like
 face, mannequin, distorted anatomy, exaggerated proportions, deformed hands, extra fingers, fused
-fingers, extra limbs, harsh flash, blown highlights, heavy makeup, watermark, text, logo, blurry.
+fingers, extra limbs, harsh flash, blown highlights, heavy makeup, black-and-white, monochrome,
+grayscale, sepia-only, near-achromatic rendering, red light leak, orange light leak, magenta light
+leak, red haze, orange haze, magenta haze, red fogging, orange fogging, magenta fogging, colored
+edge fog, watermark, text, logo, brand logo, product label, store signage, low resolution, blurry.
 ```
 
 **日本語訳**
 
-プロのファッションエディトリアル写真。23歳の成人日本人女性、きちんと着衣、休日の自宅にて。正統派の整った顔立ち、大きな丸い焦茶の目に小さくまっすぐな鼻。華奢な骨格で手首が細い。漆黒のロングストレートをセンター分けにして艶がある。落ち着いた佇まい。マットなシルク混のハイネックドレスを着て、高い窓辺に腰かけ、マグカップを両手で顔の近くに持つ。レースカーテン越しの光が柔らかく落ち、朝の光が顎のラインをなぞる。逆光が布の縁で光り、布は静かに垂れる。部屋の残りは明るく柔らかい光の中、白い影に沈む。朝、秋、雨上がりの空気。カメラは隣にいる誰かの視点。85mmポートレート、浅い被写界深度、上半身寄りの構図。
+25歳の成人日本人女性が雨上がりの明るいホテル客室にいる。卵型の輪郭、自然な二重のアーモンド形の目、目の下の小さなほくろ、黒いロングストレート。マットなシルク混のハイネックドレスで窓辺の椅子に座り、白いカーテン越しの朝の光が布へ柔らかく落ちる。隣にいる人の視点から85mmで上半身を撮る自然なカラー写真。
 
 ---
 
-## D. 単体テンプレート（自分で埋める用）
+## D. 単体テンプレート
 
 ```
-Photorealistic raw photo of a 23-year-old adult Japanese woman, with [A:顔], [B:体型],
-and [C-1:髪色] [C-2:髪型].
-[D:ムード]. She wears [F:服装], [G:ポーズ] at [E:シチュエーション].
-[H:光]. [K:時間帯], [L:季節], [M:天気]. [N:視点]. [I:カメラ].
-photorealistic raw photo, natural skin texture with visible pores, authentic candid feel,
-cinematic color grading, sharp focus on the eyes, 8k resolution, highly detailed, 3:4 vertical.
+Photorealistic raw photo of a [Q: 23-year-old adult など] Japanese woman with [A: 顔の造作],
+[A-2: 顔のアクセントまたは省略], [B: 体型], and [C-1: 髪色] [C-2: 髪型].
+[E: シーン骨格を、場所・主動作・視線ごと一文に統合].
+She wears [F]. [H]. [K], [L], [M]. [N]. [I].
+Use E's action and viewpoint without adding a separate generic pose.
+Natural color photograph, clean uncolored frame edges, 3:4 vertical.
 ```
 
 ---
 
 ## E. 第1弾（random/）との差分
 
-| 項目 | 第1弾 (random/) | 第2弾 (random2/) |
+| 項目 | 第1弾 | 第2弾 |
 |---|---|---|
-| ムード(D) | 7 | **12**（D8-D12の5群を新設。D3は第二弾ではL2.5運用に特化） |
-| シチュエーション(E) | 14（基本トーン） | **24**（第一弾と重複なし。併用で38場面） |
-| 服装(F) | 14 | **15**（F15にL2.5用のGemini通過済み記述を追加。F4から `translucent` を除去） |
-| ポーズ(G) | 10 | **12**（「止まった動作」「差し出す手」追加） |
-| 光(H) | 8（時間帯・天気を語に内包） | **8**（光の質のみに純化。時間帯・天気はK/Mへ分離し、禁則表を新設） |
-| カメラ(I) | 8 | **8**（据え置き） |
-| 時間帯(K) | 光Hに混在 | **独立8**（新設） |
-| 季節(L) | なし | **8**（新設） |
-| 天気(M) | なし | **8**（新設） |
-| 視点(N) | なし | **5**（新設） |
-| 表現レベル(J) | L1〜L2 | **L1〜L2.5**（布と光の間接描写） |
-| 顔(A) | 10（1群） | **可愛い系8 + 美人系2**（`cute` の語は重ねず造作で表現） |
-| 髪 | 色×型が一体で10 | **色4 × 型10**（独立して振れる） |
+| 年齢(Q) | 20代前半の固定文 | **23〜26歳の独立4択** |
+| 顔(A) | 顔・印象が混在した10種 | **輪郭・目・眉・鼻・口・顎だけの中立8種** |
+| 顔アクセント(A-2) | なし | **8枠。4種＋なし4** |
+| 髪(C-1/C-2) | 色と型が一体 | **色4 × 型10。Aから独立** |
+| シーン | 場所中心の14場面 | **動作・視線・場所を束ねた24場面** |
+| ムード(D) | 7種を独立抽選 | **Eから6群を導出** |
+| ポーズ(G) | 独立10種 | **廃止。Eの主動作を使用** |
+| 光・時間・天気 | 光へ混在 | **H/K/L/Mを分離し、有効候補から抽選** |
+| 視点(N) | なし | **6種。ただしEの意味を変えない候補のみ** |
+| シード | 生番号を後補正 | **状態更新式で有効候補から直接選択** |
+| 表現レベル(J) | L1〜L2 | **L1〜L2.5。E23・24がL2.5** |
 
-**使い分け:**
-- 第一弾(random/) … 基本トーン（上品/スタイリッシュ/だらしない/元気/気だるげ/レトロ）のシーン
-- 第二弾(random2/) … 不意のときめき/生活の手元/気配のツーショット/天気の変わり目/マジックリアリズム、および大人っぽい(L2.5)
-- 両方を使うことで、重複せずに幅が広がる設計
+第二弾は、きっかけ、生活の手元、気配のツーショット、天気の変わり目、静かなマジックリアリズム、大人っぽいエディトリアルに特化する。
 
 ---
 
@@ -491,12 +450,12 @@ cinematic color grading, sharp focus on the eyes, 8k resolution, highly detailed
 
 | モデル | 補足 |
 |---|---|
-| Midjourney | ネガティブは `--no` に分解。末尾に `--ar 3:4 --style raw`。`--seed` で固定できる |
-| Stable Diffusion / Qwen | Negative prompt 欄にそのまま貼る。実写系チェックポイント推奨 |
-| ChatGPT | 文脈で判定する。健全な文脈に置けば光学的な言い回しも通りやすい |
-| Gemini | 語彙の合算スコアで判定する。L2.5は「Gemini通過済み語彙」だけで組む。長文ほど落ちやすいのでコードブロックだけを貼る |
-| nano-banana 系 | 「顔だけ固定」の指示は参照画像を併用したほうが安定する |
+| Midjourney | ネガティブは `--no` に分け、末尾に `--ar 3:4 --style raw` |
+| Stable Diffusion / Qwen | Negative prompt欄を分け、実写系モデルを使う |
+| ChatGPT / Claude | コード実行が使える場合はstate計算を実行し、選択stateを表示する |
+| Gemini | 生成用コードブロックだけを貼り、L2.5はE23・24の肯定的な場面文を保つ |
+| nano-banana系 | 同じ人物を維持するときは、最初の生成画像を参照画像として併用する |
 
-- 同じ顔を維持したいときは、A/B/C-1/C-2 を固定 + 参照画像 + `same person, consistent face` を追加。
-- 20代前半＝成人であることは毎回明記する。`a 23-year-old adult` と数字で書き、場面側にも成人シグナルを1つ入れる。
-- L2.5 で弾かれたら L2 に下げる。語彙ガイドの「常時禁止」「L2.5指定時のみ回避」を守っていれば L2.5 でも通るケースが多いが、サービス差がある。
+- 同一人物を続ける場合はQ/A/A-2/B/C-1/C-2を固定し、最初の生成画像を参照する。
+- Eが指定した主動作・視線・視点を、追加の汎用ポーズで上書きしない。
+- 出力は自然なカラー写真に固定し、白黒、単色化、赤・橙・マゼンタの光漏れ、色付きの画面端モヤを使わない。
