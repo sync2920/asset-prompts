@@ -371,7 +371,8 @@ adult Japanese woman, appropriately dressed for the selected summer scene
 - F13（浴衣）は E6/E10/E11/E14/E23/E28/E29 のときだけ候補にする
 - F15（キャミソール＋リネンパンツ）は一般的な夏の日常着として扱い、Eの主動作と場に合う限り通常候補に含める
 - F16（ビキニ）は E1 だけで候補にし、D1/D4/D8、H3/H5、K3/K4、M1/M5、I2/I5/I8、N1/N2/N3、J=L1/L2 に限定する。
-  23〜26歳の成人を明記し、乾いた自然な肌のまま、人物へ寄らずプール・水面・夏空を含む環境構図にする
+  23〜26歳の成人と休日の公共レジャー場面を明記し、乾いた自然な肌のまま、
+  人物へ寄らずプール・水面・夏空を含む環境構図にする
 - C-2の8（帽子の跡）は、屋外または移動を含む E1/E2/E4/E5/E8-E14/E20-E22/E24-E30 のときだけ候補にする
 - 上記以外も、Eの主動作を妨げる服や髪は候補から除外してから抽選する
 
@@ -584,9 +585,10 @@ Face anatomy: {a soft round face with full cheeks, large round eyes with narrow 
 Facial accent: {a small beauty mark under one eye|a small beauty mark near one corner of the mouth|faint natural freckles across the nose and upper cheeks|a single dimple visible only if the selected scene naturally includes a smile|no additional facial accent|no additional facial accent|no additional facial accent|no additional facial accent}.
 Build: {a slender petite build|a healthy natural build with average proportions|tall and long-limbed, around 168 cm, with an elongated silhouette|a compact petite build with natural proportions|an athletic toned build with a sporty frame|a soft natural build|a lean editorial model build|a fine-boned frame with narrow wrists and ankles}.
 Hair color: {jet-black|dark brown|natural beige brown|natural ash brown}.
-Summer scene card: {On a midsummer day off at an outdoor poolside beneath a large towering cumulus cloud, she wears a striped boat-neck T-shirt and white cotton shorts as ordinary clothing, never swimwear, with her hair in a high ponytail. Empty-handed, she walks beside the pool or has just paused naturally. A frontal-or-side full-body wide environmental frame includes her head, feet, water, and summer sky. Reflected light from the water and Japanese consumer color-negative film with cyan shadows and warm highlights|On a humid summer afternoon in her lived-in tatami room, a white curtain billows beside a turning electric fan. She wears a short-sleeved ribbed T-shirt and loose cotton shorts, her short bob kicking out slightly in the humidity. She sits naturally with empty hands. A three-quarter-front seated frame includes her upper body, knees, fan, and tatami. Diffused curtain light, fine grain, neutral color balance, and soft highlight roll-off|Walking home from a summer festival during the blue minute, outside the stream of people, she wears a navy sleeveless shirt dress with a clean adult cut, never a school uniform or yukata, and a half-up hairstyle loosened by the breeze. Empty-handed, she is framed from the three-quarter front at the waist while walking beside the camera. Warm stall light stays localized against the blue surroundings. Localized 35mm halation appears only around real highlights, never as a colored edge fog|After work, she rides a local train back to her parents' town in late-afternoon summer light. She wears a plain white T-shirt and a colorful patterned long skirt, her long hair loose and tucked behind one ear. Empty-handed, she watches rice fields pass outside. A waist-up side profile through window glass includes cabin reflections. Muted color-negative film, gently faded colors, softly lifted blacks, and clean uncolored frame edges|On a summer evening after work, she pushes a bicycle uphill through low sunlight and a long shadow. She wears a cropped T-shirt and denim mini skirt, her short hair cut only a few days ago. She walks and laughs naturally without changing the bicycle action. A frontal full-body wide frame includes her head, feet, bicycle, hill, and full shadow. Backlight catches only the hair edge; a neutral-to-pale-white lens flare crosses the frame without colored haze|Just after a late-summer downpour, she waits under an eave beside wet asphalt giving off a small amount of neutral localized vapor. She wears a gingham blouse and a full skirt moving lightly in the post-rain air, her hair in one braid over a shoulder. Empty-handed, she watches the road. A long-lens environmental view from at least twenty meters away keeps her complete figure small, between one fifth and one quarter of the image height, while the eave and wet road dominate the frame; never turn this into a medium shot. Low-contrast post-rain light, visible grain, and lifted blacks|On a summer day off at an old-fashioned shaved-ice shop, she wears a yellow gingham one-piece dress. Her shoulder-length hair retains a slight mark from a recently removed hat. Her spoon stops as she touches one temple. A frontal chest-up close frame includes the clear bowl, stopped spoon, and fingers. Window dappled light and a disposable-camera direct flash with visible grain, while natural local colors remain distinct|On an Obon evening at the engawa of her parents' home, a wind chime and bamboo blind move in the breeze. She wears a nearly plain pale cotton yukata with a naturally overlapped front collar, the obi knot not emphasized, and her hair in a low ponytail. She turns her face toward the wind chime. A low diagonal full-body frame includes head, feet, chime, and blind. Handheld 35mm film with slight motion and gentle focus softness under slanting late-summer light|On a bright midsummer day off at a public seaside swimming area, she wears a plain cobalt-blue sporty two-piece bikini with wide shoulder straps and a high-waisted bottom as ordinary public swimwear, her hair in a low braid. Empty-handed, she walks naturally across dry sand parallel to the water toward a pale shade canopy, looking at the blue-green sea. A frontal-or-side full-body environmental frame includes her head, feet, sea, sand, canopy, and summer sky, giving the person and setting equal visual weight. Fine-grain color-negative film, neutral color balance, softly rolled-off highlights, and clean uncolored frame edges|On a bright midsummer day off at a shaded seaside cafe terrace, she wears a plain sage-green opaque ribbed-cotton camisole top with slim straps and high-waisted cream wide-leg linen trousers, her hair tucked behind one ear and falling loose again in the sea breeze. Empty-handed, she walks away from a shaded table along the terrace and turns her face toward the breeze. A three-quarter-front knee-up environmental frame includes the pale canopy, terrace, and blue sea, giving the outfit and setting equal visual weight. Diffused canopy light, fine-grain color-negative film, neutral color balance, and softly rolled-off highlights}.
+Summer scene card: {On a midsummer day off at an outdoor poolside beneath a large towering cumulus cloud, she wears a striped boat-neck T-shirt and white cotton shorts as ordinary clothing, never swimwear, with her hair in a high ponytail. Empty-handed, she walks beside the pool or has just paused naturally. A frontal-or-side full-body wide environmental frame includes her head, feet, water, and summer sky. Reflected light from the water and Japanese consumer color-negative film with cyan shadows and warm highlights|On a humid summer afternoon in her lived-in tatami room, a white curtain billows beside a turning electric fan. She wears a short-sleeved ribbed T-shirt and loose cotton shorts, her short bob kicking out slightly in the humidity. She sits naturally with empty hands. A three-quarter-front seated frame includes her upper body, knees, fan, and tatami. Diffused curtain light, fine grain, neutral color balance, and soft highlight roll-off|Walking home from a summer festival during the blue minute, outside the stream of people, she wears a navy sleeveless shirt dress with a clean adult cut, never a school uniform or yukata, and a half-up hairstyle loosened by the breeze. Empty-handed, she is framed from the three-quarter front at the waist while walking beside the camera. Warm stall light stays localized against the blue surroundings. Localized 35mm halation appears only around real highlights, never as a colored edge fog|After work, she rides a local train back to her parents' town in late-afternoon summer light. She wears a plain white T-shirt and a colorful patterned long skirt, her long hair loose and tucked behind one ear. Empty-handed, she watches rice fields pass outside. A waist-up side profile through window glass includes cabin reflections. Muted color-negative film, gently faded colors, softly lifted blacks, and clean uncolored frame edges|On a summer evening after work, she pushes a bicycle uphill through low sunlight and a long shadow. She wears a cropped T-shirt and denim mini skirt, her short hair cut only a few days ago. She walks and laughs naturally without changing the bicycle action. A frontal full-body wide frame includes her head, feet, bicycle, hill, and full shadow. Backlight catches only the hair edge; a neutral-to-pale-white lens flare crosses the frame without colored haze|Just after a late-summer downpour, she waits under an eave beside wet asphalt giving off a small amount of neutral localized vapor. She wears a gingham blouse and a full skirt moving lightly in the post-rain air, her hair in one braid over a shoulder. Empty-handed, she watches the road. A long-lens environmental view from at least twenty meters away keeps her complete figure small, between one fifth and one quarter of the image height, while the eave and wet road dominate the frame; never turn this into a medium shot. Low-contrast post-rain light, visible grain, and lifted blacks|On a summer day off at an old-fashioned shaved-ice shop, she wears a yellow gingham one-piece dress. Her shoulder-length hair retains a slight mark from a recently removed hat. Her spoon stops as she touches one temple. A frontal chest-up close frame includes the clear bowl, stopped spoon, and fingers. Window dappled light and a disposable-camera direct flash with visible grain, while natural local colors remain distinct|On an Obon evening at the engawa of her parents' home, a wind chime and bamboo blind move in the breeze. She wears a nearly plain pale cotton yukata with a naturally overlapped front collar, the obi knot not emphasized, and her hair in a low ponytail. She turns her face toward the wind chime. A low diagonal full-body frame includes head, feet, chime, and blind. Handheld 35mm film with slight motion and gentle focus softness under slanting late-summer light|On a bright midsummer day off at a public seaside swimming area, she wears a plain cobalt-blue sporty two-piece bikini with wide shoulder straps and a high-waisted bottom as ordinary public swimwear, her hair in a low braid. Empty-handed, she walks naturally across dry sand parallel to the water toward a camera positioned ahead and slightly seaward, her face visible in three-quarter-front view as she glances toward the blue-green sea. A frontal-or-three-quarter-front full-body environmental frame includes her head, feet, sea, sand, canopy, and summer sky; never show her from behind. Give the person and setting equal visual weight. Fine-grain color-negative film, neutral color balance, softly rolled-off highlights, and clean uncolored frame edges|On a bright midsummer day off at a shaded seaside cafe terrace, she wears a plain sage-green opaque ribbed-cotton camisole top with slim straps and high-waisted cream wide-leg linen trousers, her hair tucked behind one ear and falling loose again in the sea breeze. Empty-handed, she walks away from a shaded table along the terrace and turns her face toward the breeze. A three-quarter-front knee-up environmental frame includes the pale canopy, terrace, and blue sea, giving the outfit and setting equal visual weight. Diffused canopy light, fine-grain color-negative film, neutral color balance, and softly rolled-off highlights}.
 The face anatomy controls only facial structure. Do not infer personality, expression, makeup, hair, skin color, or age from it. Let the selected summer scene card determine expression, hairstyle, action, gaze, light, weather, camera, and film treatment. Do not add a competing pose or mix cards.
 Use a frontal, three-quarter-front, or side-profile view. Do not use a back-facing over-the-shoulder pose.
+For a walking scene, keep the camera ahead of or beside her path so her face remains visible in a frontal, three-quarter-front, or true side view.
 A natural color photograph with distinct plausible colors remaining in the subject and environment, no black-and-white, monochrome, grayscale, sepia-only, or near-achromatic rendering. No red light leak, orange light leak, magenta light leak, red fogging, orange fogging, magenta fogging, red haze, orange haze, magenta haze, or colored edge fog. Natural skin texture, skin matte and dry, no visible sweat, no beauty filter, no HDR glow, no SNS compression, clean frame edges, 3:4 vertical.
 ```
 
@@ -596,7 +598,7 @@ A natural color photograph with distinct plausible colors remaining in the subje
 anime, illustration, painting, stylized, CGI, 3D render, plastic skin, doll-like face, mannequin, dripping sweat, oily skin sheen, distorted anatomy, exaggerated proportions, deformed hands, extra fingers, fused fingers, extra limbs, oversharpened, HDR, beauty filter, heavy makeup, black-and-white, monochrome, grayscale, sepia-only, near-achromatic, red light leak, orange light leak, magenta light leak, red fogging, orange fogging, magenta fogging, red haze, orange haze, magenta haze, colored edge fog, watermark, text, logo, brand logo, trademark, real brand name, brand packaging, product label, store signage, recognizable brand, corporate identity, back-facing pose, over-the-shoulder turn, rear three-quarter view
 ```
 
-### ② 1ブロック・サイレント抽選版 — ChatGPT / Gemini / nano-banana 系
+### ② 1ブロック・サイレント抽選版 — ChatGPT / Gemini / nano-banana チャット経由
 
 > **下のコードブロック全体を、毎回そのまま1回貼る。文面の変更や番号指定は不要。**
 > 画像モデルに「各リストからランダムに」とだけ頼むと、実測6枚が浴衣4/6、車窓3/6、
@@ -605,13 +607,18 @@ anime, illustration, painting, stylized, CGI, 3D render, plastic skin, doll-like
 > 年齢・顔の造作・顔のアクセント・体型・髪色・撮る瞬間・
 > フィルム／光学表現の効き方だけは、選んだカードの中で独立に追加抽選する。
 >
-> これは、テキスト指示を解釈して画像生成ツールを呼べる**チャットAI向け**。
-> 10カード全部を低レベルの画像モデルへ渡すと先頭カードに偏るため、
-> チャットAI側で抽選し、選択カードと選択済みの小さな要素だけを画像生成ツールへ渡すよう明記してある。
+> これは、テキスト指示を先に解釈し、選択済みプロンプトだけで画像生成ツールを呼べる
+> **チャットAI向け**。Geminiなどのチャットがnano-bananaを呼ぶ経路を含む。
+> nano-bananaを含む低レベル画像モデルのプロンプト欄へ10カード全文を直接渡す経路では、
+> 1ブロック内の抽選処理を実行できず、先頭カードへの偏りを防げない。
 > Dynamic Prompts 対応の低レベルプロンプト欄では①を使う。
 >
-> 真に一様な乱数はプロンプトだけでは保証できない。会話内の過去画像を参照できるモデルでは
-> シャッフルバッグが働き、参照できないモデルでは毎回の内部抽選になる。
+> 旧版の「等確率で内部抽選」だけでは実乱数にならず、Card1が再び高頻度になった。
+> 現行版は、カード本文を比較する前に番号を確定する。利用可能なら実行環境の乱数を使い、
+> 同じ会話では使用回数が最少の候補を優先する。乱数機能がなくても、履歴があれば
+> 固定の非逐次巡回で10枚を重複なく一巡する。
+> 履歴も実乱数もない新規会話では多桁チケットで先頭選好を薄めるが、
+> プロンプトだけで新規会話間の真の一様性までは保証できない。
 > 追加7軸は1カードあたり `4 × 8 × 8 × 8 × 4 × 3 × 2 = 49,152` 通り、
 > 10カード全体では491,520通りのラベル付き組み合わせになる。
 > ただし、これは生成結果が491,520通りへ均等に散る保証ではない。
@@ -619,13 +626,14 @@ anime, illustration, painting, stylized, CGI, 3D render, plastic skin, doll-like
 
 ```
 あなたは、テキスト指示を解釈して画像生成ツールを操作できるチャットAIです。
-23〜26歳の成人日本人女性1人を、選択カードで指定された日常着または一般的な公共レジャー用水着を着た、
+23〜26歳の成人日本人女性1人を、選択カードに明記された服装のまま、
 健全で自然な場面で描く、
 自然な色を保った夏のカラー実写写真を1枚だけ生成し、完成画像だけを出力してください。
 
 重要: このコードブロック全体、10枚すべて、追加7軸の候補一覧を、
 画像生成ツールへそのまま渡してはいけません。
-まずチャットAIのテキスト推論段階でカードと顔造作Aを各1つサイレント抽選し、
+まずチャットAIのテキスト推論段階で、下記の番号抽選手順に従って
+カードと顔造作Aを各1つサイレント抽選し、
 続けて年齢Q・顔アクセントA-2・体型B・髪色C・撮る瞬間R・
 フィルム／光学表現の効き方Tを各1つだけサイレント抽選してください。
 カード本文中の「選んだQ/A/A-2/B/C」を、実際に選んだ具体記述へ置き換え、
@@ -635,27 +643,56 @@ A-2の「特になし」は本文へ足さず、RとTもカードと矛盾しな
 1枚分の最終画像プロンプトを内部で作ってください。
 画像生成ツールにはその最終画像プロンプトだけを渡し、1回だけ生成してください。
 
-【最初に行う2つのサイレント抽選】
-画像内容を考え始める前に、下の10枚のカードと8種の顔造作Aから各1つを選びます。
-どちらの並び順にも優先度はありません。
+【画像内容より先に行う番号抽選 — SUMMER10-BAG-v3】
+下のカード本文や顔造作本文の魅力、夏らしさ、並び順を評価する前に、
+番号だけでカードID・A ID・追加7軸のIDを確定します。
 
-- この会話内の使用履歴を参照できる場合:
-  カードとAを別々のシャッフルバッグとして扱います。各バッグを偏りなく並べ替え、
-  未使用候補を1つずつ使い、カード袋は10候補、A袋は8候補を使い切ったときだけ、
-  使い切ったバッグへ全候補を戻します。
-  カードは過去画像の「場所・服の形と色・撮影距離」の3アンカーでも判定できます。
-- 使用履歴を参照できない場合:
-  カード10候補とAの8候補を、それぞれ等確率として1つずつ内部抽選します。
-  リストの先頭や、いかにも夏らしい候補を優先しません。
+1. この会話で生成に成功した過去画像を確認します。
+   Card1〜Card10の使用回数を数え、使用回数が最少のカードIDだけを候補集合Sにします。
+   直前のカード以外がSにあれば、直前のカードはSから除きます。
+   過去カードは、内部に残る選択済みIDを優先し、なければ画像の
+   「場所・服の形と色・撮影距離」の3アンカーで判定します。
+   履歴がなければ全カードを使用0回として、S = [1,2,3,4,5,6,7,8,9,10] にします。
+   Aも同様に、使用回数が最少のA IDを候補集合Fにします。
+   Aの履歴を判定できなければ F = [1,2,3,4,5,6,7,8] にします。
+
+2. 実行可能なコード、暗号学的乱数、または乱数ツールがある場合は最優先で1回だけ使います。
+   カード本文を乱数ツールへ渡さず、数値配列だけを渡してください。
+   Pythonの `secrets.choice(S)` と `secrets.choice(F)` に相当する処理でカードIDとA IDを選び、
+   同じ1回の実行で Q=[1..4]、A-2=[1..8]、B=[1..8]、C=[1..4]、
+   R=[1..3]、T=[1..2] からも各1つを選びます。
+   「ランダムらしさ」の推測やカード内容による選び直しで代用しません。
+
+3. 乱数機能はないが、この会話の使用履歴がある場合は、カードを
+   [1,4,7,10,3,6,9,2,5,8] の固定巡回順で扱います。
+   直前カードの次から巡回し、Sに最初に現れるIDを選びます。
+   Aは [1,4,7,2,5,8,3,6] の固定巡回順で同様にFから選びます。
+   この会話で生成に成功した過去画像の総数をnとし、残り6軸は
+   Q=1+(n mod 4)、A-2=1+((3n+1) mod 8)、B=1+((5n+2) mod 8)、
+   C=1+((n+2) mod 4)、R=1+((2n+1) mod 3)、T=1+(n mod 2) とします。
+   これはランダムではありません。新規または各候補が同数の状態から始めた場合は
+   使用数の差を1以内に保ち、すでに偏った履歴がある場合は最少使用候補だけを使って差を縮めます。
+
+4. 履歴も乱数機能もない場合だけ、カード本文を読む前に0〜9の非公開数字を
+   d1〜d8として8個、前の数字から規則的に作らず各桁を別々に生成します。
+   d1〜d4の和を10で割った余りを位置0〜9とし、
+   [6,10,3,7,2,9,4,8,1,5] の対応位置からカードIDを選びます。
+   d5〜d8の和を8で割った余りを位置0〜7とし、
+   [6,3,8,1,5,2,7,4] の対応位置からA IDを選びます。
+   残り6軸は、Q=1+((d1+d5) mod 4)、A-2=1+((d2+d6) mod 8)、
+   B=1+((d3+d7) mod 8)、C=1+((d4+d8) mod 4)、
+   R=1+((d1+d3+d6+d8) mod 3)、T=1+((d2+d4+d5+d7) mod 2) とします。
+   単一の数字を「それらしく」選ぶより先頭偏りを拡散するための弱いフォールバックであり、
+   新規会話間の等確率を保証する処理ではありません。
 
 選んだ瞬間に、残り9枚の文章を画像設計から完全に破棄してください。
 複数カードの場所、服、髪型、構図、光、フィルム／光学表現の種類を混ぜたり、
 「日本の夏らしい」「絵になりやすい」という理由で別カードへ選び直したりしないでください。
 選択番号、抽選過程、説明、文字は画像内にも画像外にも出さないでください。
 
-【続けて行う小さな可変要素の抽選】
-カードとAを1つずつ選んだ後、Q・A-2・B・C・R・Tから各1つだけを独立に内部抽選します。
-QとCは各4候補、A-2とBは各8候補、Rは3候補、Tは2候補をそれぞれ等確率として扱います。
+【続けて行う小さな可変要素の確定】
+手順2・3・4のいずれでも、そこで確定したQ・A-2・B・C・R・Tをそのまま使います。
+後から候補本文の目立ちやすさで選び直しません。
 
 この会話内に同じカードの過去画像が見える場合は、過去画像と同じQ/A/A-2/B/C/R/Tの
 完全一致を避け、少なくともAかCのどちらかを変えてください。カードを一巡して袋へ戻した後も同様です。
@@ -663,6 +700,13 @@ QとCは各4候補、A-2とBは各8候補、Rは3候補、Tは2候補をそれ�
 追加7軸はカードの骨格を上書きしません。カードの場所・服・距離・髪型・主動作・視線・
 光・時間帯・天気・フィルム／光学表現の種類が常に優先です。矛盾した場合はカード側を守り、
 追加軸はそのカードと両立する範囲だけで反映してください。
+
+【画像生成ツールへ渡す直前の内部検査】
+最終画像プロンプトには、選択カード1枚の「場所・服・撮影距離」の3アンカーが
+各1組だけ含まれ、ほかのカードのアンカーが1つも含まれないことを確認してください。
+「Card」「カード」「候補」「抽選」「SUMMER10-BAG-v3」、候補番号、候補一覧、
+未選択の文章、このコードブロック自体が1つでも残っていれば、チャットAI側で作り直します。
+この検査に通った選択済み1枚分だけを画像生成ツールへ渡してください。
 
 【Q 年齢: 1つだけ選ぶ】
 Q1: 23歳の成人。
@@ -811,11 +855,12 @@ T2: 手触りが分かる程度。カード固有のフィルム／光学表現�
 場所アンカー: 盛夏の休日の昼、一般向けの海水浴場、青緑の海、乾いた砂浜、淡色の日除け。
 服アンカー: コバルトブルーの無地のスポーティーなツーピースビキニ。
 肩紐は幅広く、ボトムはハイウエストの一般的な公共レジャー用水着。
-距離アンカー: 正面または真横から頭と足先が入る全身の環境構図。
+距離アンカー: 海側へ少しずらしたカメラを進行方向の前方に置き、
+正面または斜め前から頭と足先が入る全身の環境構図。背中側から撮らない。
 人物へ寄らず、海、砂浜、日除け、夏空を広く写す。
 選んだQの年齢の成人日本人女性。選んだAの顔造作、選んだA-2の顔アクセント、
 選んだBの体型、選んだCの髪色、低い位置の一本の三つ編み、手ぶら。
-日除けへ向かって乾いた砂浜を海と平行に歩き、視線を水面へ向ける自然な一瞬。
+乾いた砂浜を海と平行にカメラの方向へ歩き、斜め前から見える顔を水面へ向ける自然な一瞬。
 細粒子のカラーネガフィルム、色かぶりのない自然な階調、柔らかなハイライト、
 色付きの画面端モヤのないクリーンなフレーム。
 
@@ -826,7 +871,8 @@ T2: 手触りが分かる程度。カード固有のフィルム／光学表現�
 距離アンカー: 斜め前から膝上の環境構図。人物へ寄りすぎず、テラス、日除け、海を画面へ入れる。
 選んだQの年齢の成人日本人女性。選んだAの顔造作、選んだA-2の顔アクセント、
 選んだBの体型、選んだCの髪色、片耳にかけた髪が海風でまたほどけかけている、手ぶら。
-日陰のテーブルを離れてテラスを歩き、海風へ顔を向ける自然な一瞬。
+日陰のテーブルを離れ、前方に置いたカメラへ向かってテラスを歩きながら、
+斜め前から見える顔を海風へ向ける自然な一瞬。
 リネンの裾だけが風を含む。
 淡い日除け越しの拡散光、細粒子のカラーネガフィルム、自然な色バランス、柔らかなハイライト。
 
