@@ -1,0 +1,251 @@
+{
+  "meta": {
+    "source_file": "season/experiments/summer-randomness-2026-07-30/lightweight-direct-v4/final/01-pier.png",
+    "format": "PNG",
+    "file_size_bytes": 2176562,
+    "width_px": 1086,
+    "height_px": 1448,
+    "megapixels": 1.57,
+    "aspect_ratio": "3:4",
+    "orientation": "portrait",
+    "medium": "photo",
+    "ai_generated_likelihood": 0.85,
+    "color_mode": "RGB",
+    "has_alpha": false,
+    "icc_profile": null,
+    "exif_present": false,
+    "gps_present": false,
+    "confidence": 0.9
+  },
+  "geometry": {
+    "composition": {
+      "layout_scheme": "center + one_point_perspective corridor",
+      "main_subject_position": [0.49, 0.55],
+      "main_subject_screen_coverage": 0.14,
+      "symmetry": {
+        "left_right_measured": 0.896,
+        "top_bottom_measured": 0.855,
+        "perceived": "桟橋が画面中央を貫く左右対称の骨格。人物のわずかな左寄り・髪と視線の左向きが対称を破って動きを作る"
+      },
+      "balance": "視覚的重心は人物（中央やや下）。左の積雲と右の水面の輝きが上部で釣り合う",
+      "leading_lines": [
+        {"type": "桟橋の左縁", "from": [0.0, 0.98], "to": [0.47, 0.45]},
+        {"type": "桟橋の右縁", "from": [1.0, 0.93], "to": [0.52, 0.45]},
+        {"type": "床板の目地と杭の列", "from": [0.15, 0.8], "to": [0.49, 0.46]}
+      ],
+      "negative_space": "上半分の空と海が大きな余白として働き、開放感と『先へ続く道』の印象を支える",
+      "framing": "全身が切れずに収まるフルショット。足元下に床板一枚分の余白、頭上に空を広く残す",
+      "luminance_grid_3x3": [[0.687, 0.618, 0.712], [0.543, 0.567, 0.543], [0.615, 0.563, 0.526]]
+    },
+    "perspective": {
+      "type": "one_point",
+      "horizon_y": 0.37,
+      "vanishing_points": [[0.49, 0.44]],
+      "depth_cues": ["linear_perspective", "relative_size（杭が奥へ小さくなる）", "texture_gradient（床板の目の細かさ）", "atmospheric（遠景の陸が淡い）", "overlap（人物が消失点を隠す）"]
+    },
+    "camera_geometry": {
+      "camera_height": "eye",
+      "pitch_deg": -6,
+      "roll_deg": 0,
+      "subject_distance_m": 4.5,
+      "estimated_focal_length_mm_35mm_equiv": 32
+    },
+    "notable_relationships": ["消失点が人物の胴の背後に隠され、視線の収束先が人物と一致する", "顔がほぼ上 1/3 線上（y≈0.26）にある"],
+    "confidence": 0.8
+  },
+  "physics": {
+    "light": {
+      "sources": [
+        {
+          "type": "sun",
+          "direction": "画面左上・やや逆光気味ではなく順斜光（人物の顔と右半身が受光）",
+          "elevation_deg": 60,
+          "quality": "hard",
+          "color_temp_k": 5600,
+          "relative_intensity": "支配的な単一キー",
+          "role": "key"
+        },
+        {
+          "type": "sky",
+          "direction": "全天からの拡散光＋海面からの照り返し（下からの弱いフィル）",
+          "elevation_deg": null,
+          "quality": "soft",
+          "color_temp_k": 9000,
+          "relative_intensity": "キーの 1/4 程度。影を浅く青く起こす",
+          "role": "fill"
+        }
+      ],
+      "shadows": {
+        "present": true,
+        "direction": "人物・杭とも画面右下方向へ落ちる",
+        "length_relative": "身長比で短め（0.3 前後）→ 太陽高度が高い根拠",
+        "softness": "縁の立った hard shadow。半影は狭い",
+        "density": "空と海の照り返しで起こされ、つぶれない中濃度。青みを帯びる",
+        "consistency": "人物・杭・床板の影方向が一致し、単一太陽光で矛盾なく説明できる"
+      },
+      "highlights_reflections": {
+        "speculars": ["右手前の海面のきらめき（太陽方向と整合）", "白スニーカーと肩・鎖骨のハイライト", "黒髪の天使の輪"],
+        "reflective_surfaces": [
+          {"surface": "海面", "reflects": "空の青と雲の白", "fidelity": "波で砕けた拡散寄りの鏡面"}
+        ],
+        "fresnel_effects": "海面は手前ほど透けて海底の明るいターコイズ、遠方ほど空を反射して青く不透明 — 視射角による反射率上昇が明瞭"
+      },
+      "atmosphere": {
+        "haze": "水平線際にわずか。左遠景の陸影が淡く霞む",
+        "volumetric_light": "無し",
+        "scattering": "天頂側ほど濃く水平線へ淡くなる空の青のグラデーション（レイリー散乱的な見え）",
+        "time_signature": "高い太陽高度・短い影・雲底が平らな積雲 → 真昼前後の晴天光"
+      },
+      "confidence": 0.8
+    },
+    "optics": {
+      "depth_of_field": {
+        "extent": "deep",
+        "focus_plane": "人物（全身）。手前床板から遠景までほぼパンフォーカス",
+        "falloff": "デフォーカスによるボケはほぼ視認できず、遠景の甘さはヘイズ由来",
+        "estimated_aperture_f": 8
+      },
+      "bokeh": {"shape": null, "character": "ボケがほぼ発生していないため判定不能"},
+      "motion_blur": {"present": false, "of": null, "direction": null},
+      "aberrations": {
+        "chromatic": "視認できず",
+        "vignetting": "ごく弱いか無し",
+        "distortion": "none（水平線・床板の直線が保たれている）",
+        "flare_ghost": "無し"
+      },
+      "rendering_naturalness": "光学的には自然な晴天スナップの見え。ただし全域の均質なシャープさとノイズの無さは撮って出し写真より生成/強い後処理を示唆",
+      "confidence": 0.7
+    },
+    "materials": [
+      {"surface": "桟橋の床板・杭", "material_guess": "風化した無塗装木材", "roughness": 0.9, "metallic": false, "translucency": "無し", "subsurface_scattering": "無し", "wetness": "乾燥", "texture": "銀灰色に退色し木目と節、板ごとの色ムラが明瞭"},
+      {"surface": "海水", "material_guess": "浅い熱帯性の海水", "roughness": 0.15, "metallic": false, "translucency": "手前は海底が透ける高い透明度", "subsurface_scattering": "浅瀬のターコイズは水中散乱の色", "wetness": null, "texture": "細かい風波。手前に波の網目状の明暗"},
+      {"surface": "ワンピース", "material_guess": "薄手の綿ローン〜シフォン系", "roughness": 0.8, "metallic": false, "translucency": "裾が光でわずかに透ける程度", "subsurface_scattering": "無し", "wetness": "乾燥", "texture": "セージグリーン地に白の小花柄。風でドレープが流れる軽さ"},
+      {"surface": "人物の肌", "material_guess": "肌", "roughness": 0.6, "metallic": false, "translucency": "無し", "subsurface_scattering": "頬・肩の受光部に自然な赤みの透け", "wetness": "つや控えめ", "texture": "均一でレタッチ的に滑らか"},
+      {"surface": "スニーカー", "material_guess": "白の合皮/キャンバス", "roughness": 0.5, "metallic": false, "translucency": "無し", "subsurface_scattering": "無し", "wetness": "乾燥", "texture": "厚めソール。汚れのない新品的な白"}
+    ],
+    "materials_confidence": 0.75
+  },
+  "color": {
+    "dominant_colors": [
+      {"hex": "#b2aba1", "ratio": 0.299, "name_ja": "ウォームグレー（桟橋の木）"},
+      {"hex": "#4a6b70", "ratio": 0.176, "name_ja": "ダークティール（沖の海）"},
+      {"hex": "#76aac3", "ratio": 0.158, "name_ja": "スカイブルー"},
+      {"hex": "#779da5", "ratio": 0.146, "name_ja": "くすみブルーグレー（中景の海）"},
+      {"hex": "#c0d1d3", "ratio": 0.112, "name_ja": "ペールグレー（雲）"},
+      {"hex": "#8fc7df", "ratio": 0.109, "name_ja": "ライトシアン（浅瀬・空の裾）"}
+    ],
+    "palette_scheme": "analogous（青〜青緑）＋木の暖色グレーが対比の錨。ワンピースのセージグリーンは海側の類似色",
+    "temperature": {"overall": "cool", "warm_cool_ratio_measured": 0.761},
+    "white_balance_impression": "デイライト基準でほぼ正確。影の青かぶりは晴天として自然",
+    "brightness": {
+      "mean": 152.2,
+      "p5": 61,
+      "p95": 209,
+      "clipped_shadows_ratio": 0.0036,
+      "clipped_highlights_ratio": 0.0001,
+      "key": "mid（明るめ。ハイライトの白飛びをほぼ回避）"
+    },
+    "saturation": {"mean_measured": 77.6, "character": "海と空に彩度を集中させ、人物と桟橋は低彩度に保つ配分"},
+    "contrast": {"global_std_measured": 42.7, "local": "床板の木目と波にマイクロコントラスト。人物の肌は滑らかで対比的"},
+    "grading": "クリーンで自然な夏色。シャドウを浅く保つ広告的トーンで、フィルム調の退色や色転びは無し",
+    "confidence": 0.9
+  },
+  "subjects": {
+    "inventory": [
+      {"label": "歩く女性", "category": "person", "bbox": [0.30, 0.20, 0.42, 0.73], "screen_coverage": 0.14, "state": "桟橋をこちらへ歩きながら左の海側を見ている"},
+      {"label": "木の桟橋（杭付き）", "category": "structure", "bbox": [0.0, 0.42, 1.0, 0.58], "screen_coverage": 0.3, "state": "画面手前から消失点へ延びる"},
+      {"label": "海", "category": "nature", "bbox": [0.0, 0.37, 1.0, 0.45], "screen_coverage": 0.3, "state": "手前は透明なターコイズ、沖は青。細かい風波"},
+      {"label": "空と積雲", "category": "nature", "bbox": [0.0, 0.0, 1.0, 0.38], "screen_coverage": 0.25, "state": "快晴。左に大きめの積雲"},
+      {"label": "遠景の陸影", "category": "nature", "bbox": [0.0, 0.355, 0.3, 0.02], "screen_coverage": 0.005, "state": "左水平線上にうっすら"}
+    ],
+    "people": [
+      {
+        "apparent_age_range": "20代前半〜半ば（見た目の印象）",
+        "apparent_gender_expression": "女性的",
+        "pose": {
+          "overall": "歩行の途中。右足を前に踏み出した瞬間で、体重移動が進行中",
+          "head": "やや上向きで画面左（海・光の方向）へ回す",
+          "gaze": "画面外左上。遠くを眺める",
+          "hands": "両腕とも力の抜けた自然な振り。手は開いたまま"
+        },
+        "expression": "目を細めた穏やかな微笑。風と光を受け止める表情",
+        "hair": {"length": "ミディアムロング", "style": "ストレート、センター寄り分け", "color": "黒", "motion": "画面右へ風で流れる（風上=画面左を向いている）"},
+        "clothing": [
+          {"item": "キャミソールワンピース（ミディ丈）", "color": "セージグリーン×白の小花柄", "material_guess": "薄手の綿〜シフォン系", "fit": "ウエスト切り替えから裾へ広がる A ライン。風で裾が右へなびく"},
+          {"item": "スニーカー", "color": "白", "material_guess": "合皮/キャンバス", "fit": "厚めソールのボリューム系"}
+        ],
+        "accessories": []
+      }
+    ],
+    "text_in_image": [],
+    "focal_hierarchy": ["人物の顔", "なびく髪と裾（動き）", "桟橋の消失点方向", "左の積雲", "右手前の海面のきらめき"],
+    "confidence": 0.85
+  },
+  "environment": {
+    "setting": "outdoor",
+    "location_type": "海に延びる木製の桟橋（リゾート的な遠浅の海岸）",
+    "region_culture_cues": ["人物の見た目は東アジア系の印象", "海の色は沖縄・熱帯圏を思わせる遠浅のターコイズ"],
+    "time_of_day": "正午前後",
+    "season": "夏",
+    "weather": "快晴（積雲あり、風速 2〜4m/s 程度を髪と裾が示す）",
+    "temperature_impression": "強い日差しと薄着が示す真夏の暑さ。風が涼をもたらす画面",
+    "confidence": 0.85
+  },
+  "photography": {
+    "shot_type": "full",
+    "angle": "eye_level（わずかに俯角）",
+    "settings": {
+      "source": "estimated",
+      "focal_length_mm": 32,
+      "aperture_f": 8,
+      "shutter_s": "1/640",
+      "iso": 100
+    },
+    "lighting_technique": "自然光のみ。順斜光の太陽をキーに、空と海面反射をフィルとして使う晴天ポートレートの定石",
+    "style_lineage": "夏のライフスタイル/トラベル系ポートレート。広告・SNS 向けのクリーンな実写調",
+    "confidence": 0.6
+  },
+  "style_aesthetics": {
+    "genre": "季節感を主題にした屋外ポートレート",
+    "mood_keywords": ["開放感", "清涼", "爽やか", "軽やか", "夏休みの静けさ"],
+    "stylistic_references": ["旅行誌・リゾート広告のビジュアル文法", "縦位置 3:4 の SNS 投稿フォーマット"],
+    "post_processing": ["肌の均一なスムージング", "ハイライトを飛ばさない露出コントロール"],
+    "era_or_trend": "2020 年代の自然光クリーン系。厚底白スニーカー×ワンピースも同時代的",
+    "confidence": 0.8
+  },
+  "quality": {
+    "sharpness": {"edge_intensity_measured": 13.61, "perceived": "人物と手前床板は良好な解像感。遠景はヘイズ相当の甘さ"},
+    "noise": "ノイズ・粒状感はほぼ皆無（実写なら低 ISO ＋ NR 強め相当）",
+    "compression_artifacts": "視認できず（PNG）",
+    "ai_artifacts": [
+      "杭の間隔と高さが左右で微妙に不揃い",
+      "手前の床板の目地が一部波打ち、板幅が不均一",
+      "EXIF・ICC が完全に欠落（生成画像や書き出し画像に典型）",
+      "全域が均質にクリーンで、実写に混じる偶発的な粗（ゴミ・傷・ノイズ）が無い"
+    ],
+    "overall_technical_grade": "A",
+    "grade_rationale": "露出・色・構図の完成度は高い。生成由来とみられる微細な幾何の乱れと 1.57MP の低めの解像度で S ではなく A",
+    "confidence": 0.7
+  },
+  "semantics": {
+    "one_line_summary": "真夏の快晴の下、海へ延びる木の桟橋を歩きながら風と光を受けて海を眺める女性",
+    "narrative": "散歩の途中で風が強まり、髪と裾が流れた瞬間。視線の先の海と、背後へ続く桟橋が『どこかへ向かう途中』を示す",
+    "intended_use_impression": "SNS 投稿・夏キャンペーン広告向けのライフスタイルビジュアル",
+    "emotional_read": "解放感と静かな多幸感。見る者に夏の休暇の記憶を呼び起こす",
+    "confidence": 0.7
+  },
+  "confidence_notes": {
+    "overall_confidence": 0.78,
+    "measured_layer_available": true,
+    "major_uncertainties": [
+      "撮影パラメータは光学的な見えからの推定で EXIF の裏付けが無い",
+      "焦点距離と被写体距離はトレードオフ関係にあり ±30% 程度の幅がある",
+      "場所の特定（沖縄か海外リゾートか）は画面内の手がかりでは決められない"
+    ],
+    "out_of_scope": [
+      "実在人物の同定（本スキルでは行わない）",
+      "撮影地の緯度経度（GPS 情報なし）",
+      "生成モデル名の特定（アーチファクトからの断定は不可能）"
+    ]
+  }
+}
