@@ -31,8 +31,9 @@
 3. **表情はD/Eから決める** — 笑顔や静かな視線は、選ばれた夏のムードとその瞬間に必要な範囲だけで作る
 4. **夏らしさは環境側に置く** — 場面(E)、服(F)、夏の髪(C-2)、光(H)、時間(K)、夏の段階(L)、天気(M)、フィルム(P)で担保する
 
-丸顔や柔らかな体型も有効な人物差なので、顔・体型を否定語で一律に消さない。
-かわいさや大人っぽさは特定の骨格へ固定せず、自然な表情、服の仕立て、光、カメラとの距離から出す。
+Aの8種はすべて可愛らしさ・美しさに寄せて設計してある（大きな目・二重・小さく整った鼻・ふっくらした唇）。
+ただしAは解剖学的な造作（輪郭・目・眉・鼻・口・顎）だけを指定し、性格・表情・メイク・髪・肌色・年齢は含めない。
+かわいさの最終的な印象は、Aの造作に加えて自然な表情、服の仕立て、光、カメラとの距離からも作られる。
 
 ### エモさの作り方
 
@@ -137,14 +138,15 @@ adult Japanese woman, appropriately dressed for the selected summer scene
 
 【A】顔の造作（8）
 ※輪郭・目・眉・鼻・口・顎だけを指定する。表情、メイク、髪、肌色、年齢はD/E/Q/C側で決める。
-1. a soft round face with full cheeks, large round eyes with narrow double lids, gently arched brows, a low straight nose with a rounded tip, a small mouth with softly full lips, and a short rounded chin
-2. a balanced oval face, almond-shaped eyes with natural creases, straight medium-thickness brows, a slim straight nose, a defined cupid's bow, and a gently tapered jaw
-3. a heart-shaped face with a slightly broad forehead, wide-set downturned eyes with shallow creases, softly curved brows, a short narrow nose, a fuller lower lip, and a small pointed chin
-4. a softly square face, long monolid eyes, straight low-set brows, a straight nose with a low bridge and defined tip, a wider mouth, and a softly defined square jaw
-5. a long narrow oval face, deep-set hooded eyes, slightly arched brows, a longer straight nose, thin well-defined lips, and a narrow rounded chin
-6. a face with broad high cheekbones and a shorter lower half, narrow almond-shaped eyes with subtle double lids, horizontal brows, a compact nose with a rounded tip, a wide mouth, and a softly tapered jaw
-7. a compact V-shaped face, upturned eyes with clear creases, gently angled brows, a high narrow nose bridge, a defined upper lip with a fuller lower lip, and a sharp small chin
-8. a naturally asymmetric oval face, one eyelid slightly heavier than the other, brows at subtly different heights, a straight nose with a soft off-center tip, a slightly uneven lip line, and a gently defined jaw
+※8種すべて可愛らしさ・美しさの方向だが、骨格・目の形・鼻・唇・顎の構造差で8通りの別人物になるよう設計。
+1. a soft round face with full cheeks, large round eyes with clear double lids and long lashes, gently arched brows, a small upturned nose with a rounded tip, a small mouth with plump full lips, and a short rounded chin
+2. a balanced oval face, elegant almond-shaped eyes with natural double lids, straight medium-thickness brows, a slim straight nose with a refined tip, a defined cupid's bow with medium lips, and a gently tapered jaw
+3. a heart-shaped face with a slightly broad forehead, large wide-set doe eyes with soft double lids, softly curved brows, a tiny button nose, a fuller lower lip, and a small pointed chin
+4. a softly defined face with mild angularity, slightly narrow elongated eyes with clear double lids, straight low-set brows, a straight nose with a defined bridge and neat tip, a wider mouth with even lips, and a clean tapered jaw
+5. a long elegant oval face, slightly hooded narrow eyes with a subtle crease, gently arched brows, a longer straight nose with a delicate tip, thin well-shaped lips, and a narrow rounded chin
+6. a face with softly high cheekbones and a shorter lower half, cat-like almond eyes with clear double lids, softly angled brows, a compact nose with a rounded tip, a wide mouth with full lips, and a softly tapered jaw
+7. a compact V-shaped face, large upturned eyes with clear double lids, gently angled brows, a high narrow nose bridge, a defined upper lip with a fuller lower lip, and a sharp small chin
+8. a soft oval face with gentle natural asymmetry, one eye slightly larger than the other with uneven double lids, brows at subtly different heights, a straight nose with a soft off-center tip, a slightly uneven but full lip line, and a gently defined jaw
 
 【A-2】顔のアクセント（8）
 1. a small beauty mark under one eye
@@ -258,7 +260,7 @@ adult Japanese woman, appropriately dressed for the selected summer scene
 14. a cami dress over a plain white tee, sport sandals
 ── 盛夏の軽装・水辺
 15. a plain sage-green opaque ribbed-cotton camisole top with slim straps and high-waisted cream wide-leg linen trousers
-16. a plain cobalt-blue sporty two-piece bikini with wide shoulder straps and a high-waisted bottom, ordinary public swimwear
+16. a plain pastel-pink ribbed two-piece set in quick-dry fabric, a halter-neck triangle top tied at the nape and back, and a mid-rise bottom with thin side ties, a cute current-season cut
 
 【H】夏の光（9）※時間帯(K)・天気(M)とは独立。必ず「H×K×M 禁則」を確認する
 1. hard backlight blowing the background to white, only the edge of her hair lit
@@ -456,10 +458,11 @@ D2 の P 1/5/7 → P=7（無色のレンズフレア）で適合。動作はE20�
 **English**
 
 ```
-A 24-year-old adult Japanese woman, fully clothed. Face anatomy: a naturally asymmetric oval
-face, one eyelid slightly heavier than the other, brows at subtly different heights, a straight
-nose with a soft off-center tip, a slightly uneven lip line, and a gently defined jaw. Faint
-natural freckles across the nose and upper cheeks. An athletic toned build with a sporty frame.
+A 24-year-old adult Japanese woman, fully clothed. Face anatomy: a soft oval face with gentle
+natural asymmetry, one eye slightly larger than the other with uneven double lids, brows at
+subtly different heights, a straight nose with a soft off-center tip, a slightly uneven but
+full lip line, and a gently defined jaw. Faint natural freckles across the nose and upper
+cheeks. An athletic toned build with a sporty frame.
 Natural beige-brown hair in a half-up style already coming loose in the wind. Laughter that comes
 before she can stop it, bright and physical. On her way home from work, she wears a ribbed tank
 top and loose cotton shorts and pushes her bicycle up a hill, laughing naturally without changing
@@ -486,7 +489,7 @@ corporate identity, back-facing pose, over-the-shoulder turn, rear three-quarter
 
 **日本語訳**
 
-24歳の成人日本人女性。自然な左右差のある卵型の顔、薄いそばかす、スポーティーに引き締まった体型。ベージュブラウンのハーフアップが風でほどけかけている。仕事帰り、入道雲の下で自転車を押して坂を上る途中に自然な笑いがこぼれる。夕方の逆光と無色のレンズフレア。カメラは隣を歩く人の視点。
+24歳の成人日本人女性。自然な左右差のある柔らかな卵型の顔、片側が少し大きい二重の目、薄いそばかす、スポーティーに引き締まった体型。ベージュブラウンのハーフアップが風でほどけかけている。仕事帰り、入道雲の下で自転車を押して坂を上る途中に自然な笑いがこぼれる。夕方の逆光と無色のレンズフレア。カメラは隣を歩く人の視点。
 
 ### C-2. 甘酸っぱい二人（D4 / L2）
 
@@ -498,9 +501,10 @@ D4 の P 1/2/8 → P=1（使い捨てカメラ）で適合。動作と横顔はE
 **English**
 
 ```
-A 26-year-old adult Japanese woman, fully clothed. Face anatomy: a softly square face, long
-monolid eyes, straight low-set brows, a straight nose with a low bridge and defined tip, a wider
-mouth, and a softly defined square jaw. A healthy natural build with average proportions.
+A 26-year-old adult Japanese woman, fully clothed. Face anatomy: a softly defined face with
+mild angularity, slightly narrow elongated eyes with clear double lids, straight low-set
+brows, a straight nose with a defined bridge and neat tip, a wider mouth with even lips, and
+a clean tapered jaw. A healthy natural build with average proportions.
 Dark-brown hair is tucked behind one ear and begins to fall out again in the breeze. A sweet,
 unspoken closeness, summer doing the rest. On her day off at an open-front shaved-ice shop, she
 wears a light yellow gingham one-piece dress. Her spoon stops halfway as she presses her temple,
@@ -527,7 +531,7 @@ corporate identity, back-facing pose, over-the-shoulder turn, rear three-quarter
 
 **日本語訳**
 
-26歳の成人日本人女性。柔らかな四角形の輪郭と横長の一重、自然な体型。ダークブラウンの髪を片耳にかけている。休日のかき氷店でスプーンが止まり、こめかみに指を当てた横顔。黄色いギンガムのワンピース、木漏れ日、隣にいる人の視点。自然なカラーを保った使い捨てカメラの質感。
+26歳の成人日本人女性。やや角のある柔らかな顔と細めの横長の二重の目、鼻梁の通った整った鼻、自然な体型。ダークブラウンの髪を片耳にかけている。休日のかき氷店でスプーンが止まり、こめかみに指を当てた横顔。黄色いギンガムのワンピース、木漏れ日、隣にいる人の視点。自然なカラーを保った使い捨てカメラの質感。
 
 ---
 
@@ -554,7 +558,7 @@ no beauty filter, no HDR glow, no SNS compression, 3:4 vertical.
 |---|---|---|
 | 季節 | スロットL（8季節） | **夏に固定**。Lは「夏の段階」6に置き換え |
 | 年齢(Q) | 23〜26歳の4 | **共通**。23〜26歳の4 |
-| 顔(A) | 中立な顔造作8 | **共通**。輪郭・目・眉・鼻・口・顎だけの8 |
+| 顔(A) | 中立な顔造作8 | **可愛さ・美しさに寄せた造作8**。輪郭・目・眉・鼻・口・顎だけ |
 | 顔アクセント(A-2) | ほくろ・そばかす・片えくぼ・なしの8 | **共通**。なし4枠の重みも維持 |
 | 体型(B) | 独立した8 | **共通**。全員スリム固定や胸サイズ分類はしない |
 | 髪色(C-1) | 自然な4色 | **共通**。Aから独立 |
@@ -581,11 +585,11 @@ no beauty filter, no HDR glow, no SNS compression, 3:4 vertical.
 
 ```
 A {23|24|25|26}-year-old adult Japanese woman, appropriately dressed for the selected summer scene.
-Face anatomy: {a soft round face with full cheeks, large round eyes with narrow double lids, gently arched brows, a low straight nose with a rounded tip, a small mouth with softly full lips, and a short rounded chin|a balanced oval face, almond-shaped eyes with natural creases, straight medium-thickness brows, a slim straight nose, a defined cupid's bow, and a gently tapered jaw|a heart-shaped face with a slightly broad forehead, wide-set downturned eyes with shallow creases, softly curved brows, a short narrow nose, a fuller lower lip, and a small pointed chin|a softly square face, long monolid eyes, straight low-set brows, a straight nose with a low bridge and defined tip, a wider mouth, and a softly defined square jaw|a long narrow oval face, deep-set hooded eyes, slightly arched brows, a longer straight nose, thin well-defined lips, and a narrow rounded chin|a face with broad high cheekbones and a shorter lower half, narrow almond-shaped eyes with subtle double lids, horizontal brows, a compact nose with a rounded tip, a wide mouth, and a softly tapered jaw|a compact V-shaped face, upturned eyes with clear creases, gently angled brows, a high narrow nose bridge, a defined upper lip with a fuller lower lip, and a sharp small chin|a naturally asymmetric oval face, one eyelid slightly heavier than the other, brows at subtly different heights, a straight nose with a soft off-center tip, a slightly uneven lip line, and a gently defined jaw}.
+Face anatomy: {a soft round face with full cheeks, large round eyes with clear double lids and long lashes, gently arched brows, a small upturned nose with a rounded tip, a small mouth with plump full lips, and a short rounded chin|a balanced oval face, elegant almond-shaped eyes with natural double lids, straight medium-thickness brows, a slim straight nose with a refined tip, a defined cupid's bow with medium lips, and a gently tapered jaw|a heart-shaped face with a slightly broad forehead, large wide-set doe eyes with soft double lids, softly curved brows, a tiny button nose, a fuller lower lip, and a small pointed chin|a softly defined face with mild angularity, slightly narrow elongated eyes with clear double lids, straight low-set brows, a straight nose with a defined bridge and neat tip, a wider mouth with even lips, and a clean tapered jaw|a long elegant oval face, slightly hooded narrow eyes with a subtle crease, gently arched brows, a longer straight nose with a delicate tip, thin well-shaped lips, and a narrow rounded chin|a face with softly high cheekbones and a shorter lower half, cat-like almond eyes with clear double lids, softly angled brows, a compact nose with a rounded tip, a wide mouth with full lips, and a softly tapered jaw|a compact V-shaped face, large upturned eyes with clear double lids, gently angled brows, a high narrow nose bridge, a defined upper lip with a fuller lower lip, and a sharp small chin|a soft oval face with gentle natural asymmetry, one eye slightly larger than the other with uneven double lids, brows at subtly different heights, a straight nose with a soft off-center tip, a slightly uneven but full lip line, and a gently defined jaw}.
 Facial accent: {a small beauty mark under one eye|a small beauty mark near one corner of the mouth|faint natural freckles across the nose and upper cheeks|a single dimple visible only if the selected scene naturally includes a smile|no additional facial accent|no additional facial accent|no additional facial accent|no additional facial accent}.
 Build: {a slender petite build|a healthy natural build with average proportions|tall and long-limbed, around 168 cm, with an elongated silhouette|a compact petite build with natural proportions|an athletic toned build with a sporty frame|a soft natural build|a lean editorial model build|a fine-boned frame with narrow wrists and ankles}.
 Hair color: {jet-black|dark brown|natural beige brown|natural ash brown}.
-Summer scene card: {On a midsummer day off at an outdoor poolside beneath a large towering cumulus cloud, she wears a striped boat-neck T-shirt and white cotton shorts as ordinary clothing, never swimwear, with her hair in a high ponytail. Empty-handed, she walks beside the pool or has just paused naturally. A frontal-or-side full-body wide environmental frame includes her head, feet, water, and summer sky. Reflected light from the water and Japanese consumer color-negative film with cyan shadows and warm highlights|On a humid summer afternoon in her lived-in tatami room, a white curtain billows beside a turning electric fan. She wears a short-sleeved ribbed T-shirt and loose cotton shorts, her short bob kicking out slightly in the humidity. She sits naturally with empty hands. A three-quarter-front seated frame includes her upper body, knees, fan, and tatami. Diffused curtain light, fine grain, neutral color balance, and soft highlight roll-off|Walking home from a summer festival during the blue minute, outside the stream of people, she wears a navy sleeveless shirt dress with a clean adult cut, never a school uniform or yukata, and a half-up hairstyle loosened by the breeze. Empty-handed, she is framed from the three-quarter front at the waist while walking beside the camera. Warm stall light stays localized against the blue surroundings. Localized 35mm halation appears only around real highlights, never as a colored edge fog|After work, she rides a local train back to her parents' town in late-afternoon summer light. She wears a plain white T-shirt and a colorful patterned long skirt, her long hair loose and tucked behind one ear. Empty-handed, she watches rice fields pass outside. A waist-up side profile through window glass includes cabin reflections. Muted color-negative film, gently faded colors, softly lifted blacks, and clean uncolored frame edges|On a summer evening after work, she pushes a bicycle uphill through low sunlight and a long shadow. She wears a cropped T-shirt and denim mini skirt, her short hair cut only a few days ago. She walks and laughs naturally without changing the bicycle action. A frontal full-body wide frame includes her head, feet, bicycle, hill, and full shadow. Backlight catches only the hair edge; a neutral-to-pale-white lens flare crosses the frame without colored haze|Just after a late-summer downpour, she waits under an eave beside wet asphalt giving off a small amount of neutral localized vapor. She wears a gingham blouse and a full skirt moving lightly in the post-rain air, her hair in one braid over a shoulder. Empty-handed, she watches the road. A long-lens environmental view from at least twenty meters away keeps her complete figure small, between one fifth and one quarter of the image height, while the eave and wet road dominate the frame; never turn this into a medium shot. Low-contrast post-rain light, visible grain, and lifted blacks|On a summer day off at an old-fashioned shaved-ice shop, she wears a yellow gingham one-piece dress. Her shoulder-length hair retains a slight mark from a recently removed hat. Her spoon stops as she touches one temple. A frontal chest-up close frame includes the clear bowl, stopped spoon, and fingers. Window dappled light and a disposable-camera direct flash with visible grain, while natural local colors remain distinct|On an Obon evening at the engawa of her parents' home, a wind chime and bamboo blind move in the breeze. She wears a nearly plain pale cotton yukata with a naturally overlapped front collar, the obi knot not emphasized, and her hair in a low ponytail. She turns her face toward the wind chime. A low diagonal full-body frame includes head, feet, chime, and blind. Handheld 35mm film with slight motion and gentle focus softness under slanting late-summer light|On a bright midsummer day off at a public seaside swimming area, she wears a plain cobalt-blue sporty two-piece bikini with wide shoulder straps and a high-waisted bottom as ordinary public swimwear, her hair in a low braid. Empty-handed, she walks naturally across dry sand parallel to the water toward a camera positioned ahead and slightly seaward, her face visible in three-quarter-front view as she glances toward the blue-green sea. A frontal-or-three-quarter-front full-body environmental frame includes her head, feet, sea, sand, canopy, and summer sky; never show her from behind. Give the person and setting equal visual weight. Fine-grain color-negative film, neutral color balance, softly rolled-off highlights, and clean uncolored frame edges|On a bright midsummer day off at a shaded seaside cafe terrace, she wears a plain sage-green opaque ribbed-cotton camisole top with slim straps and high-waisted cream wide-leg linen trousers, her hair tucked behind one ear and falling loose again in the sea breeze. Empty-handed, she walks away from a shaded table along the terrace and turns her face toward the breeze. A three-quarter-front knee-up environmental frame includes the pale canopy, terrace, and blue sea, giving the outfit and setting equal visual weight. Diffused canopy light, fine-grain color-negative film, neutral color balance, and softly rolled-off highlights}.
+Summer scene card: {On a midsummer day off at an outdoor poolside beneath a large towering cumulus cloud, she wears a striped boat-neck T-shirt and white cotton shorts as ordinary clothing, never swimwear, with her hair in a high ponytail. Empty-handed, she walks beside the pool or has just paused naturally. A frontal-or-side full-body wide environmental frame includes her head, feet, water, and summer sky. Reflected light from the water and Japanese consumer color-negative film with cyan shadows and warm highlights|On a humid summer afternoon in her lived-in tatami room, a white curtain billows beside a turning electric fan. She wears a short-sleeved ribbed T-shirt and loose cotton shorts, her short bob kicking out slightly in the humidity. She sits naturally with empty hands. A three-quarter-front seated frame includes her upper body, knees, fan, and tatami. Diffused curtain light, fine grain, neutral color balance, and soft highlight roll-off|Walking home from a summer festival during the blue minute, outside the stream of people, she wears a navy sleeveless shirt dress with a clean adult cut, never a school uniform or yukata, and a half-up hairstyle loosened by the breeze. Empty-handed, she is framed from the three-quarter front at the waist while walking beside the camera. Warm stall light stays localized against the blue surroundings. Localized 35mm halation appears only around real highlights, never as a colored edge fog|After work, she rides a local train back to her parents' town in late-afternoon summer light. She wears a plain white T-shirt and a colorful patterned long skirt, her long hair loose and tucked behind one ear. Empty-handed, she watches rice fields pass outside. A waist-up side profile through window glass includes cabin reflections. Muted color-negative film, gently faded colors, softly lifted blacks, and clean uncolored frame edges|On a summer evening after work, she pushes a bicycle uphill through low sunlight and a long shadow. She wears a cropped T-shirt and denim mini skirt, her short hair cut only a few days ago. She walks and laughs naturally without changing the bicycle action. A frontal full-body wide frame includes her head, feet, bicycle, hill, and full shadow. Backlight catches only the hair edge; a neutral-to-pale-white lens flare crosses the frame without colored haze|Just after a late-summer downpour, she waits under an eave beside wet asphalt giving off a small amount of neutral localized vapor. She wears a gingham blouse and a full skirt moving lightly in the post-rain air, her hair in one braid over a shoulder. Empty-handed, she watches the road. A long-lens environmental view from at least twenty meters away keeps her complete figure small, between one fifth and one quarter of the image height, while the eave and wet road dominate the frame; never turn this into a medium shot. Low-contrast post-rain light, visible grain, and lifted blacks|On a summer day off at an old-fashioned shaved-ice shop, she wears a yellow gingham one-piece dress. Her shoulder-length hair retains a slight mark from a recently removed hat. Her spoon stops as she touches one temple. A frontal chest-up close frame includes the clear bowl, stopped spoon, and fingers. Window dappled light and a disposable-camera direct flash with visible grain, while natural local colors remain distinct|On an Obon evening at the engawa of her parents' home, a wind chime and bamboo blind move in the breeze. She wears a nearly plain pale cotton yukata with a naturally overlapped front collar, the obi knot not emphasized, and her hair in a low ponytail. She turns her face toward the wind chime. A low diagonal full-body frame includes head, feet, chime, and blind. Handheld 35mm film with slight motion and gentle focus softness under slanting late-summer light|On a bright midsummer day off at a public seaside swimming area, she wears a plain pastel-pink ribbed two-piece set in quick-dry fabric, a halter-neck triangle top tied at the nape and back, and a mid-rise bottom with thin side ties, a cute current-season cut, her hair in a low braid. Empty-handed, she walks naturally across dry sand parallel to the water toward a camera positioned ahead and slightly seaward, her face visible in three-quarter-front view as she glances toward the blue-green sea. A frontal-or-three-quarter-front full-body environmental frame includes her head, feet, sea, sand, canopy, and summer sky; never show her from behind. Give the person and setting equal visual weight. Fine-grain color-negative film, neutral color balance, softly rolled-off highlights, and clean uncolored frame edges|On a bright midsummer day off at a shaded seaside cafe terrace, she wears a plain sage-green opaque ribbed-cotton camisole top with slim straps and high-waisted cream wide-leg linen trousers, her hair tucked behind one ear and falling loose again in the sea breeze. Empty-handed, she walks away from a shaded table along the terrace and turns her face toward the breeze. A three-quarter-front knee-up environmental frame includes the pale canopy, terrace, and blue sea, giving the outfit and setting equal visual weight. Diffused canopy light, fine-grain color-negative film, neutral color balance, and softly rolled-off highlights}.
 The face anatomy controls only facial structure. Do not infer personality, expression, makeup, hair, skin color, or age from it. Let the selected summer scene card determine expression, hairstyle, action, gaze, light, weather, camera, and film treatment. Do not add a competing pose or mix cards.
 Use a frontal, three-quarter-front, or side-profile view. Do not use a back-facing over-the-shoulder pose.
 For a walking scene, keep the camera ahead of or beside her path so her face remains visible in a frontal, three-quarter-front, or true side view.
@@ -612,22 +616,22 @@ anime, illustration, painting, stylized, CGI, 3D render, plastic skin, doll-like
 
 ```
 以下の条件で、3:4縦位置の実写RAW写真を1枚だけ生成してください。
-被写体は23〜26歳の成人日本人女性1人。健全で自然な、日本の夏の日常の一瞬です。
+被写体は20〜23歳の成人日本人女性1人。健全で自然な、日本の夏の日常の一瞬です。
 
 顔・体型・髪・シーン・カメラの各リストから、毎回それぞれ1つだけ選んでください。
 シーンは服・場所・動作・光を一組のまま使い、別シーン同士を混ぜません。
 選んだ番号や説明文は出さず、完成画像だけを出してください。
 同じ会話に直前の生成画像がある場合は、少なくともシーンと髪を直前と別の番号にします。
 
-【顔】
-1. 柔らかな丸顔、ふっくらした頬、狭い二重の大きな丸い目、短く丸い顎
-2. 均整の取れた卵型、自然な二重のアーモンド形の目、緩く先細りの顎
-3. 額がやや広いハート形、少したれた浅い二重、下唇に自然な厚み、小さな顎
-4. 柔らかな四角形、横長の一重、低い直線眉、やや広い口、穏やかな角の顎
-5. 縦長の細い卵型、奥二重、長めの鼻、薄く輪郭の明瞭な唇
-6. 高く広い頬骨と短めの下顔面、細いアーモンド形の目、水平眉
-7. 小さなV字形、ややつり上がった目、角度のある眉、小さく明瞭な顎
-8. 自然な左右差のある卵型、片側だけ少し重いまぶた、わずかに高さの違う眉
+【顔】※すべて可愛らしさ・美しさの方向だが、骨格・目の形・鼻・唇・顎の構造差で8通りの別人物になる造作
+1. 柔らかな丸顔、ふっくらした頬、二重の大きな丸い目と長いまつげ、小さく上向きの鼻先、ぷっくりした唇、短く丸い顎
+2. 均整の取れた卵型、上品なアーモンド形の二重の目、細く整った鼻先、キューピッドボウと中程度の唇、緩く先細りの顎
+3. 額がやや広いハート形、二重の大きく離れたたれ目、小さなボタン鼻、厚い下唇、小さく尖った顎
+4. やや角のある柔らかな顔、細めの横長で二重の目、低い直線眉、鼻梁の通った整った鼻先、やや広く均整の取れた唇、すっきり先細りの顎
+5. 縦長の上品な卵型、奥二重の細い目、長めで繊細な鼻先、薄く形の整った唇、細く丸い顎
+6. 柔らかく高い頬骨と短めの下顔面、猫のようなアーモンド形の二重の目、小さく丸い鼻先、広くふっくらした唇、緩く先細りの顎
+7. 小さなV字形、二重のややつり上がった大きな目、高く細い鼻梁、上唇より厚い下唇、小さく明瞭な顎
+8. 自然な左右差のある柔らかな卵型、片側が少し大きく左右差のある二重の目、わずかに高さの違う眉、やや中心からずれた丸い鼻先、少し左右差のあるふっくらした唇、穏やかに整った顎
 
 【体型】
 1. 華奢で小柄 2. 標準的で自然 3. 長身で手足が長い 4. 小柄で自然な丸み
