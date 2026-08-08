@@ -25,3 +25,9 @@ $RECYCLE.BIN/
 .directory
 .Trash-*
 .nfs*
+
+# Hermes/X workflow transient delivery files
+.discord-delivery/
+.hermes-delivery/
+.tmp/
+_deliveries/
