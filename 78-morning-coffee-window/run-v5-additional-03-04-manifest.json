@@ -1,0 +1,23 @@
+{
+  "revision": "v5-moderate-ease-additional-03-04",
+  "authorization_message_id": "1536517101982978139",
+  "project_thread_id": "1536495807707086908",
+  "person_reference": "/home/natrial/_work/X/asset-prompts/main/_profile/01.png",
+  "prompt": "/home/natrial/_work/X/asset-prompts/78-morning-coffee-window/prompt-v5-moderate-ease-two.md",
+  "prompt_sha256": "027cad85380a0b92bce4f6e325329b0b13a0bed47760d90611332a9628ff0c63",
+  "person_reference_sha256": "9aef0f8cddd57648ea193859ede01ccf98a016832362d92f26d39f34e1331ccb",
+  "additional_image_count": 2,
+  "output_slots": ["generated-v5/03.png", "generated-v5/04.png"],
+  "passthrough": true,
+  "codex_exec_count": 1,
+  "image_generation_calls": 2,
+  "quality_driven_retries": 0,
+  "output_sha256": {
+    "03": "1112601bb8ac2a6489d472cca859603ce9f74b8108e07e86a5fc1b2db0cc8ed2",
+    "04": "cb68608a3f872b9b1530de70b5c814686363434f36612248549e33bd8421ffc0"
+  },
+  "visual_qa": {
+    "03": "identity scene action pass; upper-torso projection fail; ambiguous small dark region below center hem",
+    "04": "identity scene action secure coverage pass; upper-torso projection fail"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "revision": "v3-sofa-coffee-two",
+  "authorization_message_id": "1536505022098182234",
+  "origin_thread_id": "1536464809212641400",
+  "project_thread_id": "1536495807707086908",
+  "person_reference": "/home/natrial/_work/X/asset-prompts/main/_profile/01.png",
+  "prompt": "/home/natrial/_work/X/asset-prompts/78-morning-coffee-window/prompt-v3-sofa-coffee-two.md",
+  "prompt_sha256": "6c103202de7e4fa23c951615522b17665960d13e6a97d798828aa7eec95d846a",
+  "person_reference_sha256": "9aef0f8cddd57648ea193859ede01ccf98a016832362d92f26d39f34e1331ccb",
+  "google_chat_thread": "spaces/AAQA_tGGPuw/threads/4-tClkush0s",
+  "image_count": 2,
+  "output_slots": ["generated-v3/01.png", "generated-v3/02.png"],
+  "passthrough": true,
+  "imagegen_calls": 2,
+  "no_artifact_retries": 0,
+  "successful_generator_prompt_sha256": {
+    "01": "8f2b1da7d22babd8c1a1f27a3fa652e3901227f98f8b53cd435ffacfb1311ab7",
+    "02": "29e1c40d9a00f37c2970c697c68dfc3736b088cf1519f288d3984bad02e8d18f"
+  },
+  "output_sha256": {
+    "01": "eb4d67407ce7c1b99c49d96101da9be3ce19ed72178d006862c480f67663c4ca",
+    "02": "7d647fa804f7fb30b9e666c503702852a8f2c231b1c8d3bb8471bec9e08aa51b"
+  },
+  "visual_qa": {
+    "01": "scene and coverage pass; chest-size preservation fail; torso transmittance fail; near thighs perspective-large",
+    "02": "scene and coverage pass; chest-size preservation fail; torso transmittance weak"
+  }
+}

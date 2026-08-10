@@ -1,0 +1,30 @@
+{
+  "revision": "v4-geometric-drape-two",
+  "authorization_message_id": "1536507552945406062",
+  "project_thread_id": "1536495807707086908",
+  "person_reference": "/home/natrial/_work/X/asset-prompts/main/_profile/01.png",
+  "prompt": "/home/natrial/_work/X/asset-prompts/78-morning-coffee-window/prompt-v4-geometric-drape-two.md",
+  "prompt_sha256": "382df616d7a3625cf5fdf8bb799988d07394d44d9bcadba0ec740ae482d64320",
+  "person_reference_sha256": "9aef0f8cddd57648ea193859ede01ccf98a016832362d92f26d39f34e1331ccb",
+  "image_count": 2,
+  "output_slots": [
+    "generated-v4/01.png",
+    "generated-v4/02.png"
+  ],
+  "passthrough": true,
+  "codex_exec_count": 1,
+  "image_generation_calls": 2,
+  "quality_driven_retries": 0,
+  "output_sha256": {
+    "01": "bcfc442eb938db2d5852911b5340bd55a24429042b0bb1f0e1a3b51c5a228a8d",
+    "02": "3c470f8fa7d172b74cef6f30abfe4cbcdd13751eb5331fec5c65f3f8e27af3f9"
+  },
+  "visual_qa": {
+    "01": "scene identity action coverage pass; slight broad-curvature improvement; exact chest width/projection preservation fail/partial",
+    "02": "scene identity action coverage pass; planar bridge and lower-abdomen drape persist; exact chest width/projection preservation fail"
+  },
+  "consultants": [
+    "claude-fable-5 medium",
+    "gemini-3.6-flash-high high"
+  ]
+}

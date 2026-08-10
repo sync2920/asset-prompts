@@ -1,0 +1,32 @@
+{
+  "project": "78-morning-coffee-window",
+  "authorization_message_id": "1536495406685618238",
+  "origin_thread_id": "1536464809212641400",
+  "project_forum_id": "1535191860278984755",
+  "project_thread_id": "1536495807707086908",
+  "person_reference": "/home/natrial/_work/X/asset-prompts/main/_profile/01.png",
+  "person_reference_role": "sole identity, face, hair, skin, body and proportions reference",
+  "prompt_sha256": "8f97bb0ffece51fbe882c648251718238de60b2c80b795c74d995c7373c04e68",
+  "person_reference_sha256": "9aef0f8cddd57648ea193859ede01ccf98a016832362d92f26d39f34e1331ccb",
+  "google_chat_thread": "spaces/AAQA_tGGPuw/threads/xyU_B3FPfn4",
+  "image_count": 4,
+  "output_slots": ["generated/01.png", "generated/02.png", "generated/03.png", "generated/04.png"],
+  "generation_mode": "first four successful outputs unchanged; deterministic and visual QA annotate but do not silently replace",
+  "initial_attempt": {
+    "artifact_created": false,
+    "result": "moderation_blocked",
+    "category": "sexual"
+  },
+  "successful_generator_prompt_sha256": {
+    "01": "279a4431279d2a54a70c194da67905e5011d204ce4f1c948fdbd7199429cd812",
+    "02": "c86152862c227e83e1ac4a6b66d741ac4594f53ef9a753e617783bc64e6091e0",
+    "03": "db0711f7e5e56ec66266c1736890314680dbb70a1cc7d6a44496fc6ad53fdf09",
+    "04": "988451084fa2f0f2bcdbbbf0eb37ee0b2ce46012038d914daab9965822bb41f2"
+  },
+  "output_sha256": {
+    "01": "f60289a5ecbafe03194c0cea21d6f0da9daaabad49d2f58f3fbe1811c81e850a",
+    "02": "0ba72e5a42070aaffd1e63f7739a4a30181727b790323bec5cadc764a7fd319f",
+    "03": "31f92084c5ab8ad132114407aded545854d7c04c2f0a8f0f26a1094f333af175",
+    "04": "5772cca7d9e04b0e62f1ccf4b69d1ec1953d6548b32e3529600d3ac4dd44551f"
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "revision": "v2-oversized-tshirt-backlight",
+  "authorization_message_id": "1536501182019674142",
+  "origin_thread_id": "1536464809212641400",
+  "project_thread_id": "1536495807707086908",
+  "person_reference": "/home/natrial/_work/X/asset-prompts/main/_profile/01.png",
+  "prompt": "/home/natrial/_work/X/asset-prompts/78-morning-coffee-window/prompt-v2-oversized-tshirt-backlight.md",
+  "prompt_sha256": "396b21fb751204243a11eeada3e435db6b4d8112a22f1962193550b89fb16d3e",
+  "person_reference_sha256": "9aef0f8cddd57648ea193859ede01ccf98a016832362d92f26d39f34e1331ccb",
+  "google_chat_thread": "spaces/AAQA_tGGPuw/threads/abbSpFGoHug",
+  "image_count": 4,
+  "output_slots": ["generated-v2/01.png", "generated-v2/02.png", "generated-v2/03.png", "generated-v2/04.png"],
+  "passthrough": true,
+  "imagegen_calls": 4,
+  "no_artifact_retries": 0,
+  "successful_generator_prompt_sha256": {
+    "01": "47db52edf97ab403c7b52e19f90c995970109074dc09f7d12864766e709bdfe9",
+    "02": "e3ec22482e3d688a65a68721fb62722639384404c52dd3375c90e677e659531d",
+    "03": "ccd0c8909e65103b53f903b8e6fcf27e5e42110fdd09a05e1f255e259678914b",
+    "04": "a55e70e75754724e794d2177d3d0755e5ead799a5b872322bd7cc1da65b23eb9"
+  },
+  "output_sha256": {
+    "01": "fb35a01abe76a9c08232cdf3afce44cfd4e243d5be852caf817c96661d67c25f",
+    "02": "62a52db098f04987defe9d7e336c196fe5ccabd145caf0dfb01c4e5c2c8d3036",
+    "03": "41a9aec3edb58bdd8dd8864c291ece5d2c27153e379d02d96d6bfb93938ddf08",
+    "04": "007b91a11a9c0f493b1d29a9650ec584d6a7eeaaecda43ab14d1b9c6391e6a09"
+  }
+}

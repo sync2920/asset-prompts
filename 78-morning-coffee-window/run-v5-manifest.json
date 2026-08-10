@@ -1,0 +1,23 @@
+{
+  "revision": "v5-moderate-ease-two",
+  "authorization_message_id": "1536514726798958656",
+  "project_thread_id": "1536495807707086908",
+  "person_reference": "/home/natrial/_work/X/asset-prompts/main/_profile/01.png",
+  "prompt": "/home/natrial/_work/X/asset-prompts/78-morning-coffee-window/prompt-v5-moderate-ease-two.md",
+  "prompt_sha256": "027cad85380a0b92bce4f6e325329b0b13a0bed47760d90611332a9628ff0c63",
+  "person_reference_sha256": "9aef0f8cddd57648ea193859ede01ccf98a016832362d92f26d39f34e1331ccb",
+  "image_count": 2,
+  "output_slots": ["generated-v5/01.png", "generated-v5/02.png"],
+  "passthrough": true,
+  "codex_exec_count": 1,
+  "image_generation_calls": 2,
+  "quality_driven_retries": 0,
+  "output_sha256": {
+    "01": "2a214ea02b228799d9aef07c274c43ba6a46f050941da7b1ac21c62a75f71232",
+    "02": "77d204ea3c2a9fe6e9fb90b04d0e4926605166a2d09f99633bdc9d670cce564f"
+  },
+  "visual_qa": {
+    "01": "identity scene action coverage pass; moderate-ease instruction not followed; reference upper-torso projection fail",
+    "02": "identity scene action coverage pass; straight oversized body panel persists; reference upper-torso projection fail"
+  }
+}

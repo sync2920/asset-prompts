@@ -1,0 +1,67 @@
+Create variation 1 of 4: follow the full prompt below exactly, with a quiet near-frontal three-quarter living-room morning moment. Keep the person reference as the mandatory sole identity source.
+
+Create one single-frame, highly detailed, strongly photorealistic contemporary Japanese lifestyle-fashion editorial photograph in a 3:4 vertical composition. Show exactly one clearly adult woman. No collage, duplicate person, text, border, watermark, or logo.
+
+## Sole person reference
+
+Use the first and only attached image as the mandatory person reference. Use the clearly adult woman shown there as the same person in the output. The reference is authoritative only for identity, apparent age, face, hair, skin, body shape, and proportions. Do not copy its clothing, accessories, pose, food, drink, restaurant, seaside setting, or lighting.
+
+A highly detailed photorealistic portrait of the person from the reference image.
+3:4 aspect ratio. Infer apparent age from the reference image and preserve it.
+Match the reference image exactly for gender presentation, ancestry, body shape and
+lines, height impression, proportions, overall build, skin tone and texture, facial
+features, hair, and all physical characteristics including chest and hip shape and
+fullness. Reproduce the natural volume and silhouette of the bust and hips as seen
+in the reference, kept accurate through the fit and drape of the clothing. Preserve
+the subject's identity and physique faithfully without age-shifting, beautifying,
+exaggerating, or reshaping. Never add or hardcode features that are not present in
+the reference image — no invented hair colors, accessories, uniforms, or props.
+
+Identity and facial geometry outrank shirt styling, backlight, room, coffee, or atmosphere. Keep her face large enough to judge and unmistakably the same person. Use a near-frontal three-quarter face with both eyes visible, no hard shadow across the face, and no hand, hair, cup, or flare covering facial landmarks. Preserve the reference's natural skin hue, warmth, undertone, and saturation; do not tan, grey, cool, muddy, or desaturate it.
+
+## Decisive living-room moment
+
+At about 08:40 on a warm August morning in Japan, she stands barefoot beside a low neutral sofa in a compact contemporary Japanese living room. A large window is directly behind and slightly to one side of her. The sheer curtain is open enough for the low morning sun to pour around her body and through the room.
+
+Catch the quiet second after she has stood up and turned toward the warmth: her weight settles on the leg nearer the sofa, the other knee stays soft, and both hands rest loosely behind her hips as if she is making a small downward morning stretch. Her shoulders are relaxed, one slightly lower than the other. The hands do not pull, lift, or gather the shirt. Her upper torso is angled gently away from the window while her face turns back toward the room and camera, producing a calm near-frontal three-quarter face. She lowers her gaze just below the lens, lips resting in the beginning of a private morning smile. She is enjoying the sunlight, not posing or performing.
+
+The image should feel like one close friend quietly noticed a beautiful ordinary instant in the living room: warm rim light around her hair, softened fabric glowing at its edges, a calm adult face held by gentle interior bounce, and the broad natural silhouette only faintly readable through the sunlit cloth.
+
+## Outfit — oversized T-shirt only
+
+Dress her in one unbranded, extra-oversized long T-shirt in soft warm ivory. It is a true big-T silhouette: broad dropped shoulders, generous low armholes, elbow-length sleeves, a wide relaxed torso, a clean medium crew neck, and one continuous straight hem reaching securely to mid-thigh. The hem is long enough to fully cover the pelvis, seat, and uppermost thighs from the camera in this standing pose, even with natural fabric movement. There are no side slits, curved high-low cuts, distressing, graphics, logos, pockets, ties, or tucked sections.
+
+The material is fine-gauge premium cotton-modal jersey with a smooth cotton face, soft washed drape, and modest light transmittance. In ordinary room light it reads clearly as a warm-ivory T-shirt, not transparent clothing. Only where the low sun passes directly through the backlit panel does the microscopic knit scatter and partially transmit light, allowing the reference person's broad natural torso and waist-to-hip transition to appear as a soft low-contrast silhouette. The cloth remains the visual surface: show jersey grain, small gravity folds, doubled sleeve and hem bands, and soft shadows between fabric and body. Do not reveal precise skin detail or intimate anatomy through the textile. No visible nipples, intimate contours, or hard-edged body tracing. The effect is subtle enough that viewers first see a large T-shirt in golden morning light and only then notice the gentle body line inside it.
+
+Below the shirt there is no separate visible lower garment. The long T-shirt itself is the complete visible outfit and provides full physical coverage. Show bare lower thighs beginning only below the secure mid-thigh hem. Do not show shorts, trousers, skirt, leggings, underwear bands, garment edges beneath the shirt, crotch, buttocks, or any wardrobe malfunction. Keep the hem hanging naturally under gravity and never riding upward.
+
+No shoes, socks, jewelry, bag, hat, hair accessory, or invented styling items.
+
+## Living room and coffee continuity
+
+Use a believable compact contemporary Japanese living room, not a bedroom, hotel, café, beach house, studio cyclorama, or vast Western loft. Include one low oatmeal-beige sofa beside her, warm off-white plaster walls, pale-oak floor, the edge of one low round pale-oak coffee table, and one large window with a warm-white sheer curtain. Keep the room calm, tidy, and lightly lived-in rather than staged.
+
+Place exactly one small off-white ceramic cup of dark coffee on the coffee table, softly out of focus and well below her hands. It is a quiet link to the morning-coffee concept, not the main subject. No second cup, saucer, spoon, kettle, coffee pot, food, pastries, flowers, books, phone, laptop, television screen, alcohol, decorative tray, readable text, or branding.
+
+## Backlit composition and light
+
+Create a 3:4 vertical portrait from the top of her head to just above the knees. Use a level camera at lower-chest height and a natural 65 mm full-frame perspective, far enough away to prevent wide-angle enlargement of the chest, abdomen, hips, or thighs. Her face sits near the upper third. The full T-shirt outline, complete mid-thigh hem, and enough bare thigh below it to make the one-garment styling clear must all remain visible. The sofa occupies only a narrow side area and the coffee table only a small lower corner; neither becomes a large foreground mass.
+
+Let the low August morning sun enter from behind and slightly to her window side. It creates a clean pale-gold halo around hair strands and shoulders, luminous doubled bands at sleeve cuffs and hem, and a restrained glow through the central jersey panel. The backlight is strongest around the outside edge and through fabric that hangs away from the body. Use broad neutral-warm bounce from the opposite living-room wall to expose her face accurately without defeating the backlit atmosphere. Keep both eyes, nose, lips, jaw, and skin hue readable. Allow one soft, low-contrast lens flare near the window edge only; it must not cross her face or torso. Avoid a black silhouette, blown white window, strong orange cast, hard bands across the face, dramatic stage lighting, or sunset darkness.
+
+Use approximately 65 mm, f/3.5, 1/320 s, ISO 400, with highlights protected. Keep her eyes, face, front neckline, sleeve edges, complete hem, and nearest jersey texture sharp; let the far sofa and curtain soften naturally. Render real skin pores and fine texture, identity-consistent hair strands, cotton-modal jersey grain, doubled rib bands, natural fabric-to-body distance, pale wood grain, woven curtain fibers, ceramic glaze, and restrained sensor grain. Professional Japanese youth-fashion editorial realism with an intimate morning lifestyle candid mood; no beauty filter, plastic skin, excessive smoothing, HDR halo, CGI finish, illustration, or anime rendering.
+
+## Priority check
+
+Before finalizing, satisfy these in order:
+1. unmistakable same clearly adult identity, face, skin hue, hair, natural build, and reference proportions;
+2. one oversized warm-ivory big T-shirt with dropped shoulders, elbow-length sleeves, crew neck, and a continuous mid-thigh hem;
+3. the hem fully covers the pelvis, seat, and uppermost thighs while no separate lower garment is visible;
+4. backlight produces only a faint broad body silhouette through the jersey, with the textile still reading as fabric and no precise intimate detail;
+5. calm near-frontal three-quarter face remains readable through neutral interior bounce;
+6. compact Japanese living room, sofa, pale-oak floor, sheer curtain, and low morning sun from behind;
+7. exactly one small coffee cup on the table and no extra props.
+
+Avoid malformed or extra hands and fingers, lifted hem, shirt pulled tight by the hands, fabric clinging like wet cloth, completely transparent shirt, opaque heavy sweatshirt, visible lower garment, visible underwear edge, exposed intimate area, hard-edged anatomy through fabric, strict profile, rear view, face in black silhouette, face covered by flare, altered body proportions, bent wide-angle room, oversized foreground sofa or table, duplicated cup, readable text, logos, watermark, border, or UI elements.
+
+Format: one single-frame 3:4 vertical, strongly photorealistic living-room morning editorial photograph of exactly one clearly adult woman.
