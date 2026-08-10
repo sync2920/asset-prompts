@@ -1,0 +1,87 @@
+# Morning Prompt — Putting On Sneakers and Looking Back at the Door
+
+Generate one highly detailed photorealistic Japanese fashion-editorial photograph. Do not create a collage, comparison sheet, duplicate person, alternate outfit, or text in the image.
+
+## Reference-image role
+
+1. The first attached image is the mandatory person reference and the only source for identity, face, hair, skin, apparent age, body type, body lines, and proportions.
+
+## Mandatory person preservation
+
+Use the clearly adult person from the first reference as the only subject. Infer apparent age from that image and preserve it.
+
+Match the first reference exactly for gender presentation, ancestry, body shape and lines, height impression, proportions, overall build, skin tone and texture, facial features, hair, and all physical characteristics including natural chest and hip shape and fullness. Preserve identity and physique faithfully without age-shifting, beautifying, exaggerating, slimming, padding, compressing, lowering, minimizing, or reshaping. Never inherit the body shape of either garment reference.
+
+Preserve the exact natural skin hue, warmth, undertone, saturation, and living color visible in the first person reference across the face, neck, shoulders, arms, chest, and waist. Do not recolor, tan, brown, grey, muddy, cool, or desaturate the person. The outer tulle itself visually covers approximately 75% of the skin-facing area in dense smoke-black textile, leaving only approximately 25% subdued translucency. Through the textile, skin appears only as a faint warm undertone and soft shadow, never as a clearly exposed surface. Balanced side-front illumination preserves a hint of healthy warmth without making pores, ribs, the navel, or exact torso contours readable through the black layer.
+
+The clothing must preserve the exact visible bust silhouette envelope from the first person reference, not merely the subject's general body type. Match the reference's frontal outer-bust width, apex-to-apex spacing, forward projection from the ribcage, upper and side fullness near the armholes, lower-bust curve, and bust-to-waist ratio. Do not infer a smaller chest from the square neckline, black color, opaque fabric, or layered styling. Through the finished clothing, the chest must remain recognizably the same natural size, depth, width, position, and rounded three-dimensional volume as in the first reference.
+
+Correct the current tendency to render the bust smaller: restore the first reference's full forward rounded projection, outward side-bust fullness beside the armholes, and uninterrupted lower-bust curve before the torso narrows. Recent outfit results have appeared roughly 10–15% too shallow in visible projection and about 5% too narrow at the sides. Restore only that missing reference volume. Match the first reference exactly; never enlarge beyond it, never add pushed-up cleavage, and never compensate with padding.
+
+The opaque inner is not a flat rectangular front panel. Its front pattern includes extra three-dimensional fabric length and width over the bust, subtle curved side-bust shaping, and tiny hidden ease at the side seams so the jersey wraps around the reference volume without pulling it inward. The neckline lies softly and does not form a taut horizontal compression line. The armholes sit outside the natural side-bust contour and never cut into or erase side fullness. From a three-quarter view, the front surface visibly projects forward from the ribcage, rounds over the fullest point, returns naturally beneath the bust, and only then narrows toward the waist.
+
+Use low-tension soft jersey with minimal recovery force. The tank only covers and follows the body; it does not support by compression, bind, minimize, lift, push together, separate unnaturally, pad, enlarge, lower, or create invented cleavage. The outer tulle follows the same full contour with gentle natural tension lines, forms a small soft shadow fold immediately beneath the bust, then falls toward the waist without flattening the inner or projecting as a rigid tent.
+
+## Selected inner layer — Variant 1 direction with Variant 3 length
+
+- A completely opaque soft matte black standalone daywear tank in fine compact cotton-modal jersey with only 2–4% elastane and low recovery force; no compression fabric.
+- Broad flat shoulder straps, approximately 4 cm wide, positioned outside the reference person's natural outer-bust contour rather than cutting inward.
+- A structured square-scoop neckline: a calm horizontal line across the upper chest joined to short vertical sides by softly rounded corners. It sits below the collarbones, remains distinguishable beneath the high-neck outer tulle, and provides full secure coverage without pulling taut across the chest.
+- Softly body-following and explicitly non-compressive. The front is three-dimensionally patterned with enough added length, width, curved side-bust shaping, and hidden ease to contain the first reference's exact natural bust projection and side fullness without flattening. No sports-bra construction and no minimizing panel.
+- Tonal black-on-black layering: where daylight reaches the jersey, the inner reads approximately half a tone lighter than the dense outer tulle, so its neckline, straps, torso plane, and hem remain distinct.
+- The inner is deliberately short but is not a bralette or underwear. It has a clean straight folded-and-stitched hem at the narrowest point of the natural waist, approximately 6–8 cm above the top edge of the low pale denim waistband.
+- The hem is a thin textile edge, not a thick elastic band. No ribbed underband, logo band, piping, drawstring, twist, knot, cutout, corset seam, lingerie hardware, or continuation below the hem. The inner simply ends at this horizontal line and is not tucked into the jeans.
+
+## Layer order at the waist
+
+Read the underlying horizontal boundaries clearly from top to bottom:
+
+1. the clean straight lower edge of the opaque black inner tank at the narrow natural waist;
+2. a narrow 6–8 cm waist zone between the tank hem and the denim waistband, covered by the still-continuous dense smoke-black tulle shell, with only a faint warm hint of skin visible beneath;
+3. the straight top edge of the low pale washed-blue denim waistband at the hip crest.
+
+These are three separate underlying boundaries beneath one continuous outer textile. The second zone is not a cutout, not a missing section, not transparent PVC, and not an extension of the inner. Dense plain smoke-black tulle remains physically continuous across the entire waist zone. The waist is recognized mainly from the garment silhouette and the tank/denim boundaries; skin beneath is only a muted warm shadow. Do not reveal the navel, skin texture, abdominal lines, or exact waist contour through this zone.
+
+The hip-length outer sheer shell spans across all three underlying boundaries without interruption. It continues 4–6 cm below the denim waistband and lies lightly over the upper hip, making its own final soft hem visible against the pale denim. Do not shorten the outer shell to the tank length. Do not merge the tank hem, tulle hem, and denim waistband into one line.
+
+## Outer sheer shell — plain patternless dense black tulle, only slightly sheer
+
+- A sleeveless straight hip-length outer top made entirely from one continuous layer of plain fine-gauge dense smoke-black fashion tulle or soft stretch mesh. Its dominant reading is a black textile surface, not exposed skin. The black textile provides approximately 70–80% visual coverage, with only approximately 20–30% restrained translucency. It is intentionally patternless: no embroidered motif, lace motif, print, flocking, appliqué, cord, ribbon, jacquard figure, floral drawing, geometric decoration, or ornamental repeat.
+- Clean high round crew neckline with a very narrow matte woven binding; slightly extended shoulders that cover the shoulder points; straight body-skimming silhouette with no waist cinch.
+- The material is uniformly dense, soft, matte, and lightweight. At normal fashion-photography distance it reads first as a continuous black top. Only on close inspection does a restrained translucency become noticeable through tiny regular mesh openings. Never render it as a fully transparent stocking layer or as bare skin covered by a grey tint.
+- The mesh is fine enough to avoid fishnet, netting, hosiery, honeycomb, or visible diamond-pattern emphasis. It has no large holes, no decorative cells, and no variation that could be interpreted as a motif.
+- Over the opaque black tank, the outer layer remains visible through a slightly deeper black tone, subtle edge separation, delicate surface grain, soft folds, and controlled highlight reduction. The tank neckline, straps, torso plane, and short hem remain distinguishable beneath it without the outer layer disappearing.
+- Over the upper chest, side, short waist zone, and lower hem, the black textile remains the dominant visible surface. Skin appears only as a faint warm undertone behind smoke-black fabric. Do not show clear skin color blocks, pores, cleavage detail, ribs, navel, abdominal lines, or exact body contours through the material.
+- Show the black outer layer through its continuous dense textile body, fine filaments, narrow finished edge, tiny contact shadows, soft folds, and low-transmission light scattering. The covered region must not resemble exposed skin with a transparent black filter.
+- The tulle is matte, soft, dry, and textile-like, with no glossy coating. Side-front light catches only a few individual fibers and the folded hem; edge light reveals a soft charcoal fabric edge without opening a clear view of the skin.
+- The textile follows the first reference's full bust contour without compression, forms a small soft fold beneath the bust, falls vertically over the short inner hem, then floats lightly across the waist and upper hip. It creates broad shallow gravity folds and slight air gaps at the side and hem.
+- The plain outer tulle, opaque inner tank, muted warm shadow of the waist beneath the tulle, and pale denim remain physically and optically separate layers. The outer tulle never fuses with the tank and never appears printed, tattooed, painted, or digitally multiplied over the skin.
+
+## Bottom and styling
+
+- Pale washed-blue full-length wide-leg jeans made from soft lightweight approximately eight-ounce summer denim.
+- Low natural waist at the hip crest; clean flat front; curved side seams; relaxed around the subject's real hip; widening fluidly toward the hem.
+- Visible fine diagonal cotton twill, soft gravity folds at the hip and behind the knees, and an irregular pale wash. No rips, cargo pockets, logos, stiff raw-denim cylinder, exaggerated whiskering, elastic waist, or high rise.
+- Low-profile retro sneakers in silver-grey nylon and matte charcoal suede, with a slim off-white rubber sole, soft grey laces, and no visible logo. The same pair must be used in the midday continuation.
+- No bag, necklace, bracelet, watch, hat, blazer, gilet, belt, or object crossing the torso. One tiny silver ear cuff only.
+
+## Frame, action, expression, and light
+
+- Photorealistic contemporary Japanese fashion editorial, 3:4 vertical, capturing the first moment of the same-day outing.
+- A clean compact Japanese apartment genkan: pale oak raised floor, lower warm-grey stone tile, a plain closed umbrella in one corner, and an uncluttered cream wall. No decorative sign, text, logo, mirror reflection, or extra person.
+- She is seated sideways on the raised wooden threshold while putting on the second sneaker. One sneaker is already fully on. The other foot is halfway into the matching sneaker on the lower tiled floor; one hand holds the tongue and heel collar open while the other hand lightly braces on the wood beside her.
+- Her hips, knees, and working hand remain directed toward the shoe. Mid-action, she hears the camera-side person and turns only her head, neck, and upper shoulders back toward us. Do not rotate her whole body into a front-facing portrait. The image must clearly read as “putting on shoes, then glancing back,” not posing beside shoes.
+- She meets the lens over her shoulder with the small spontaneous expression of thinking, “You called me just as I was about to leave” — a soft quick smile, alert eyes, and no exaggerated surprise.
+- Keep both arms below the bust line and away from the center of the chest. Preserve the first reference's exact bust volume and rounded projection despite the seated twist and slight forward lean; do not flatten or hide it with the arm or outer tulle.
+- Compose from head through both shoes so the turned face, hand-to-shoe action, tank hem, tulle-covered waist zone, outer tulle hem, low denim waistband, wide-leg drape, and both matching sneakers are all readable. Leave a small amount of open doorway space in the direction of departure.
+- Natural 50 mm perspective with the camera just above the lower tiled floor and diagonally behind her shoe-facing side. Avoid a steep top-down view, wide-angle leg enlargement, or camera placement directly behind the body.
+- Clean diffuse 08:00 summer light enters from a side window and softly reflects from the open doorway onto her face. No strong backlight through the torso. The dense black tulle remains 70–80% visually covering and only 20–30% subtly translucent; uncovered and covered skin keep the first reference's warm-neutral hue without tan, grey, or muddy cast.
+- Realistic pores on uncovered skin, individual hair strands, fine textile fibers, seams, stitches, shoe materials, denim folds, soft contact shadows, and spatial depth.
+
+## Quality and exclusion checks
+
+One clearly adult person only. Preserve the first reference's identity, natural skin tone, natural bust, waist, hips, and overall proportions. Maintain full secure coverage by the opaque inner tank beneath the continuous plain sheer outer tulle.
+
+Hard acceptance constraints, checked in this order: First, the clothed bust silhouette equals the first person reference in outer width, forward rounded projection, side fullness, lower curve, and bust-to-waist ratio — neither reduced nor enlarged. Second, the entire outer top is one continuous plain uniform dense smoke-black tulle with no decorative pattern, embroidery, motif, appliqué, flocking, cord, or visible ornamental grid. Third, the black textile visually covers approximately 70–80% of every skin-facing area, leaving only approximately 20–30% subdued translucency. At normal viewing distance the garment reads as a black textile top first; the slight sheerness is noticed only afterward. Fourth, the upper chest and waist show only a muted warm undertone behind the black surface. Pores, the navel, ribs, abdominal lines, cleavage detail, and exact torso contours are not clearly readable. If it resembles a fully transparent stocking, bare skin under a grey filter, or a completely opaque solid fabric with no hint of warmth, the image is wrong.
+
+Avoid: front-facing seated portrait with shoes merely placed nearby; looking down without looking back; whole-body rotation toward camera; kneeling; standing still; crossed arms; hand or knee hiding the tank hem; shoe held in midair; mismatched shoes; missing second shoe; malformed shoe; extra fingers; malformed hands; nearly invisible tulle; 70–100% transparency; high-transmission mesh; fully transparent stocking layer; bare skin under a grey or black filter; clear skin-color blocks; clearly readable pores, navel, ribs, abdominal lines, cleavage detail, or exact torso contours through the outer layer; completely opaque solid fabric with zero translucency; any decorative lace pattern; embroidered lace; floral motif; botanical motif; geometric motif; jacquard figure; appliqué; flocking; corded embroidery; ornamental repeat; visible diamond pattern; spiderweb; cobweb; random radiating threads; branching veins; cracked-glass pattern; neural-network pattern; sparse net; fishing net; fishnet; coarse mesh; chain-link pattern; large holes; flat rectangular tank front; taut chest panel; inward-cut armholes; minimizing sports tank; long or tucked inner tank; inner continuing below its stated hem; bralette; bra band; lingerie; bandeau; thin spaghetti straps; exposed side; deep cleavage; compression top; flattened chest; padded or enlarged chest; high-rise jeans hiding the waist zone; lace cutout at the waist; missing tulle over the waist; outer lace ending at the inner hem; outer lace ending above the denim; fused tank and lace; black layers collapsing into one shapeless mass; rubber; silicone; neoprene; latex; PVC; laser-cut sheet; molded or extruded openwork; plastic lattice; metal grid; rigid cage; harness; bondage styling; body paint; lace tattoo; glossy rounded cords; thick piping; rope; macramé; heavy crochet; chunky guipure; perfectly identical holes; perfect mirror symmetry; continuous specular highlights; stiff board-like drape; melted mesh; moiré; added accessories; malformed hands; duplicate limbs; duplicate person; text; watermark; collage.
