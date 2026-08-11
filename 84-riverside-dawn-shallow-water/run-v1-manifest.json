@@ -1,0 +1,53 @@
+{
+  "authorization": {
+    "source_message_id": "1536858473084624987",
+    "matched_intent": "explicit_codex_generation",
+    "requested_images": 1
+  },
+  "provider": "codex-built-in-image_generation",
+  "mode": "generate",
+  "codex_cli_version": "0.147.0",
+  "codex_agent_model": "gpt-5.5",
+  "image_generation_model": "unknown / not exposed",
+  "codex_session_id": "019ff2e2-0c82-7870-b757-4c2f0a9045e2",
+  "prompt_path": "/home/natrial/_work/X/asset-prompts/84-riverside-dawn-shallow-water/prompt.md",
+  "prompt_sha256": "7cd53db122aeeed56ae93a4104bf4b817f115cc5a6e1160f3beb64ab2e191369",
+  "references": [
+    {
+      "order": 1,
+      "role": "sole person identity and physique reference",
+      "path": "/home/natrial/_work/X/asset-prompts/main/_profile/01.png",
+      "sha256": "9aef0f8cddd57648ea193859ede01ccf98a016832362d92f26d39f34e1331ccb"
+    }
+  ],
+  "outputs": [
+    {
+      "slot": 1,
+      "codex_result_source": "/home/natrial/.codex/generated_images/019ff2e2-0c82-7870-b757-4c2f0a9045e2/call_UYZAM9oVErZxYvje7ZPXYCEQ.png",
+      "saved_path": "/home/natrial/_work/X/asset-prompts/84-riverside-dawn-shallow-water/generated/01.png",
+      "format": "PNG",
+      "dimensions": [941, 1672],
+      "sha256": "35d9888ca9b2fd8fe407087a470ad925470c25a7d7fca2f9ce5f3c0e797739e3"
+    }
+  ],
+  "delivery": {
+    "discord_prompt_message_id": "1536859663679627336",
+    "google_chat_thread": "spaces/AAQA_tGGPuw/threads/ofE33TM7M98"
+  },
+  "content_verification": {
+    "pass": [
+      "Clearly adult subject and safe fully covered styling",
+      "Reference identity, face, hair, skin tone, and general physique are strongly retained",
+      "9:16 full-body riverside composition with dawn light, mist, water reflection, and one planted foot",
+      "Cobalt asymmetric sleeveless top and ivory sheer outer skirt over an opaque coverage layer are present",
+      "No obvious extra limbs, malformed hands, duplicated feet, or impossible body proportions"
+    ],
+    "deviations": [
+      "The right leg rises higher than specified and reads closer to a playful high kick; the moving toes are above rather than still touching the surface",
+      "The splash is larger and more vertical than the requested low fan-shaped sheet",
+      "The outer skirt reads as a flowing A-line sheer layer rather than a clearly rounded bubble silhouette",
+      "The damp two-to-three-centimeter hem boundary is not clearly visible"
+    ],
+    "passthrough": "The first successful output was retained unchanged; no quality-based regeneration or replacement was performed."
+  }
+}

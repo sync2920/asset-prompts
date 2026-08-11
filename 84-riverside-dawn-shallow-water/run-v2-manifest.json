@@ -1,0 +1,68 @@
+{
+  "authorization": {
+    "source_message_id": "1536863198462877828",
+    "source_text": "生成してみて",
+    "matched_intent": "explicit_codex_generation",
+    "requested_images": 1
+  },
+  "provider": "codex-built-in-image_generation",
+  "mode": "generate",
+  "codex_cli_version": "0.147.0",
+  "codex_agent_model": "gpt-5.5",
+  "image_generation_model": "unknown / not exposed",
+  "codex_session_id": "019ff2f0-6c43-7450-8a09-47416372f303",
+  "codex_session_log": "/home/natrial/.codex/sessions/2026/08/12/rollout-2026-08-12T07-27-50-019ff2f0-6c43-7450-8a09-47416372f303.jsonl",
+  "prompt_path": "/home/natrial/_work/X/asset-prompts/84-riverside-dawn-shallow-water/prompt.md",
+  "prompt_sha256": "1c765ae6048e2f97ea1e795089b24c98e86d57421a0499734a530516c4f5eb44",
+  "references": [
+    {
+      "order": 1,
+      "role": "sole adult person identity and physique reference",
+      "path": "/home/natrial/_work/X/asset-prompts/main/_profile/01.png",
+      "sha256": "9aef0f8cddd57648ea193859ede01ccf98a016832362d92f26d39f34e1331ccb"
+    }
+  ],
+  "outputs": [
+    {
+      "slot": 2,
+      "codex_result_source": "/home/natrial/.codex/generated_images/019ff2f0-6c43-7450-8a09-47416372f303/call_2s1sn0cKRul7oyiIriyfoIOz.png",
+      "saved_path": "/home/natrial/_work/X/asset-prompts/84-riverside-dawn-shallow-water/generated/02.png",
+      "format": "PNG",
+      "dimensions": [941, 1672],
+      "mode": "RGB",
+      "bytes": 2581429,
+      "sha256": "e0a8e2baddd4cd7268703f53290ba2aaf171741f6f71f0f387943c184d3a7e36",
+      "source_and_saved_sha256_match": true
+    }
+  ],
+  "delivery": {
+    "discord_prompt_summary_message_id": "1536863582103543919",
+    "google_chat_thread": "spaces/AAQA_tGGPuw/threads/QsT0yt6cTyQ",
+    "google_chat_summary_message_id": "spaces/AAQA_tGGPuw/messages/QsT0yt6cTyQ.QsT0yt6cTyQ",
+    "google_chat_prompt_message_id": "spaces/AAQA_tGGPuw/messages/QsT0yt6cTyQ.iCglMil7yBU"
+  },
+  "execution_notes": {
+    "generation_calls": 1,
+    "successful_output_retained_unchanged": true,
+    "quality_based_regeneration": false,
+    "pre_generation_cli_parse_failure": "An initial Codex invocation exited before a session or image-generation call because --image consumed the following positional prompt; command syntax was corrected and no image slot was consumed."
+  },
+  "content_verification": {
+    "pass": [
+      "Clearly adult subject with safe, fully covered styling",
+      "Reference identity, face, hair, skin tone, and general physique are strongly retained",
+      "Cobalt short-sleeve baby T-shirt and narrow ivory lace edges at neckline and waist are visible",
+      "Ivory above-knee translucent balloon skirt has a clearly opaque coverage layer",
+      "Sunrise river, mist, bridge, pebbled shallow water, and 9:16 full-body framing are present",
+      "Hands, fingers, legs, feet, and overall anatomy show no obvious duplication or major malformation"
+    ],
+    "deviations": [
+      "The moving foot is lifted clearly above the surface rather than keeping its toes in contact with the water",
+      "The splash is larger and more vertical than the requested low fan-shaped sheet",
+      "The crossed-leg pose makes the exact left-planted/right-moving role less immediately legible",
+      "The lace at the lower T-shirt edge reads partly like a decorative waistband rather than unmistakably as the camisole hem",
+      "The wet two-to-three-centimeter organza hem boundary is not clearly distinguishable"
+    ],
+    "passthrough": "The first successful output was retained unchanged; no quality-based regeneration or replacement was performed."
+  }
+}
