@@ -1,0 +1,35 @@
+{
+  "authorization": {
+    "source_message_id": "1537218551036670064",
+    "source_text": "生成してください。",
+    "matched_intent": "explicit_codex_generation",
+    "context_resolution": "Consumes the immediately preceding requested revision: no wooden bookshelf, rougher roomwear, slightly more natural cleavage, short lounge shorts."
+  },
+  "provider": "codex-built-in-image_generation",
+  "codex_cli_version": "codex-cli 0.147.0",
+  "codex_agent_model": "gpt-5.5",
+  "image_generation_model": "unknown / not exposed",
+  "prompt_path": "/home/natrial/_work/X/asset-prompts/90-home-tea-pancake-prompt-comparison/prompts/agy-round3.md",
+  "prompt_sha256": "283f25076f15261d5a331e4c8feaa5295c097a4e4eeef59eda2aa3faf7165e84",
+  "reference_order": [
+    {
+      "order": 1,
+      "path": "/home/natrial/_work/X/asset-prompts/main/_profile/01.png",
+      "role": "mandatory person and identity reference",
+      "sha256": "9aef0f8cddd57648ea193859ede01ccf98a016832362d92f26d39f34e1331ccb"
+    }
+  ],
+  "requested_images": 1,
+  "generation_calls_planned": 1,
+  "saved_path": "/home/natrial/_work/X/asset-prompts/90-home-tea-pancake-prompt-comparison/generated/agy-round3.png",
+  "status": "failed",
+  "generation_calls": 1,
+  "codex_session_id": "019ff7fa-6688-7933-94a5-9fcac2bef436",
+  "error_code": "moderation_blocked",
+  "moderation_stage": "output",
+  "category": "sexual",
+  "request_id": "1d2265ae-da37-4238-b4d2-930f93122545",
+  "unfilled": true,
+  "retry_performed": false,
+  "fallback_performed": false
+}

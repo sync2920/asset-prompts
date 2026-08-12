@@ -1,0 +1,10 @@
+{
+  "status": "success",
+  "mode": "ideas",
+  "model": "gemini-3.6-flash-high",
+  "effort": "high",
+  "guidance_hits": 0,
+  "output": "/home/natrial/_work/X/asset-prompts/90-home-tea-pancake-prompt-comparison/agy-revision-round3.json",
+  "duration_seconds": 25.76,
+  "model_usage": {}
+}

@@ -1,0 +1,101 @@
+{
+  "authorization": {
+    "source_message_id": "1537215756238852156",
+    "source_text": "agyに指摘を送って修正した後、再生成できますか？ブロックされたものもサイド試してみて",
+    "matched_intent": "explicit_codex_generation"
+  },
+  "instruction": "Revise agy from QA and retry both revised conditions.",
+  "provider": "codex-built-in-image_generation",
+  "codex_cli_version": "codex-cli 0.147.0",
+  "codex_agent_model": "gpt-5.5",
+  "image_generation_model": "unknown / not exposed",
+  "reference_order": [
+    {
+      "order": 1,
+      "path": "/home/natrial/_work/X/asset-prompts/main/_profile/01.png",
+      "role": "mandatory person and identity reference",
+      "sha256": "9aef0f8cddd57648ea193859ede01ccf98a016832362d92f26d39f34e1331ccb"
+    }
+  ],
+  "agy_revision": {
+    "model": "gemini-3.6-flash-high",
+    "effort": "high",
+    "critique_attempts": 2,
+    "critique_attempts_status": "degraded: no structured output",
+    "ideas_fallback_status": "success",
+    "raw_output": "/home/natrial/_work/X/asset-prompts/90-home-tea-pancake-prompt-comparison/agy-revision-round2.json",
+    "applied_feedback": [
+      "make steam clearly visible against dark background",
+      "fix left fork and right knife half-cut geometry",
+      "preserve face width, cheek volume, rounded jaw and head scale"
+    ]
+  },
+  "conditions": [
+    {
+      "label": "hermes-round2",
+      "prompt_path": "/home/natrial/_work/X/asset-prompts/90-home-tea-pancake-prompt-comparison/prompts/hermes-round2.md",
+      "prompt_sha256": "95eefe52de3f2aa4a960c4ccc360888d358adf2daef1d11afaab0d2181e93517",
+      "generation_calls_planned": 1,
+      "saved_path": "/home/natrial/_work/X/asset-prompts/90-home-tea-pancake-prompt-comparison/generated/hermes-round2.png",
+      "status": "success",
+      "generation_calls": 1,
+      "retry_performed": false,
+      "fallback_performed": false,
+      "codex_session_id": "019ff7f3-a525-7f40-b378-f5fc7a8f90e4",
+      "codex_result_source": "/home/natrial/.codex/generated_images/019ff7f3-a525-7f40-b378-f5fc7a8f90e4/call_b9JmC1tsKkc4MgNRADgqq6X4.png",
+      "format": "PNG",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "bytes": 2247368,
+      "sha256": "92aa05c60d36c3a706d512e69033972bae144ad91fd1c9f1cf704cbb2e5586fe",
+      "qa": {
+        "identity": "pass with minor narrower/longer impression; jaw remains rounded rather than sharply pointed",
+        "adult": "pass",
+        "aspect_ratio": "pass 4:3 landscape",
+        "home_scene": "pass: compact lived-in room, sofa and shelf readable",
+        "food": "pass: three hotcakes, browned surface, syrup and melting vanilla ice cream readable",
+        "steam": "strong pass: pale curling steam clearly separated from dark background",
+        "action": "pass: subject-left fork steadies stack and subject-right knife cuts front edge; bite is in-progress, though a small front piece appears nearly separated",
+        "outfit": "partial: dusty-rose knit and brown lounge trousers match, but neckline is substantially deeper and cleavage more visible than requested; still fully clothed with no underwear or wardrobe accident",
+        "anatomy": "pass: hands, fingers, fork and knife coherent",
+        "story_readability": "pass: person, food, tea and room all read immediately"
+      }
+    },
+    {
+      "label": "agy-round2",
+      "prompt_path": "/home/natrial/_work/X/asset-prompts/90-home-tea-pancake-prompt-comparison/prompts/agy-round2.md",
+      "prompt_sha256": "26b1f8935a30b5487b3e810a1020ca5b1e67b381e726c3e2a6d5e5d055d92b87",
+      "generation_calls_planned": 1,
+      "saved_path": "/home/natrial/_work/X/asset-prompts/90-home-tea-pancake-prompt-comparison/generated/agy-round2.png",
+      "status": "success",
+      "generation_calls": 1,
+      "retry_performed": false,
+      "fallback_performed": false,
+      "codex_session_id": "019ff7f3-a579-7060-b873-55db91e4a18f",
+      "codex_result_source": "/home/natrial/.codex/generated_images/019ff7f3-a579-7060-b873-55db91e4a18f/call_2yroU5V8Tn9GlCNs6gPBwt0z.png",
+      "format": "PNG",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "bytes": 2191752,
+      "sha256": "2118d8b103e6d36d9fa73cf63f2a4971c16182f3593d0ac06b9456f99c12ab78",
+      "qa": {
+        "identity": "pass with minor remaining facial length/taper impression; chin is not sharply pointed",
+        "adult": "pass",
+        "aspect_ratio": "pass 4:3 landscape",
+        "home_scene": "pass: window, sofa throw and dark bookshelf clearly establish private room",
+        "food": "pass: three hotcakes, browned surface, syrup and melting vanilla ice cream readable",
+        "steam": "strong pass: thin irregular steam is clearly visible against dark shelf",
+        "action": "strong pass: subject-left fork fixes the right side of the stack while subject-right knife cuts the front center; half-cut causal geometry is clear",
+        "outfit": "pass: soft off-white knit loungewear, secure moderate scoop neckline, tasteful partial upper cleavage, no wardrobe accident",
+        "anatomy": "pass: both hands and utensils are plausible; no prominent defects",
+        "story_readability": "strong pass: face, cutting action, food, steaming tea and room form a clear sequence"
+      }
+    }
+  ],
+  "comparison_status": "complete: both revised conditions succeeded with one generation call each.",
+  "comparison_summary": "Both revisions fixed steam and cutting action. agy-round2 follows the requested safe neckline and action geometry more closely; Hermes-round2 has a deeper neckline than requested despite otherwise strong compliance."
+}

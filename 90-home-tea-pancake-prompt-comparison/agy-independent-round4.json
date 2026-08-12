@@ -1,0 +1,82 @@
+{
+  "gaps": [
+    "画像生成AI（Flux.1 / SDXL / Midjourney v6等）における「紅茶の湯気（backlit steam）」と「暗い背景（charcoal wall）」の分離精度・プロンプト強度の実機生成テスト未実施。",
+    "「洗いざらしの綿スラブ地（washed cotton slub）」と「胸元の自然なドレープ」を指定した際、AIが自動的にツルツルしたグラビア調シルクや揃いのニットに補正してしまう確率の検証。",
+    "「フォーク固定＋ナイフで手前を半ば切る」という複雑な両手・器具接触アクションに関する手元崩れ（多指・器具溶着）の発生頻度と、ネガティブプロンプト／Inpainting補正の必要性。"
+  ],
+  "items": [
+    {
+      "candidate_id": "candidate_1",
+      "deepening_idea": "ナイフの刃先がふんわりした黄色いパンケーキ断面に沈み込んだ瞬間の質感を強調するため、プロンプトの[ACTION & FOOD]ブロック内で「fluffy yellow interior texture revealed by the knife cut」の記述をライティング指定とともに補強する。",
+      "english_prompt": "A 4:3 landscape natural lifestyle photograph of an adult Japanese female in her early 20s during a relaxed weekend morning in her room.\n\n[CHARACTER CONSISTENCY REFERENCE: Adult Japanese female, early 20s, identical face and body structure to Person 1 reference images. Characterized by a slightly wider face structure with full, soft cheeks, a rounded soft chin, natural almond-shaped dark brown eyes, and smooth natural features. Authentic, realistic adult female physique with soft shoulders and natural curves, strictly preserving exact facial proportions, cheek volume, chin shape, and body silhouette without stylized AI smoothing or alteration.]\n\n[OUTFIT & STYLING: Washed off-white cotton slub Henley tank top with a relaxed, unbuttoned two-button placket and a casual scoop neckline resting across the collarbones, showing a soft, natural partial cleavage. Layered under an unbuttoned, slubby washed light-grey lounge cardigan casually draped over the shoulders. Paired with heather charcoal upper-thigh length lounge shorts resting comfortably on upper thighs. Washed fabric texture with realistic cloth tension, stable seams, and natural home loungewear drape, explicitly non-commercial and non-ad matching knit.]\n\n[ACTION & FOOD DETAIL: Seated comfortably at a low natural wood table. Her left hand holds a stainless steel fork firmly anchoring a thick stack of fluffy golden-brown pancakes. Her right hand holds a knife, halfway through cutting a clean slice into the front edge of the top pancake. A single scoop of rich vanilla ice cream sits atop the stack, actively melting and glistening as white cream cascades down the golden surface. Beside the plate, a ceramic teacup of hot black tea emits clear, crisp, wispy steam rising directly in front of the dark background.]\n\n[ENVIRONMENT & BACKGROUND: 4:3 landscape composition. Background features plain charcoal gray floor cushions and a minimal shadowed plaster wall. Strictly NO wooden bookshelves, NO books, and no ambient clutter.]\n\n[PHOTOGRAPHY & LIGHTING: Authentic non-gravure candid lifestyle photography. Soft natural side window illumination creating rich highlights on the melting ice cream and illuminating the backlit tea steam against dark charcoal shadows. 35mm lens, f/2.8, natural skin texture, subtle micro-shadows, photorealistic detail. --ar 4:3]",
+      "freshness_clichet_check": "広告的な「完璧に揃ったニットセット＆カメラ目線の微笑み」というAI生成の典型（既視感）を完全に排除。洗いざらしヘンリータンク×カーデのリアルな日常感と、食事の動的な手元動作に絞り込んだ生活写真。",
+      "human_action": "左手フォークでパンケーキを固定し、右手ナイフで手前縁を半分まで切り進めている途中の手元集中アクション。少し首を傾げてナイフの入れ具合を見つめるナチュラルな視線。",
+      "is_recommended": true,
+      "likely_weakness": "手元とパンケーキのカット面に焦点が集まるため、人物の目線や表情の主張は控えめ（生活写真としての自然さ優先）になる。",
+      "posting_context": "休日の朝、「いただきます」直前の静寂と小さな贅沢感を投稿。過度なアピール感を消したリアルな個人アカウントの休日風景として機能。",
+      "title": "【最推奨】 candidate_1: 「手元の切断アクションと立体湯気・バニラ融解の標準決定版」",
+      "visual_hook": "暗いチャコール背景の前に白く立体的に立ち上る紅茶の湯気と、焼き色のついたパンケーキから滴り落ちるバニラアイスのシズル感。"
+    },
+    {
+      "candidate_id": "candidate_2",
+      "deepening_idea": "ローテーブル天板からのバウンス光（反射光）をプロンプトに指定し、手元や胸元に柔らかいフィルライトを当てて暗部の質感を出す。",
+      "english_prompt": "",
+      "freshness_clichet_check": "フラットな全灯照明の明るいカフェ調背景を否定し、 chiaroscuro（明暗対比）を活かしたシネマティックな暗背景演出。",
+      "human_action": "ナイフで前縁を切りながら、手首をわずかに外側に傾けてパンケーキの断面とバニラアイスの溶け具合が見えるように調整する仕草。",
+      "is_recommended": false,
+      "likely_weakness": "光のコントラストが強すぎると、影側の部屋着のテクスチャや髪のディテールが潰れるリスクがある。",
+      "posting_context": "「湯気が冷めないうちに」という時間経過と現場の温もりを強調するタイムリーな休日投稿。",
+      "title": "candidate_2: 「サイド逆光による湯気のシルエット強調アングル」",
+      "visual_hook": "横からの自然光が紅茶のカップ縁と立ち上る湯気の粒子をくっきり浮かび上がらせる明暗対比。"
+    },
+    {
+      "candidate_id": "candidate_3",
+      "deepening_idea": "チャコールクッションの生地の沈み込みと膝の曲げによるラウンジショーツのシワ表現を精密化し、座り姿勢のリアルな解剖学的ディテールを補強。",
+      "english_prompt": "",
+      "freshness_clichet_check": "グラビア的な体型露出ではなく、「クッションへの体重の沈み」「洗いざらし生地のリアルなヨレ」という物理的な居心地の良さに注目させる。",
+      "human_action": "あぐらまたは体育座りに近いリラックスした座り姿勢で、ローテーブルの低い位置で丁寧にナイフとフォークを構える。",
+      "is_recommended": false,
+      "likely_weakness": "引きの画角になるため、紅茶の湯気のディテールがサムネイルサイズでやや小さく映る。",
+      "posting_context": "「外に出たくない休日の自室スローライフ」を共感テーマにした投稿。",
+      "title": "candidate_3: 「ローテーブルでのくつろぎ座り姿勢と上腿ショーツの質感引き構図」",
+      "visual_hook": "無地チャコールクッションに深く沈み込む身体と、上腿丈ショーツの自然なリラックス感。"
+    },
+    {
+      "candidate_id": "candidate_4",
+      "deepening_idea": "画面上部に顎ラインと丸い顎の輪郭を意図的に切り取って配置し、人物の存在感を残しながら料理の迫力を出す構図。",
+      "english_prompt": "",
+      "freshness_clichet_check": "綺麗な完成品フード写真ではなく、ナイフを入れた瞬間の「崩れて溶ける美しさ」をとらえたリアリティ。",
+      "human_action": "右手ナイフを手前に引きつつ、溶けたバニラアイスがナイフの背に触れそうになるギリギリのカット動作。",
+      "is_recommended": false,
+      "likely_weakness": "料理への寄りが強くなるため、人物の顔立ち（頬の量感や顔幅）の認識領域が小さくなる。",
+      "posting_context": "「休日の甘党ブランチ」として視覚的な食欲（シズル）を最大化するストレートなフード寄り投稿。",
+      "title": "candidate_4: 「溶け落ちるバニラアイスと焼き色断面のシズルクローズアップ」",
+      "visual_hook": "バニラビーンズの質感がわかるアイスの滴りと、パンケーキの黄色いふんわりした断面。"
+    },
+    {
+      "candidate_id": "candidate_5",
+      "deepening_idea": "ヘンリーネックの2つボタンが外れたリアルな開き具合と、肩から少し滑り落ちたカーディガンの重ね着構造を明確指定。",
+      "english_prompt": "",
+      "freshness_clichet_check": "AIにありがちな「あからさまな胸元強調」や「ツルツルのグラビア衣装」ではなく、洗いざらしコットンの素朴なドレープによる自然な立体感。",
+      "human_action": "ナイフをパンケーキに入れる際に肩から腕に少し力が入り、ヘンリータンクの首元が自然に落ち込む瞬間。",
+      "is_recommended": false,
+      "likely_weakness": "AIモデルが「部屋着」を認識できず、勝手に綺麗すぎる服に変形させるプロンプト感度のブレ。",
+      "posting_context": "「飾らない休日の素顔」を見せる親近感重視のライフスタイル投稿。",
+      "title": "candidate_5: 「洗いざらしヘンリータンクのナチュラルドレープとレイヤード」",
+      "visual_hook": "スラブコットンのザラついた生地感と、自然な着崩れから生まれるナチュラルな谷間感。"
+    },
+    {
+      "candidate_id": "candidate_6",
+      "deepening_idea": "キーライトを紅茶の湯気とバニラアイスの白だけにピンポイントで当て、背景の壁影を深く落とすスポット演出。",
+      "english_prompt": "",
+      "freshness_clichet_check": "明るい北欧風インテリアや本棚背景の定番AI画像を完全に否定し、ダークな無地トーンで静寂感を演出。",
+      "human_action": "ナイフを切る指先に集中しつつ、ふと息を整えるような静かな静止動作。",
+      "is_recommended": false,
+      "likely_weakness": "全体がダークトーンのため、明るいXのタイムラインで視認性が低くなる可能性がある。",
+      "posting_context": "賑やかなTLの中で一瞬目を引く「静かな空気感」を持ったシネマティック投稿。",
+      "title": "candidate_6: 「影の無地壁背景と暗部ディープフォーカス」",
+      "visual_hook": "木目や本棚を徹底排除した暗い影壁の質感と、浮き立つ料理・人物の質感の静謐な美しさ。"
+    }
+  ],
+  "summary": "@akinonnon_kan向け「おうち紅茶とバニラホットケーキ」のagy独立完成英語プロンプトおよびアイディエーション案。Hermes統合版からの独立した視点として、AI画像生成の典型的な既視感 trope（広告的ニットセット、明るすぎる北欧カフェ風背景、木製本棚、過度なグラビア演出）を徹底排除し、「洗いざらしの素朴な部屋着」「無地チャコール背景に映える紅茶の湯気」「切断途中のリアルな手元アクション」を中心とした自然な生活写真として再設計しました。\n\n---\n\n### 【Sourced Observation / 観測・制約事実】\n1. **人物保持条件**: 第1人物参照の成人女性。顔幅・頬の量感・丸い顎・体型を忠実に維持（人物保持正典ブロックを完全形で1回組み込み）。\n2. **画面・背景仕様**: 4:3横長、自室の休日。木の本棚や本は一切禁止。無地のチャコールクッションまたは影の無地壁。\n3. **衣装仕様**: 洗いざらしでラフな部屋着（揃いの広告的ニットセット不可）。胸元は自然な部分的谷間を前版よりやや多く見せるが衣服構造は安定（同義反復を避け、層順・素材・襟・丈・接触で定義）。ボトムは上腿丈ラウンジショーツ。\n4. **アクション・被写体仕様**: 左手フォーク固定、右手ナイフで手前縁を半分まで切る途中。溶け始めたバニラアイス、焼き色、暗背景前の明瞭な紅茶の湯気。グラビアでなく自然な生活写真。\n\n---\n\n### 【Inference / 推論・分析（ブラインドスポットチェック）】\n- **AI生成の trope 回避**: AIモデルは「部屋着」と指定すると「清潔でお揃いのモコモコニットセット」や「ツルツルのグラビア衣装」を自動選択しがちである。これを防ぐため、`washed off-white cotton slub Henley tank top`（洗いざらしの綿スラブ地ヘンリータンク）および`unbuttoned two-button placket`と素材・構造を具体的に指定した。\n- **胸元・安全性の表現手法**: 「Safe, modest, clean」などの同義反復・打消し表現はかえって生成AIのバイアスを刺激し服の形状を崩すリスクがある。本設計では「鎖骨にかかるヘンリーネック」「2つボタンが開いた自然なドレープ」という肯定的な構造定義（Positive Definition）のみで表現。\n- **湯気の視認性**: 明るい背景では紅茶の湯気（steam）が消失しやすい。チャコールクッション／影壁という暗い背景とサイド光（backlit）を指定することで、湯気をくっきり分離させる物理的整合性を確保。\n\n---\n\n### 【最推奨 Candidate Prompt（コピー用完成英語プロンプト）】\n※ `candidate_1` に組み込まれている完結したプロンプトです。\n\n```text\nA 4:3 landscape natural lifestyle photograph of an adult Japanese female in her early 20s during a relaxed weekend morning in her room.\n\n[CHARACTER CONSISTENCY REFERENCE: Adult Japanese female, early 20s, identical face and body structure to Person 1 reference images. Characterized by a slightly wider face structure with full, soft cheeks, a rounded soft chin, natural almond-shaped dark brown eyes, and smooth natural features. Authentic, realistic adult female physique with soft shoulders and natural curves, strictly preserving exact facial proportions, cheek volume, chin shape, and body silhouette without stylized AI smoothing or alteration.]\n\n[OUTFIT & STYLING: Washed off-white cotton slub Henley tank top with a relaxed, unbuttoned two-button placket and a casual scoop neckline resting across the collarbones, showing a soft, natural partial cleavage. Layered under an unbuttoned, slubby washed light-grey lounge cardigan casually draped over the shoulders. Paired with heather charcoal upper-thigh length lounge shorts resting comfortably on upper thighs. Washed fabric texture with realistic cloth tension, stable seams, and natural home loungewear drape, explicitly non-commercial and non-ad matching knit.]\n\n[ACTION & FOOD DETAIL: Seated comfortably at a low natural wood table. Her left hand holds a stainless steel fork firmly anchoring a thick stack of fluffy golden-brown pancakes. Her right hand holds a knife, halfway through cutting a clean slice into the front edge of the top pancake. A single scoop of rich vanilla ice cream sits atop the stack, actively melting and glistening as white cream cascades down the golden surface. Beside the plate, a ceramic teacup of hot black tea emits clear, crisp, wispy steam rising directly in front of the dark background.]\n\n[ENVIRONMENT & BACKGROUND: 4:3 landscape composition. Background features plain charcoal gray floor cushions and a minimal shadowed plaster wall. Strictly NO wooden bookshelves, NO books, and no ambient clutter.]\n\n[PHOTOGRAPHY & LIGHTING: Authentic non-gravure candid lifestyle photography. Soft natural side window illumination creating rich highlights on the melting ice cream and illuminating the backlit tea steam against dark charcoal shadows. 35mm lens, f/2.8, natural skin texture, subtle micro-shadows, photorealistic detail. --ar 4:3]\n```"
+}

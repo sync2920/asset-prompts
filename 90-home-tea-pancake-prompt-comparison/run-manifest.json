@@ -1,0 +1,73 @@
+{
+  "authorization": {
+    "source_message_id": "1537212069173137560",
+    "source_text": "今まで通りプロンプトを作って生成と、1つ試して欲しいのが、agyでもプロンプトを作って生成して\nそれで比較したい",
+    "matched_intent": "explicit_codex_generation"
+  },
+  "comparison_contract": "One Codex built-in image_generation call per prompt; first successful output fixed; no quality-based replacement.",
+  "requested_images": 2,
+  "provider": "codex-built-in-image_generation",
+  "codex_cli_version": "codex-cli 0.147.0",
+  "codex_agent_model": "gpt-5.5",
+  "image_generation_model": "unknown / not exposed",
+  "reference_order": [
+    {
+      "order": 1,
+      "path": "/home/natrial/_work/X/asset-prompts/main/_profile/01.png",
+      "role": "mandatory person and identity reference",
+      "sha256": "9aef0f8cddd57648ea193859ede01ccf98a016832362d92f26d39f34e1331ccb"
+    }
+  ],
+  "conditions": [
+    {
+      "label": "hermes",
+      "prompt_path": "/home/natrial/_work/X/asset-prompts/90-home-tea-pancake-prompt-comparison/prompts/hermes.md",
+      "prompt_sha256": "5bd723491224e8b076932838aa29fbd2e63fe1d338371e6156814eff1cfe79ac",
+      "generation_calls_planned": 1,
+      "saved_path": "/home/natrial/_work/X/asset-prompts/90-home-tea-pancake-prompt-comparison/generated/hermes.png",
+      "status": "failed",
+      "codex_session_id": "019ff7e9-8f57-7961-b18f-8d3bda8e57e2",
+      "generation_calls": 1,
+      "error_code": "moderation_blocked",
+      "moderation_stage": "output",
+      "category": "sexual",
+      "request_id": "f864cea5-0b56-4d00-a641-006ecea1d365",
+      "unfilled": true,
+      "retry_performed": false,
+      "fallback_performed": false
+    },
+    {
+      "label": "agy",
+      "prompt_path": "/home/natrial/_work/X/asset-prompts/90-home-tea-pancake-prompt-comparison/prompts/agy.md",
+      "prompt_sha256": "923e34ccd9f1d8ddf5ddef2fb0267097023ec8d23d9fdd224978aee13716ae34",
+      "generation_calls_planned": 1,
+      "saved_path": "/home/natrial/_work/X/asset-prompts/90-home-tea-pancake-prompt-comparison/generated/agy.png",
+      "status": "success",
+      "codex_session_id": "019ff7e9-907a-70b2-aa26-8b917c79b721",
+      "generation_calls": 1,
+      "codex_result_source": "/home/natrial/.codex/generated_images/019ff7e9-907a-70b2-aa26-8b917c79b721/call_FGpmzku2vkyFqOfFhVJVOxkR.png",
+      "format": "PNG",
+      "dimensions": [
+        1448,
+        1086
+      ],
+      "bytes": 2226483,
+      "sha256": "d8c7febf94e57385e89f8a88049e9371a0ffe7213577a2227b6343f1d861467e",
+      "retry_performed": false,
+      "fallback_performed": false,
+      "qa": {
+        "identity": "pass with minor narrower/longer face impression from angle",
+        "adult": "pass",
+        "aspect_ratio": "pass 4:3 landscape",
+        "home_scene": "pass",
+        "hotcakes_and_melting_vanilla_ice_cream": "pass",
+        "hot_tea": "pass but steam is weak/not clearly readable",
+        "candid_action": "partial: fork touches/scoops ice cream rather than clearly cutting one bite from the pancake",
+        "outfit": "pass: soft off-white knit layers, tasteful partial cleavage, no wardrobe malfunction",
+        "anatomy": "pass; visible hand and fork plausible",
+        "story_readability": "pass: person, food, and lived-in room all legible"
+      }
+    }
+  ],
+  "comparison_status": "incomplete: Hermes condition blocked at output moderation; agy condition succeeded. No retry or fallback by contract."
+}

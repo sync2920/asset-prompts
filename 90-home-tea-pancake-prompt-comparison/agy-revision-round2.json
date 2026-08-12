@@ -1,0 +1,84 @@
+{
+  "gaps": [
+    "AI画像生成モデル（FLUX.1 / Midjourney v6 / SDXL等）における「両手で異なる器具（右手ナイフ・左手フォーク）を保持・操作する表現」の生成安定度と最適ネガティブ/ControlNet構成の検証",
+    "暗め背景パッチ（ダークウッド家具等）を用いた「繊細で不規則な湯気」描画時のプロンプト加重（weighting）と解像度設定のベストプラクティス",
+    "@akinonnon_kan アカウントにおける「静止ポーズ」対「手元アクティブ動的カット（中途切断）」のX上におけるインプレッション・エンゲージメント比較データ"
+  ],
+  "items": [
+    {
+      "candidate_id": "candidate_1",
+      "freshness": "定番の「料理の横で完璧な盛り付けを前にして微笑む静止グラビア構図」を脱却。手元の物理的アプローチ（フォークでの固定、ナイフの中途切断）と、背景の明暗比による湯気の視認性向上により、現実の時間の流れと生活感を同時に演出。",
+      "human_action": "左手のフォークをホットケーキのスタック上面に垂直気味に軽く突き立てて固定し、右手のテーブルナイフで手前の縁から中心に向かって半分まで切っている最中の動作。視線は手元のカット位置からカメラ方向へ自然に向けられる。",
+      "likely_weakness": "AIモデルによっては「ナイフとフォークを持ち替えてしまう」「手元や指の描画が崩れる」リスクがあるため、ControlNetや手元Inpainting等のマルチパス処理が推奨される。",
+      "one_way_to_deepen_it": "ナイフの刃先に少しだけ溶けたバニラアイスとシロップが付着している細部描写を追加し、断面から立ち上る微量な熱気を補強する。",
+      "posting_context": "「休日の遅い朝ごはん。アイスが溶ける前にいただきます☕️🥞」などの親しみやすく季節を問わない生活感投稿。",
+      "prompt_spec": {
+        "completed_english_prompt": "A photorealistic 4:3 landscape medium shot of a young woman in her cozy bedroom on a relaxing weekend morning. She wears soft off-white knit loungewear with a clean, elegant, and modest neckline framing her collarbone naturally. She sits at a rustic wooden table with a plate of fluffy golden hotcakes topped with a melting scoop of vanilla ice cream and rich maple syrup drizzle. Action detail: Her left hand holds a dessert fork vertically, pressing gently into the top of the hotcake stack to hold it steady. Her right hand grips a polished silver table knife mid-cut, slicing through the front edge of the hotcake stack up to halfway through, revealing the fluffy interior. Beverage detail: On the side of the table, a hot porcelain tea cup is placed directly in front of a dark mahogany wood backdrop patch, making thin, delicate, irregular wisps of white steam sharply defined and vivid against the dark background. [Must-Keep Person Block: Strictly maintain the exact face-to-body proportions from the reference image, preserving natural cheek volume, cheek width, and soft rounded jawline. Strictly avoid chin sharpening, V-line distortion, or facial lengthening. Maintain identity consistency without hardcoding facial features.] Soft morning light coming from a nearby window, shallow depth of field, warm cozy color palette, photorealistic texture, cinematic lighting, 4k resolution --ar 4:3",
+        "must_keep_person_block": "[Must-Keep Person Block: Strictly maintain the exact face-to-body proportions from the reference image, preserving natural cheek volume, cheek width, and soft rounded jawline. Strictly avoid chin sharpening, V-line distortion, or facial lengthening. Maintain identity consistency without hardcoding facial features.]"
+      },
+      "title": "【完成修正案】切り込み途中×暗背景湯気のリアル休日ホットケーキティータイム",
+      "visual_hook": "ナイフが黄金色の生地へ半分沈み込むダイナミックな切断線、溶けかけるバニラアイスの立体感、ダークウッドの背景に鮮明に浮き上がる繊細で不規則な白い湯気。"
+    },
+    {
+      "candidate_id": "candidate_2",
+      "freshness": "フラットな順光撮影を避け、自然光の逆光/斜光を生かしたリムライティングで部屋着の毛羽立ちやアイスのエッジを際立たせる。",
+      "human_action": "ナイフとフォークをテーブルに軽く添えつつ、窓からの朝光を浴びながら紅茶のカップにそっと手を伸ばすリラックス動作。",
+      "likely_weakness": "逆光により顔が暗く落ち込むリスクがあるため、補光（fill light）の指定が必須。",
+      "one_way_to_deepen_it": "レースカーテン越しの柔らかな木漏れ日状の光影模様をテーブルクロスに投影させる。",
+      "posting_context": "「日差しが気持ちいい休日。紅茶とホットケーキでゆっくり過ごす午前中。」",
+      "title": "逆光が捉える溶けかけアイスと窓辺のティータイム",
+      "visual_hook": "窓からの光輪（リムライト）がオフホワイトのニットと湯気、アイスの透明感を美しく浮かび上がらせるシネマティック感。"
+    },
+    {
+      "candidate_id": "candidate_3",
+      "freshness": "第三者目線の客観撮影ではなく、向かい側に座っている人物の視点（POV）を取り入れた親密感の強調。",
+      "human_action": "皿の直前で手元を動かしつつ、ふとカメラ（対面者）を見上げて柔らかく微笑む。",
+      "likely_weakness": "手前の皿やカトラリーの広角歪みが大きくなりすぎる可能性。",
+      "one_way_to_deepen_it": "フォークの先に一口分切り分けたホットケーキを乗せ、こちらに向けた動作に拡張。",
+      "posting_context": "「『一口食べる？』みたいな休日。のんびりティータイム中。」",
+      "title": "テーブル越し目線×ローアングル近接POV構図",
+      "visual_hook": "手前に大きく映る溶けるバニラアイスとホットケーキの奥行き感、その奥にある柔らかい表情と上品な首元。"
+    },
+    {
+      "candidate_id": "candidate_4",
+      "freshness": "「食べる前」「食べた後」の静止状態ではなく、シロップを回しかける「仕上げのシズルアクション」にフォーカス。",
+      "human_action": "左手でピッチャーを持ち、アイスの上からシロップを流し込みつつ、右手でナイフを添える。",
+      "likely_weakness": "AIによる流体（シロップの流れる線）の描写が途切れやすかったり不自然な塊になりやすい。",
+      "one_way_to_deepen_it": "ピッチャーのガラス透過光とシロップの屈折ハイライトを細部プロンプトで強調。",
+      "posting_context": "「メープルシロップはたっぷり派。甘い香りに癒される休日です🥞✨」",
+      "title": "シロップ流し込みの瞬間×手元のシズル感",
+      "visual_hook": "光沢あるメープルシロップがバニラアイスの曲線を滑り落ちる流体ハイライト。"
+    },
+    {
+      "candidate_id": "candidate_5",
+      "freshness": "食事シーン単体にとどまらず、「読書」という休日カルチャーの文脈を組み込むことでキャラクターの知的・リラックスした日常感を醸成。",
+      "human_action": "開いた文庫本を片手で軽く押さえながら、もう片方の手で紅茶のカップを持つかナイフを添える。",
+      "likely_weakness": "小道具（本・カップ・お皿）が増えることで画面内が散漫になるリスク。",
+      "one_way_to_deepen_it": "本のページに微かな水滴跡や栞を配し、リアルな読書の残り香を演出。",
+      "posting_context": "「読書のお供にホットケーキ。休日は時間が経つのが早いな〜📖☕️」",
+      "title": "本を傍らに置いた読書×ホットケーキの午後",
+      "visual_hook": "使い込まれた木製テーブル、開かれた本のページ、斜め後方からの温かい西日。"
+    },
+    {
+      "candidate_id": "candidate_6",
+      "freshness": "典型的なSNS自撮り風グラビアから離れ、雑誌（FUDGEやKinfolk）のエディトリアル写真のような洗練されたライフスタイル感を提示。",
+      "human_action": "姿勢を正し、リネンナプキンが敷かれたテーブルで優雅にカトラリーを構える。",
+      "likely_weakness": "親近感（親しみやすさ）がやや減少し、やや硬い印象になる可能性。",
+      "one_way_to_deepen_it": "部屋着ニットの編み目模様やリネンのシワ感などテキスタイルの質感を極限まで緻密化。",
+      "posting_context": "「ちょっと丁寧な休日の過ごし方。お気に入りのお皿でティータイム。」",
+      "title": "斜め45度エディトリアル構図（ライフスタイル誌風）",
+      "visual_hook": "整えられたテーブルセッティング、アンティーク調カトラリー、均整の取れたカラーパレット。"
+    },
+    {
+      "candidate_id": "candidate_7",
+      "freshness": "無傷の完璧な料理ではなく、「一口食べ進めたリアルな途中経過」が持つリアリティとリラックス感。",
+      "human_action": "カトラリーを一度お皿の端に置き、一口食べた後のほっとした口元・表情を見せる。",
+      "likely_weakness": "食べかけの料理表現が不潔に見えないよう、美しいカット面としてコントロールする必要がある。",
+      "one_way_to_deepen_it": "断面にしみ込んだバニラアイスとシロップのグラデーションを描写。",
+      "posting_context": "「一口目で大満足。やっぱり休日のバニラアイス載せホットケーキは最高🥞🥰」",
+      "title": "一口食べた後の満足げな微小表情（Micro-expression）",
+      "visual_hook": "削れたホットケーキ断面のふんわりした質感と、キャラクターの飾らない素の満足顔。"
+    }
+  ],
+  "summary": "@akinonnon_kan 向け画像プロンプト修正版として、前回成功要素（人物・食品・部屋、オフホワイトの柔らかい部屋着、安全で上品な胸元、4:3横構図）を継承しつつ、ご要望の改善点（左手フォーク固定、右手ナイフによる前縁中途切断、暗め背景パッチによる明瞭な白い湯気、参照人物の顔立ち・頭身の完全保持ブロック）を盛り込んだ完成英語プロンプトを含む主提案案（Candidate 1）を作成しました。また、単一案のバリエーションにとどまらない独立した視点のアイデア（逆光、POV近接、シロップ動態、読書文脈、エディトリアル構図、食べ進め微小表情）計7本の候補を整理・提案しています。"
+}

@@ -1,0 +1,16 @@
+{
+  "source_message_id": "1537225182660272219",
+  "source_path": "/home/natrial/.hermes/cache/images/img_656fd1c6c538.png",
+  "adopted_path": "/home/natrial/_work/X/asset-prompts/90-home-tea-pancake-prompt-comparison/generated/adopted-agy-independent-round4.png",
+  "format": "PNG",
+  "dimensions": [
+    1448,
+    1086
+  ],
+  "mode": "RGB",
+  "bytes": 2276242,
+  "sha256": "e277034a3225f02b5286a9375fab7b035222f022b4e3d7cd81d2fb8a30a89f78",
+  "adopted_prompt": "/home/natrial/_work/X/asset-prompts/90-home-tea-pancake-prompt-comparison/prompts/agy-independent-round4.md",
+  "adopted_prompt_sha256": "1c3374cbe4c2f156d8e9c117298ca1138ca19766a3da322bbbe3d097ddd5d0ca",
+  "final_title": "おうち紅茶とバニラホットケーキ"
+}

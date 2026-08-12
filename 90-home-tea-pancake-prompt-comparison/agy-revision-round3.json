@@ -1,0 +1,71 @@
+{
+  "gaps": [
+    "AI画像生成モデル（Flux.1 / Midjourney v6等）における「湯気（steam）」と「チャコール色無地クッション/陰影壁」の明暗コントラストのモデル間再現差の検証",
+    "「洗いざらしで肩が少し落ちたヘンリーネック」指定時における胸元露出オーバー（誤認識による深すぎるVネック化）を防止するネガティブプロンプト・ネガティブ要素の厳密パラメータ調整",
+    "X（旧Twitter）タイムライン上での4:3アスペクト比サムネイル表示時における、ホットケーキ・湯気・胸元・短パンのトリミング崩れ防止レイアウト検証"
+  ],
+  "items": [
+    {
+      "candidate_id": 1,
+      "deepening_idea": "グラスやコースターに微小な水滴を加えることで、温かい紅茶と冷たいアイスの対比および「おうちの生活感」の実在感をさらに補強する。",
+      "english_prompt": "A realistic candid indoor medium shot of a young Japanese woman (akinonnon_kan) with natural facial features and width, sitting at a wooden dining table in her home. She is holding a silver fork in her left hand and a silver knife in her right hand, mid-motion cutting halfway into a thick stack of golden-brown pancakes. The pancakes are topped with a melting scoop of vanilla ice cream cascading down the sides and a small butter slab. Beside the plate is a porcelain teacup with hot black tea. Clearly visible, delicate, translucent steam rises vertically from both the pancakes and teacup. The background is a solid matte charcoal-grey plain cushion on a couch, casting deep background shadow to make the rising steam stand out sharply without any wooden or mahogany bookshelves. She wears washed, casual, slightly rumpled homewear: an oversized heather-grey slub-cotton henley top with unbuttoned neck, relaxed fit naturally slipping slightly off one collarbone from her movement, showing a subtle natural cleavage line with zero deep exposure, no visible underwear, no side-boob, no under-boob, paired with soft short lounge shorts. Soft natural window daylight, candid lifestyle photography, non-gravure pose, 4:3 horizontal aspect ratio --ar 4:3",
+      "freshness": "「整いすぎたモデル部屋」や「広告的なペアルック風ニット」を排除。洗いざらし感のある素材とチャコール色の無地背景により、AI生成物にありがちな過剰な装飾・マホガニー本棚の重厚感を消し、等身大のリアルな自室タイムライン文脈を作る。",
+      "human_action": "左手のフォークと右手のナイフで、重ねたホットケーキの中央を半分までスッと切る動作。目線は手元の溶け出すバニラアイスに向いている。",
+      "likely_weakness": "背景がシンプルな無地チャコールになるため、ライティングが単調だと画面全体が暗く見えやすい。",
+      "posting_context": "休日の遅め朝食・ブランチ投稿。「休日の遅め朝食。温かい焼き立てホットケーキとバニラアイスの組み合わせは最高…」",
+      "title": "休日遅朝の静寂（Weekend Late Morning Soft Sun）",
+      "visual_hook": "チャコール色の無地クッションを背景に、白い繊細な湯気がくっきりと立ち上る明暗対比。"
+    },
+    {
+      "candidate_id": 2,
+      "deepening_idea": "部屋の奥に小さな温白色デスクライトの絞った光をわずかに補い、雨の日の冷たい影壁と人物の肌の温かみの対比を際立たせる。",
+      "english_prompt": "A natural indoor 4:3 medium shot of a young Japanese woman (akinonnon_kan, realistic face proportions) at her dining table, slicing a fluffy pancake stack halfway through with a silver fork in her left hand and a knife in her right hand. The pancakes are topped with rich melting vanilla ice cream and butter, served next to a steaming cup of dark tea. Wisps of clear white steam drift upward, highly visible against a plain wall in cool ambient shadow. She wears rumpled, washed light-beige home loungewear with a wide relaxed collar naturally resting slightly askew, subtly revealing a modest natural cleavage with strictly safe framing, no underwear visible, paired with short lounge shorts. Soft overcast rainy-day daylight, intimate everyday mood, clean composition without any mahogany shelves, non-gravure posture, 4:3 horizontal orientation --ar 4:3",
+      "freshness": "あえて「雨の日の陰影壁」を背景に採用し、AI特有の過剰に明るい白飛び部屋や過度なライティングを回避。生活のしっとりとした情緒を醸し出す。",
+      "human_action": "ナイフとフォークを交互に動かし、バニラアイスが溶け落ちる直前に半分カットした断面を見せる動き。",
+      "posting_context": "雨の日の自宅ティータイム投稿。「外は雨。今日はおうちでホットケーキ焼いて温かい紅茶を飲む日。」",
+      "title": "雨の日の午後紅茶（Rainy Afternoon Soft Shadow）",
+      "visual_hook": "影になった無地壁の冷たいトーンと、紅茶・ホットケーキの温かいアンバー色のコントラスト。"
+    },
+    {
+      "candidate_id": 3,
+      "deepening_idea": "テーブルの端に読みかけの本をさりげなくボケ要素として配置し、「読書中の休憩」というストーリー性を深める。",
+      "english_prompt": "A photorealistic horizontal 4:3 medium view of a young Japanese female (akinonnon_kan) seated in her cozy room. In a clear eating action, her left hand holds a fork and her right hand holds a knife, cutting halfway into a hot pancake tower topped with soft melting vanilla ice cream. Translucent steam noticeably curls into the air. The background features a dark charcoal plain cushion that provides a high-contrast dark backdrop for the steam, with no wooden furniture or bookshelves. She wears a washed-out, slightly disheveled charcoal-cotton lounge shirt with an unbuttoned relaxed collar slumping gently on her shoulder, presenting a subtle cleavage line in a natural non-explicit way, zero bra exposure, short lounge shorts. Soft indoor ambient light, authentic lifestyle photography, natural face shape, non-gravure pose --ar 4:3",
+      "freshness": "マホガニー本棚という「作り込まれたインテリア trope」を完全除去。テーブルの小道具と素朴な無地クッションのみで、生活感のある読書休憩の1コマを表現。",
+      "human_action": "テーブルでナイフ（右手）とフォーク（左手）を使い、ホットケーキを切る手を止めてカメラへふと目線を送る瞬間。",
+      "posting_context": "読書や作業の合間のリフレッシュ投稿。「一冊読み終えてちょっとお茶時間。ホットケーキ溶ける前にいただきます。」",
+      "title": "読書休憩の甘味タイム（Post-Reading Tea Break）",
+      "visual_hook": "チャコールトップス×チャコールクッションのトーン・オン・トーンの中に浮き上がる、黄色いバターと溶ける白いアイス。"
+    },
+    {
+      "candidate_id": 4,
+      "deepening_idea": "トップスのヘンリーネックの胸元が開いた際にも生地の厚みと自然な落ち感を強調し、あざとさのない無防備さを表現。",
+      "english_prompt": "An authentic 4:3 medium photographic shot of a young Japanese woman (akinonnon_kan, natural face width) leaning slightly forward over a home dining table. Her left hand holds a silver fork into a pancake stack while her right hand uses a silver knife to cut halfway through it. The pancakes are crowned with a scoop of soft vanilla ice cream melting down, with clear thermal steam rising into the air. The background wall is in soft dark shadow, solid plain neutral grey, making steam sharply defined without any wooden bookshelf clutter. She wears relaxed washed slub cotton homewear, loose crew-henley collar unbuttoned and slightly pulled down by movement, showing a modest natural cleavage with completely safe coverage, no underwear, paired with short lounge shorts. Natural daylight, candid domestic portrait, 4:3 aspect ratio --ar 4:3",
+      "freshness": "「カメラに向かってポーズを取るグラビア感」を廃し、「食べる直前に少し身を乗り出す自然な身体動作」にフォーカス。あざとさを消した無防備な生活感。",
+      "human_action": "ホットケーキの焼き立ての匂いを嗅ぐように少し前かがみになりつつ、右手ナイフ・左手フォークで切る動作。",
+      "posting_context": "ひと仕事終えたご褒美投稿。「ひと仕事終えたので贅沢バニラ乗せホットケーキ。甘い匂いが広がる…」",
+      "title": "作業あがりのご褒美スイーツ（Post-Work Evening Treat）",
+      "visual_hook": "前かがみ動作によって生じるトップスの自然な着崩れと、影壁背景に白く立つクッキリとした湯気。"
+    },
+    {
+      "candidate_id": 5,
+      "deepening_idea": "クッションの側面にだけ木漏れ日の斑影を落とし、湯気の立つ背面中央は暗い無地カゲのまま維持して視認性を担保する。",
+      "english_prompt": "A cozy lifestyle 4:3 photograph of a young Japanese female (akinonnon_kan, authentic face scale) at a home wooden table, cutting a stack of pancakes halfway using a fork in her left hand and a knife in her right. Melting vanilla cream drips over the warm hotcakes, accompanied by a steaming teacup. Clear, distinct steam trails float upward, illuminated against a background of a deep charcoal plain sofa cushion with subtle ambient shadow. No mahogany or bookshelf elements. She is dressed in washed, loose-fit relaxed homewear in pale heather grey, collar resting casually off-center, displaying a hint of natural cleavage tastefully and safely with no underwear exposure, short lounge shorts. Warm natural side-lighting, candid atmosphere, non-gravure, 4:3 horizontal aspect ratio --ar 4:3",
+      "freshness": "スタジオ撮影的なパーフェクトな光ではなく、窓からの自然な木漏れ日影が無地クッションに落ちるリアルな部屋の空間演出。",
+      "human_action": "左手でフォークを支え、右手のナイフでサクッとホットケーキを半分までカットしながら、ふんわり微笑む表情。",
+      "posting_context": "晴れた日のブランチ投稿。「お天気いいからお部屋でゆっくり紅茶淹れた。溶ける前にいただきます！」",
+      "title": "木漏れ日リビングのブランチ（Dappled Sunlight Brunch）",
+      "visual_hook": "暗いチャコール背景に浮かび上がる、溶けるバニラアイスのツヤと揺らぐ湯気のレイヤー。"
+    },
+    {
+      "candidate_id": 6,
+      "deepening_idea": "テーブルの配置をカメラ目線に対してやや斜め4:3に振り、短パンの裾が過剰にめくれない自然な座り姿を維持。",
+      "english_prompt": "A candid, relaxed 4:3 ratio image of a young Japanese woman (akinonnon_kan) indoors enjoying tea and pancakes. She uses a silver fork (left hand) and silver knife (right hand) to cut through the middle of a warm pancake stack topped with a big melting scoop of vanilla ice cream. Visible translucent steam ascends smoothly. The background is a shaded plain neutral wall in quiet shadow, completely omitting wooden books or shelves to ensure high contrast for the steam. She wears soft, washed casual homewear top with a relaxed neck, slightly slouched from lounging, showing a modest natural cleavage with zero underwear or risk of exposure, paired with casual short lounge shorts. Soft indoor daylight, grounded everyday atmosphere, horizontal 4:3 framing --ar 4:3",
+      "freshness": "夏場の室内（エアコンの効いた部屋で食べる熱々スイーツ）という季節文脈。短パンの選択がストーリー（涼しい部屋着）として必然性を持つ。",
+      "human_action": "短パン姿でリラックスして椅子に腰掛け、両手でナイフとフォークを使いホットケーキをカットする一連の日常動作。",
+      "posting_context": "夏の室内ティータイム投稿。「エアコン効かせたお部屋で食べる、熱々ホットケーキとひんやりバニラアイス。」",
+      "title": "涼しい部屋での熱々ティータイム（Chilled AC Room Comfort）",
+      "visual_hook": "短パン＋ラフな部屋着の涼し気な装いと、熱々のホットケーキから上る温かい湯気の対比。"
+    }
+  ],
+  "summary": "@akinonnon_kan向け「おうち紅茶とバニラホットケーキ」の完成英語画像プロンプト候補6選を提案します。前回agy修正版からの変更要件（マホガニー本棚の完全除去、チャコール色無地クッション/影無地壁による湯気視認性の最大化、洗いざらしで着崩れたホームウェア、短パン化、自然な胸元見せと事故防止の両立、4:3横、左右手ナイフフォーク動作の維持）を厳密に遵守し、AIグラビア trope や過剰な広告感を排除した独立した文脈・構図案を構築しました。"
+}
