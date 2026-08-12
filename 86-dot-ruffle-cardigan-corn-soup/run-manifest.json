@@ -1,0 +1,57 @@
+{
+  "authorization": {
+    "source_message_id": "1536939646662213722",
+    "source_text": "黒地の白ドット・ラッフルキャミワンピ＋白アイレットニットカーディガン\n冷製コーンスープをこの服装版のも作って",
+    "matched_intent": "explicit_codex_generation",
+    "requested_images": 1
+  },
+  "provider": "codex-built-in-image_generation",
+  "mode": "generate",
+  "codex_agent_model": "gpt-5.5",
+  "image_generation_model": "unknown / not exposed",
+  "prompt_path": "/home/natrial/_work/X/asset-prompts/86-dot-ruffle-cardigan-corn-soup/prompt.md",
+  "prompt_sha256": "14220b7883d61f132d82ba152b043de5d0387d8cfce470a3c6ac8bc80591e9d7",
+  "references": [
+    {
+      "order": 1,
+      "role": "sole adult person identity and physique reference",
+      "path": "/home/natrial/_work/X/asset-prompts/main/_profile/01.png",
+      "sha256": "9aef0f8cddd57648ea193859ede01ccf98a016832362d92f26d39f34e1331ccb"
+    }
+  ],
+  "outputs": [
+    {
+      "slot": 1,
+      "codex_session_id": "019ff405-37c1-7922-933c-69769ced042c",
+      "codex_result_source": "/home/natrial/.codex/generated_images/019ff405-37c1-7922-933c-69769ced042c/call_30TZQuE94oGEnO1oUjDrjlSH.png",
+      "saved_path": "/home/natrial/_work/X/asset-prompts/86-dot-ruffle-cardigan-corn-soup/generated/01.png",
+      "format": "PNG",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "bytes": 2258937,
+      "sha256": "8d59979d9a2000beb425a7c8b8e82fc57f1e5f3642f21ccf96347e6b1067f1ac",
+      "source_and_saved_sha256_match": true
+    }
+  ],
+  "execution_notes": {
+    "generation_calls": 1,
+    "successful_output_retained_unchanged": true,
+    "quality_based_regeneration": false,
+    "failed_slots": []
+  },
+  "final_selection": {
+    "source_message_id": "1536956628618973224",
+    "source_cache_path": "/home/natrial/.hermes/cache/images/img_29bf608b1627.png",
+    "saved_path": "/home/natrial/_work/X/asset-prompts/86-dot-ruffle-cardigan-corn-soup/generated/final-selected.png",
+    "sha256": "6b36e7c3c41f15b6e76609169d63622c753c5a0fc77a7b1b6968c79cf842b267",
+    "dimensions": [
+      1086,
+      1448
+    ],
+    "selected_by_user": true,
+    "canonical_remote": "personal-drive:X/asset-prompts/86-dot-ruffle-cardigan-corn-soup/generated/final-selected.png",
+    "drive_verified": true
+  }
+}
