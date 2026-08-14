@@ -1,0 +1,40 @@
+{
+  "authorization_source": "standing user preference established by message 1537589843079463045; this generation fulfills the immediately preceding revision",
+  "forum_thread_id": "1537568460798955610",
+  "provider": "codex-built-in-image-generation",
+  "codex_model": "gpt-5.6-sol",
+  "codex_session_id": "019ffd42-dc88-7fa2-9fe5-8d35f1dba71f",
+  "prompt_author": "agy",
+  "agy_model": "gemini-3.7-flash-high",
+  "agy_effort": "high",
+  "agy_conversation_id": "a7370642-5d4a-40d9-a716-3957d05f1489",
+  "prompt_path": "/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/prompt-v2-feminine-mild-reaction.md",
+  "prompt_sha256": "070289081363ef0e4c8c98a7e06c9e00411fce914cfcfbaf5d883397d7c8fce5",
+  "reference_order": [
+    "/home/natrial/_work/X/asset-prompts/main/_profile/01.png"
+  ],
+  "reference_role": "identity and physique only",
+  "requested_slots": 2,
+  "outputs": [
+    {
+      "slot": 1,
+      "status": "success_first_output",
+      "path": "/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated-v2/01.png",
+      "format": "PNG",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "fa4b658a16eb0a30ece79506f111d925a7dabc8063b0fe3125fbae182c470cf3",
+      "qa": "PASS — 成人・顔髪体型の同一人物らしさは良好。片足をマットへ置き、後ろ足を床につけたまま踵を浮かせる動作が自然で、表情も「少し痛い」程度。細リブトップとブルーショーツで女子感と上品な色気が出ている。全身・両足・手指に明白な破綻なし。アングルは低すぎず非覗き込みで安全。"
+    },
+    {
+      "slot": 2,
+      "status": "success_first_output",
+      "path": "/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated-v2/02.png",
+      "format": "PNG",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "1d2091e24ccf322cbc5ab59f499a4c5c83705e794acd70ba746fa963d6e08549",
+      "qa": "PASS — 成人・顔髪体型の同一人物らしさは良好。表情は小さな痛笑いで抑制され、足つぼへの踏み込みも明瞭。フェミニンなトップとショーツ、自然な胸元、全身微ロー構図が成立。手足指に明白な破綻なし。01より足の反応は少し静かだが意図範囲内。"
+    }
+  ]
+}

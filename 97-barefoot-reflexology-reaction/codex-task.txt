@@ -1,0 +1,11 @@
+Use the final prompt at `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/prompt.md` and the sole identity/physique reference attached as the first image, whose canonical path is `/home/natrial/_work/X/asset-prompts/main/_profile/01.png`.
+
+Generate exactly four independent images with the built-in image generation tool, one image-generation call per slot. Each call must request exactly ONE continuous full-frame 3:4 vertical photograph—never a collage, grid, contact sheet, or multiple views. Use prompt.md verbatim as the design contract; do not reinterpret the scene. Keep the attached reference role strictly identity and physique only.
+
+Save the first successful artifact from each call unchanged and in order as:
+- `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated/01.png`
+- `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated/02.png`
+- `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated/03.png`
+- `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated/04.png`
+
+Do not replace a successful slot for aesthetic reasons. Retry only if a call produces no artifact for a non-safety technical reason. If any call is blocked by moderation or refusal, stop immediately without modifying the prompt or retrying, preserve the exact error/request ID, and leave remaining slots unrun. Do not use any API, browser, external provider, or image reference besides the attached first image. Do not edit prompt.md. At the end report the Codex session ID, every image-generation call status, and only the paths that actually exist.

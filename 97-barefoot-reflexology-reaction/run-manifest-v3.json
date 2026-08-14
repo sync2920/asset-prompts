@@ -1,0 +1,36 @@
+{
+  "provider": "codex-built-in-image-generation",
+  "codex_model": "gpt-5.6-sol",
+  "codex_session_id": "019ffd4f-4e8c-7ef3-a97e-a62b78b3e4bd",
+  "prompt_author": "agy",
+  "agy_model": "gemini-3.7-flash-high",
+  "agy_effort": "high",
+  "agy_conversation_id": "1b8d95c3-7761-46bd-b9c9-db22bb72633c",
+  "prompt_path": "/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/prompt-v3-distinctive-low-angle.md",
+  "prompt_sha256": "8640dfa44171e4455670095ac5a206ed2097cd3486d6c672a88f60beb4f211aa",
+  "reference_order": [
+    "/home/natrial/_work/X/asset-prompts/main/_profile/01.png"
+  ],
+  "requested_slots": 2,
+  "outputs": [
+    {
+      "slot": 1,
+      "status": "success_first_output",
+      "path": "/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated-v3/01.png",
+      "format": "PNG",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "c324e27039192d9ec864fa7d199c93b51ac3aecdb6a435dae871bce5b90142c2",
+      "qa": "PARTIAL PASS — 成人・髪型・顔の大枠と参照体型は良好。焦げテラコッタの一体型ホルタープレイスーツ、自然な上部谷間、素脚、ウエストから脚への縦ラインが成立し、前版より明確に低い非覗き込み全身構図。足つぼマットと軽い痛み表情は読める。手足指・衣装構造に明白な破綻なし。ただし踏み込み足の指の力みが弱く、後ろ足の踵上げも控えめで、足つぼアクションはやや静か。"
+    },
+    {
+      "slot": 2,
+      "status": "moderation_blocked",
+      "moderation_stage": "output",
+      "category": "sexual",
+      "request_id": "e6fe9e81-42b7-47fa-8adb-9e899da6da34",
+      "path": null,
+      "retried": false
+    }
+  ]
+}

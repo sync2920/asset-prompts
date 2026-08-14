@@ -1,0 +1,20 @@
+Generate exactly two independent vertical 3:4 photorealistic images from the final prompt at `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/prompt-v10-watering-plant-high-oblique.txt`.
+
+Use the single attached image only as the identity and base-physique reference for the same clearly adult woman. Do not use any previously generated image as a reference.
+
+This is a new materially revised scene, not the former reflexology scene. Each slot is one continuous full-frame photograph, never a grid, collage, diptych, contact sheet, or split panel. Use the final v10 prompt unchanged in both slots, allowing only natural photographic variation in the water stream, leaf position, hand relaxation, dawn light, and small closed-mouth smile.
+
+Critical requirements:
+- no reflexology mat, acupressure object, foot-pressure action, pain reaction, or weight-relief pose;
+- she is actively watering a waist-high indoor houseplant: one hand holds a small matte ceramic watering can tilted over the pot, a thin stream reaches the soil, and the other hand gently moves one broad leaf aside with clearly separated fingers;
+- camera lens 20–30 cm above the top of her head, 3.0–3.4 m away, angled downward 18–22 degrees in a diagonal three-quarter full-body composition; not steep overhead and no large-head/short-leg distortion;
+- direct eye contact, chin slightly raised, small warm closed-mouth smile;
+- preserve the reference hairstyle/base color while adding only a few sparse narrow black mesh-like lowlight strands;
+- bust appears one modest visual step fuller than the reference through natural bustier cup capacity; shoulders, waist, hips, limbs, height, and overall proportions stay unchanged;
+- warm-ivory structured outerwear bustier with broad straps and shallow sweetheart neckline, natural partial central cleavage with secure side/underside coverage;
+- washed matte-black high-rise relaxed straight ankle jeans;
+- complete head-to-toe framing in the summer-dawn apartment.
+
+Save successful outputs as PNG under `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated-v10/` using exact filenames `01.png` and `02.png`. Do not overwrite earlier directories.
+
+If any slot is blocked by safety/moderation or refused, do not rewrite, weaken, sanitize, retry, or switch provider. Retain the exact error/category/request ID, continue only with the untouched remaining slot if permitted, and report the failed slot.

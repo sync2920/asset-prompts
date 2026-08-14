@@ -1,0 +1,36 @@
+{
+  "provider": "codex-built-in-image-generation",
+  "codex_model": "gpt-5.6-sol",
+  "codex_session_id": "019ffd5f-6fd4-7a31-9754-0fe0170c5dac",
+  "prompt_author": "agy",
+  "agy_model": "gemini-3.7-flash-high",
+  "agy_effort": "high",
+  "agy_conversation_id": "34bc5310-537a-42b7-a7ed-d6ad937b0be9",
+  "prompt_path": "/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/prompt-v4-room-athleisure.md",
+  "prompt_sha256": "abd81e4032771a56efb4d007dc02826f1feccab382dd91a3e88ba1038562be36",
+  "reference_order": [
+    "/home/natrial/_work/X/asset-prompts/main/_profile/01.png"
+  ],
+  "requested_slots": 2,
+  "outputs": [
+    {
+      "slot": 1,
+      "status": "success_first_output",
+      "path": "/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated-v4/01.png",
+      "format": "PNG",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "97af318fc5dae3810eb44bede6a6165a012ae99932fef692f57b83e8935b5be4",
+      "qa": "PARTIAL PASS — 明確な成人で、顔・髪・体型の大枠は参照と整合。スモーキーセージの同色ルームスポーツウェア上下、自然な胸元上端、くびれ、素脚が成立し、低めだが非覗き込みの全身構図も安全。上下境界、手足指に明白な破綻なし。足つぼマットは明瞭だが、後ろ足の踵がほぼ下がり、両目の軽い痛み表情もかなり穏やかで、踏んだ瞬間の反応は弱め。ショーツが指定より短めに見える。"
+    },
+    {
+      "slot": 2,
+      "status": "moderation_blocked",
+      "moderation_stage": "output",
+      "category": "sexual",
+      "request_id": "1c36ebf9-11ce-4f47-bef5-ff7089bdb379",
+      "path": null,
+      "retried": false
+    }
+  ]
+}

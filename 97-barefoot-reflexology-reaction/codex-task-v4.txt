@@ -1,0 +1,9 @@
+Use the final prompt at `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/prompt-v4-room-athleisure.md` and the sole identity/physique reference attached as the first image, canonical path `/home/natrial/_work/X/asset-prompts/main/_profile/01.png`.
+
+Generate exactly two independent images with built-in image generation, one call per slot. Each call requests exactly ONE continuous full-frame 3:4 vertical photograph, never collage/grid/contact sheet/multiple views. Use prompt file verbatim; reference is identity/physique only.
+
+Save each first successful artifact unchanged:
+- `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated-v4/01.png`
+- `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated-v4/02.png`
+
+Do not replace a successful slot for quality. Retry only no-artifact non-safety technical failures. On moderation/refusal stop immediately, do not modify/retry, preserve exact error/request ID, leave remaining slots unrun. No API/browser/external provider/additional refs/prompt edits. Report session ID, call statuses, existing paths only.

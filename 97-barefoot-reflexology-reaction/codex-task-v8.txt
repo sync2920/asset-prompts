@@ -1,0 +1,18 @@
+Generate exactly two independent vertical 3:4 photorealistic images from the final prompt at `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/prompt-v8-bustier-jeans.txt`.
+
+Use the single attached image only as the identity and complete physique reference for the same clearly adult woman in both slots. Do not use any previously generated image as a person or composition reference.
+
+Each slot is one continuous full-frame photograph, never a grid, collage, diptych, contact sheet, or split panel. Keep the same prompt and concept in both slots while allowing only natural photographic variation in the exact weight shift, hand relaxation, dawn light, and small closed-mouth smile.
+
+Critical requirements in both slots:
+- warm ivory structured cotton-twill bustier worn as outerwear, broad straps, shallow sweetheart neckline, visible princess seams;
+- natural partial central upper cleavage while the sides and underside remain securely covered;
+- washed matte-black high-rise relaxed straight ankle jeans;
+- slightly elevated diagonal three-quarter full-body camera, direct eye contact, chin slightly raised, small closed-mouth smile;
+- one bare foot presses the muted-teal reflexology mat, the other relieves a little weight on the wooden floor;
+- complete head-to-toe framing with both bare feet, all toes, mat, torso, neckline, and face readable;
+- preserve the adult reference identity and physique without slimming, leg lengthening, age shifting, beautifying, or reshaping.
+
+Save successful outputs as PNG under `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated-v8/` using exact filenames `01.png` and `02.png`. Do not overwrite earlier directories.
+
+If a slot is blocked by safety/moderation or refused, do not rewrite, weaken, sanitize, retry, or switch provider. Retain the exact error/category/request ID, continue only with the untouched remaining slot if permitted, and report the failed slot.

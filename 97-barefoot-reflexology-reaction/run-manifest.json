@@ -1,0 +1,63 @@
+{
+  "authorization_message_id": "1537583237352792064",
+  "forum_parent_id": "1535191860278984755",
+  "forum_thread_id": "1537568460798955610",
+  "provider": "codex-built-in-image-generation",
+  "codex_model": "gpt-5.6-sol",
+  "codex_session_id": "019ffd2a-8fcd-7d83-a6d7-09217eb610e1",
+  "prompt_author": "agy",
+  "agy_model": "gemini-3.7-flash-high",
+  "agy_effort": "high",
+  "agy_conversation_id": "7eca3774-33ef-4611-9ca2-b7d73d1d8950",
+  "prompt_path": "/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/prompt.md",
+  "prompt_sha256": "a71ae25ddeef2352ddab2f810cd4770e7a0e5a5bfd820a73f79999cdabc296f7",
+  "reference_order": [
+    "/home/natrial/_work/X/asset-prompts/main/_profile/01.png"
+  ],
+  "reference_role": "identity and physique only",
+  "reference_sha256": "9aef0f8cddd57648ea193859ede01ccf98a016832362d92f26d39f34e1331ccb",
+  "requested_slots": 4,
+  "moderation_blocks": [],
+  "outputs": [
+    {
+      "slot": 1,
+      "status": "success_first_output",
+      "path": "/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated/01.png",
+      "format": "PNG",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "58254b040842722e860c962d1b49913400cccdb0bb2a5416b1d407eb9409ca37",
+      "qa": "PARTIAL PASS — 成人・顔髪の大枠・ラフ服・全身3:4・安全性は良好。片足をマットへ置き、反対足を完全に浮かせた反応と大きな痛がり顔が最も明瞭。手足は概ね自然だが、植足の指先の接触が少し硬く、参照より顔がやや細く胸腰の量感も服で読み取りにくい。"
+    },
+    {
+      "slot": 2,
+      "status": "success_first_output",
+      "path": "/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated/02.png",
+      "format": "PNG",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "b480d79312a9efc6547f47f1b035d39f87874eed84fed342fa41a55555f43931",
+      "qa": "PARTIAL PASS — 成人・ラフ服・全身・安全性は良好。マットの突起と踏み込みは明瞭で、逃げる側の踵上げも自然。表情は悶絶より笑い寄りで反応が少し弱い。手足は概ね自然。参照より顔の輪郭と体型がやや細く見える。"
+    },
+    {
+      "slot": 3,
+      "status": "success_first_output",
+      "path": "/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated/03.png",
+      "format": "PNG",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "18c6d15443522e07dad38b9cdd42a5b3a77dc1b6318c533ac87f66a83149829f",
+      "qa": "PARTIAL PASS — 成人・人物らしさ・全身3:4・安全性は良好。片足を完全に浮かせ、支持脚を突起へ置く因果が明瞭。表情は痛笑いとして自然。手足は概ね破綻なし。参照より顔がやや細く、足指の圧迫変形は弱め。"
+    },
+    {
+      "slot": 4,
+      "status": "success_first_output",
+      "path": "/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated/04.png",
+      "format": "PNG",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "12df632b6c269895f830377fc059da078433ffdfd2a19fa9fc47222f20cc1cf8",
+      "qa": "PARTIAL PASS — 成人・顔髪の大枠・ラフ服・全身・安全性は良好。支持脚は足つぼマット上だが、反対足のつま先も床へ接地しており「反射的に浮かせて逃げる」動作は4枚中最も弱い。表情は痛笑いとして読め、手足は概ね自然。参照より顔・体型が少し細い。"
+    }
+  ]
+}

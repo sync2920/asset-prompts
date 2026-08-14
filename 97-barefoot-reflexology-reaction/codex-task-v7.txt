@@ -1,0 +1,14 @@
+Generate exactly three independent vertical 3:4 photorealistic images, one per supplied prompt file. Do not create a collage, contact sheet, diptych, triptych, or grid.
+
+Use the single attached image only as the identity and physique reference for the same clearly adult woman in all three slots. Do not use any previously generated image as a person reference.
+
+Read and use these prompts exactly, one prompt per slot:
+1. `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/prompt-v7-variety-01.txt`
+2. `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/prompt-v7-variety-02.txt`
+3. `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/prompt-v7-variety-03.txt`
+
+Preserve each slot's distinct top, black bottom, reflexology-mat color, safe low full-body framing, mild reaction, dawn light, and complete visible bare feet. Do not merge details between slots.
+
+Save successful outputs as PNG files under `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated-v7/` using exact filenames `01.png`, `02.png`, and `03.png` matching the slot numbers. Do not overwrite any earlier generated directory.
+
+If any slot is blocked by safety/moderation or refused, do not rewrite, weaken, sanitize, retry, or switch provider. Continue only with the untouched remaining slot prompts if allowed, retain the exact error/category/request ID, and report which slot failed.

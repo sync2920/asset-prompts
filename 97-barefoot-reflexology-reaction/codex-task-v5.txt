@@ -1,0 +1,9 @@
+Use the final prompt at `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/prompt-v5-contrasting-patterned-athleisure.md` and the sole identity/physique reference attached as the first image, canonical path `/home/natrial/_work/X/asset-prompts/main/_profile/01.png`.
+
+Generate exactly two independent images with built-in image generation, one call per slot. Each call requests exactly ONE continuous full-frame 3:4 vertical photograph, never collage/grid/contact sheet/multiple views. Use prompt file verbatim; reference is identity/physique only.
+
+Save each first successful artifact unchanged:
+- `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated-v5/01.png`
+- `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated-v5/02.png`
+
+Do not replace successful slots for quality. Retry only no-artifact non-safety technical failures. On moderation/refusal stop immediately without modifying or retrying, preserve exact error/request ID, and leave remaining slots unrun. No API/browser/external provider/additional refs/prompt edits. Report session ID, call statuses, and existing paths only.

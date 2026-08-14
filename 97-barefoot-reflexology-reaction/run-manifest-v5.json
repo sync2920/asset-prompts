@@ -1,0 +1,37 @@
+{
+  "provider": "codex-built-in-image-generation",
+  "codex_model": "gpt-5.6-sol",
+  "codex_session_id": "019ffd74-12c9-7301-a951-599afb8389fe",
+  "prompt_author": "agy",
+  "agy_model": "gemini-3.7-flash-high",
+  "agy_effort": "high",
+  "agy_conversation_id": "6d911729-4ae0-4e42-aebc-b843b5b99c5a",
+  "prompt_path": "/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/prompt-v5-contrasting-patterned-athleisure.md",
+  "prompt_sha256": "66a370776172dc30fab85f9c43c4c2cef3de0c23d9570e35906e308215435d0e",
+  "reference_order": [
+    "/home/natrial/_work/X/asset-prompts/main/_profile/01.png"
+  ],
+  "requested_slots": 2,
+  "outputs": [
+    {
+      "slot": 1,
+      "status": "success_first_output",
+      "path": "/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated-v5/01.png",
+      "format": "PNG",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "e3fe6b775b845a18c8cf492442abe48e2248f6a09b75067c50697c0e90158f29",
+      "qa": "PASS — 成人・顔髪・自然な体型は参照人物との整合が良好。無地ダークプラムのトップと、別系統のくすみオリーブ＋エクリュ幾何柄ショーツが明瞭に分離し、低彩度・マット質感・端正な形で洗練されたルームスポーツウェアとして成立。チャコールのマットも完全に独立。軽い痛み反応、安全な低め全身構図、手足指、柄と衣装境界に目立つ破綻なし。後ろ足の踵の上がりは控えめ。"
+    },
+    {
+      "slot": 2,
+      "status": "success_first_output",
+      "path": "/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated-v5/02.png",
+      "format": "PNG",
+      "width": 1086,
+      "height": 1448,
+      "sha256": "18d9f5ae84321b208ec934db66d9c57a10a19694b3ccea7d1c31c67fd12882b1",
+      "qa": "PARTIAL PASS — 成人・人物・上下別系統色・チャコールマット・安全な低め全身構図は成立し、配色もダサくない。ショーツ柄はシェブロンより菱形寄りに簡略化。踏み足の足指周辺に不自然な緑灰色の着色と軽い融合感があり、解剖QAで減点。表情も「少し痛い」より微笑みに近い。"
+    }
+  ]
+}

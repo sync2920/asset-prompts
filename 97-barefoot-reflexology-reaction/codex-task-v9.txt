@@ -1,0 +1,18 @@
+Generate exactly two independent vertical 3:4 photorealistic images from the final prompt at `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/prompt-v9-higher-black-lowlights-fuller-bust.txt`.
+
+Use the single attached image only as the identity and base-physique reference for the same clearly adult woman. Do not use any previously generated image as a reference.
+
+Each slot is one continuous full-frame photograph, never a grid, collage, diptych, contact sheet, or split panel. Use the final prompt unchanged in both slots, allowing only natural photographic variation in weight shift, hand relaxation, dawn light, and the small closed-mouth smile.
+
+Critical changes relative to v8:
+- camera lens physically 20–30 cm above the top of her head, 3.0–3.4 m away, angled downward 18–22 degrees in a diagonal three-quarter full-body composition; not steep overhead and no large-head/short-leg distortion;
+- preserve the reference hairstyle/base color while adding only a few sparse narrow black mesh-like lowlight strands beneath the top layer and in two face-framing sections;
+- bust appears only modestly fuller than the reference (about one visual step / 10–12%), created by slightly greater bustier cup capacity and supportive side panels; shoulders, waist, hips, limbs, height, and overall proportions stay unchanged;
+- natural partial central cleavage, fully covered sides and underside;
+- direct eye contact, chin slightly raised, small warm closed-mouth smile;
+- warm-ivory structured outerwear bustier, washed matte-black high-rise relaxed straight ankle jeans;
+- one bare foot pressing the muted-teal reflexology mat and the other relieving a little weight on the wooden floor; full head-to-toe framing and all toes readable.
+
+Save successful outputs as PNG under `/home/natrial/_work/X/asset-prompts/97-barefoot-reflexology-reaction/generated-v9/` using exact filenames `01.png` and `02.png`. Do not overwrite earlier directories.
+
+If any slot is blocked by safety/moderation or refused, do not rewrite, weaken, sanitize, retry, or switch provider. Retain the exact error/category/request ID, continue only with the untouched remaining slot if permitted, and report the failed slot.
