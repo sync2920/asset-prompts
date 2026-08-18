@@ -1,0 +1,26 @@
+# 163-01: Ink Cowl — Night Ukulele Dress Revision (3:4 Vertical)
+
+A highly detailed photorealistic portrait of the person from the reference image.
+3:4 aspect ratio. Infer apparent age from the reference image and preserve it.
+Match the reference image exactly for gender presentation, ancestry, body shape and
+lines, height impression, proportions, overall build, skin tone and texture, facial
+features, hair, and all physical characteristics including chest and hip shape and
+fullness. Reproduce the natural volume and silhouette of the bust and hips as seen
+in the reference, kept accurate through the fit and drape of the clothing. Preserve
+the subject's identity and physique faithfully without age-shifting, beautifying,
+exaggerating, or reshaping. Never add or hardcode features that are not present in
+the reference image — no invented hair colors, accessories, uniforms, or props.
+
+Scene: A serene, elegant late-night music moment on a quiet wooden outdoor terrace under a deep indigo night sky. An adult woman is captured in a continuous full-length photorealistic lifestyle photograph as she sits naturally on a wooden stool, holding a four-string acoustic ukulele and strumming the very first chord. Exactly ONE continuous full-frame photograph; strictly no collage, split panels, contact sheets, or multiple views.
+
+Pose and Action: Seated in a relaxed three-quarter posture on a simple wooden stool with her torso angled toward the camera, her face clear and brightly lit by soft ambient terrace light. Her right forearm rests comfortably along the upper bout of the ukulele while her right index finger makes delicate downward contact against the top string near the soundhole, capturing the exact causal micro-instant right before the chord rings out. Her left hand softly holds the slim wooden ukulele neck near the headstock, her fingertips cleanly fretting the first chord. Her expression is focused yet gentle, looking down at the fretboard with quiet concentration and a subtle half-smile. Physical anatomy and contact geometry are realistic and grounded: exactly five fingers per hand, natural joint positioning, clear hand-to-instrument contact, and both low dark leather flat sandals rest flat on the wooden deck floor. The ukulele is held securely across her waist level, keeping her chest area and neckline completely unblocked and fully visible.
+
+Outfit: An ink-blue wide-band cowl-neck fluid satin midi dress paired with low dark leather flat sandals. The dress features wide shoulder bands that support a softly draped shallow cowl neckline resting gracefully near her collarbones with complete coverage and zero plunge. A softly defined waist follows her natural midsection without bodycon tightness, flowing into a fluid bias-cut midi skirt that extends past her knees with soft structural folds. Crafted from rich ink-blue satin with a subtle matte luster, the dress is fully opaque and structured with internal lining, ensuring adult-safe, elegant nocturnal styling without sheer panels, cutouts, plunging necklines, thigh-high slits, bodycon compression, or visible underwear.
+
+Ukulele Geometry: Exactly ONE small four-string acoustic wooden ukulele with a warm matte finish, a round central soundhole, a small wooden bridge, and a slim neck. The headstock features exactly four distinct tuning pegs (two on each side). Exactly four thin nylon strings stretch parallel along the fretboard from nut to bridge pins, plainly visible and geometrically intact without extra strings or guitar proportions.
+
+Lighting and Environment: A quiet permitted outdoor terrace featuring dark teak wooden deck planks underfoot and a low protective safety railing behind her. The background opens to a deep indigo night sky illuminated by distant, warm golden and amber bokeh orbs from garden lanterns in the soft out-of-focus background. A gentle, cool night breeze sways only the tips of her hair and the lower hem of her dress. Strictly no audience, no second people, no alcohol, no animals, no sheet music, no floating musical notes or visual soundwaves, no stage spotlights, no fireworks, no text, and no logos.
+
+Camera and Framing: 3:4 vertical full-length editorial photograph framing from the top of her head to her dark leather sandals on the deck floor. Shot with an 85mm portrait lens at f/2.8, achieving tack-sharp focus on the woman, her face, her fretting and strumming hands, and the ukulele, with smooth bokeh softening the nocturnal background. Authentic photorealism with natural skin texture and real night atmosphere; no digital smoothing, synthetic filters, or fantasy lighting effects.
+
+Avoid: no collage, no split screen, no photo strip, no contact sheet, no multi-pose grid, no extra limbs, no extra fingers, no malformed hands, no pointing pose, no finger guns, no guitar geometry, no six strings, no extra tuning pegs, no duplicated instruments, no sheet music, no floating musical notes, no visual soundwaves, no stage lights, no alcohol, no crowds, no second person, no readable text, no logos, no brand markings, no watermarks, no sheer skin exposure, no plunging neckline, no cutouts, no thigh-high slit, no visible underwear, no chest obstruction, no bodycon compression.

@@ -1,0 +1,36 @@
+{
+  "run_number": 164,
+  "slug": "night-ukulele-ash-lilac-sheer",
+  "concept": "夜風に合う、最初の一音 — アッシュライラックのシアードレス",
+  "user_message_id": "1539241245476519968",
+  "parent_run": 163,
+  "replaced_slot": "03-deep-olive-wrap",
+  "generation_route": "codex_builtin",
+  "prompt_author": {
+    "name": "agy",
+    "model": "gemini-3.6-flash-high",
+    "effort": "high",
+    "conversation_id": "6f08ecde-f748-45c8-9ddd-5b077f664e82",
+    "log": "logs-agy/author.json"
+  },
+  "person_reference": [
+    {
+      "path": "/home/natrial/_work/X/asset-prompts/main/_profile/01.png",
+      "role": "first and sole identity reference"
+    }
+  ],
+  "prompt_sha256": "bf3fc0dc752ac6eca755b3dcf6597d2268d60ee58ac1a2beffda6da9ef11934b",
+  "output": {
+    "path": "generated/01-ash-lilac-sheer.png",
+    "format": "PNG",
+    "dimensions": [
+      1086,
+      1448
+    ],
+    "sha256": "40f4cc0e41ce5a9531d01855b7f0665c60c59db331bbc1d5357fb74ada324fc1"
+  },
+  "qa": {
+    "status": "PASS",
+    "notes": "Reference identity, clearly adult-safe full-body composition, ash-lilac opaque base and outer organza flutter layers, controlled shallow cowl neckline, natural feet/stool contacts, one four-string ukulele, and no text/logo/collage or overtly transparent base garment observed."
+  }
+}

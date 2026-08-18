@@ -1,0 +1,104 @@
+{
+  "run_number": 163,
+  "slug": "night-ukulele-dress-revision",
+  "concept": "夜風に合う、最初の一音 — ドレス4パターン",
+  "user_message_id": "1539236132225814550",
+  "discord_forum_thread_id": "1539233208561045524",
+  "generation_route": "codex_builtin",
+  "prompt_author": {
+    "name": "agy",
+    "model": "gemini-3.6-flash-high",
+    "effort": "high",
+    "conversation_id": "f6a24fae-bf15-4681-bde0-33feef91919e",
+    "log": "logs-agy/author.json",
+    "note": "agy wrote all prompt files; CLI reported a post-write artifact-path permission error despite the files being present and verified."
+  },
+  "person_reference": [
+    {
+      "path": "/home/natrial/_work/X/asset-prompts/main/_profile/01.png",
+      "role": "first and sole identity reference, age impression, face, hair, physique, proportions"
+    }
+  ],
+  "slots": [
+    {
+      "slot": "01-ink-cowl",
+      "prompt": "prompts/01-ink-cowl.md",
+      "prompt_sha256": "981d07eec3b44faba541b5313dca2579e0aa865e366cc9c76cdc9efb31b12ac0",
+      "status": "generated",
+      "source_output": "generate-runs/01-ink-cowl/generated/01.png",
+      "output": "generated/01-01-ink-cowl.png",
+      "file_format": "PNG",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "file_sha256": "59d8cae537c84a558f715dfe0a9a4d9b320a9dfb078d438268b0298a30223cac",
+      "qa": {
+        "status": "PASS",
+        "notes": "顔・髪・体格の参照同一性、成人・安全条件、フルレングス、控えめなカウルネック、足元、手指、単一の4弦ウクレレ、無文字の夜テラスが概ね整合。"
+      }
+    },
+    {
+      "slot": "02-smoky-rose-square",
+      "prompt": "prompts/02-smoky-rose-square.md",
+      "prompt_sha256": "4dbd3ac71326e54027c74b8faed41b0433950a6503a043698ed632bfdbed2cb5",
+      "status": "generated",
+      "source_output": "generate-runs/02-smoky-rose-square/generated/01.png",
+      "output": "generated/02-02-smoky-rose-square.png",
+      "file_format": "PNG",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "file_sha256": "06bf2e187096b277397851d5eff2936dde5a370bb1f7c715c165b62f57c9f5c6",
+      "qa": {
+        "status": "PASS",
+        "notes": "参照同一性と成人・安全条件を維持。スクエアネックはデコルテの見せ場を一箇所に限定し、衣装・手指・足元・ウクレレ・背景に明白な破綻なし。"
+      }
+    },
+    {
+      "slot": "03-deep-olive-wrap",
+      "prompt": "prompts/03-deep-olive-wrap.md",
+      "prompt_sha256": "3c3a1bb0cac989ef1fbf45f8cfd34ab63a65b0940f76051aee175c5f68a510f0",
+      "status": "generated",
+      "source_output": "generate-runs/03-deep-olive-wrap/generated/01.png",
+      "output": "generated/03-03-deep-olive-wrap.png",
+      "file_format": "PNG",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "file_sha256": "f13f54e14d5bacdcf910415e9054a18e467d04696df6afc9f31f2c3aebaa6caa",
+      "qa": {
+        "status": "PARTIAL",
+        "notes": "参照同一性、成人・手指、4弦ウクレレ、座り姿は概ね整合。ただしスカート下部が指定の「lined / fully opaque」より透け、脚の輪郭が読めるため、衣装の不透明条件には未達。成功slotの差し替えはしない。"
+      }
+    },
+    {
+      "slot": "04-night-plum-column",
+      "prompt": "prompts/04-night-plum-column.md",
+      "prompt_sha256": "7904e29771fe4bca0679fcb899233de4213cc2c85c8a05420e3f3c25ba969e0e",
+      "status": "generated",
+      "source_output": "generate-runs/04-night-plum-column/generated/01.png",
+      "output": "generated/04-04-night-plum-column.png",
+      "file_format": "PNG",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "file_sha256": "32a4f5a79b8488cfc3c52d69abebc64efbc27398025d01dc66bf998dddccf0fe",
+      "qa": {
+        "status": "PARTIAL",
+        "notes": "参照同一性、成人・安全条件、4弦ウクレレ、手指、足元、無文字の単一写真は整合。ワイドネックの指定に対して生成はややタンク寄りの丸いスクープ、column maxiも想定より身体に沿うため衣装シルエットは部分一致。成功slotの差し替えはしない。"
+      }
+    }
+  ],
+  "research": {
+    "fashion_sources": [
+      "https://www.vogue.co.jp/article/maxi-dress-style-guide-2026-ss",
+      "https://www.elle.com/jp/fashion/trends/a71597657/summer-keyword-2606/"
+    ],
+    "agy_research": "/home/natrial/_work/hermes/research-factcheck/runs/20260818-203549-summer-night-dress/agy.json",
+    "opus_review": "timeout after 300 seconds; no fashion trend fact claim is made in this delivery."
+  }
+}

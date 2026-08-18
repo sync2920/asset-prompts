@@ -1,0 +1,106 @@
+{
+  "run_number": 162,
+  "slug": "night-ukulele-first-chord",
+  "concept": "夜風に合う、最初の一音",
+  "user_message_id": "1539232786320334889",
+  "discord_forum_thread_id": "1539233208561045524",
+  "generation_route": "codex_builtin",
+  "prompt_author": {
+    "name": "agy",
+    "model": "gemini-3.6-flash-high",
+    "effort": "high",
+    "conversation_id": "fcf02577-0d35-4546-ac99-188d68000265",
+    "log": "logs-agy/author.json"
+  },
+  "person_reference": [
+    {
+      "path": "/home/natrial/_work/X/asset-prompts/main/_profile/01.png",
+      "role": "sole identity, age impression, face, hair, physique, proportions"
+    }
+  ],
+  "slots": [
+    {
+      "slot": "01-midnight-knit-polo",
+      "prompt": "prompts/01-midnight-knit-polo.md",
+      "prompt_sha256": "9ee9a461c9ddc353aa1be942b4558201ce7e504cd63db8c95f65190910998c1e",
+      "run_prompt": "generate-runs/01-midnight-knit-polo/prompt.md",
+      "status": "generated",
+      "output": "generated/01-midnight-knit-polo.png",
+      "qa": {
+        "status": "PASS",
+        "notes": "Reference likeness, adult-safe full-body terrace scene, one four-string ukulele, apparel, legs/feet and hand contact are visually coherent."
+      },
+      "file_sha256": "2e141444ca2853263785d971c2790672d18a169e3d337b1662c4caf848a7eaaf",
+      "source_output": "generate-runs/01-midnight-knit-polo/generated/01.png"
+    },
+    {
+      "slot": "02-burnt-coral-satin",
+      "prompt": "prompts/02-burnt-coral-satin.md",
+      "prompt_sha256": "682fe803a32016f410351f68fbd0a67f1b927406f403f0ccb6251d39ab9c8616",
+      "run_prompt": "generate-runs/02-burnt-coral-satin/prompt.md",
+      "status": "generated",
+      "output": "generated/02-burnt-coral-satin.png",
+      "qa": {
+        "status": "PASS",
+        "notes": "Reference likeness, satin shirt and straight denim, single small four-string ukulele, seating and hands/feet are visually coherent."
+      },
+      "file_sha256": "408f39af20dc0705cfad5b5949a601315fbf998003d8b966394be9a2a0414459",
+      "source_output": "generate-runs/02-burnt-coral-satin/generated/01.png"
+    },
+    {
+      "slot": "03-sheer-layered-t",
+      "prompt": "prompts/03-sheer-layered-t.md",
+      "prompt_sha256": "bfebb9d434ca3efef57c639dd607525cf5b56458bccc41c6166d9649b4f0f80c",
+      "run_prompt": "generate-runs/03-sheer-layered-t/prompt.md",
+      "status": "generated",
+      "output": "generated/03-sheer-layered-t.png",
+      "qa": {
+        "status": "PASS",
+        "notes": "Reference likeness, opaque inner plus open tulle layer, charcoal skirt, one four-string ukulele and adult-safe terrace scene are visually coherent."
+      },
+      "file_sha256": "82f2d4e6d0f8df88a60f5dad6276204770a32e3fcfc25134b1330e622a0ac098",
+      "source_output": "generate-runs/03-sheer-layered-t/generated/01.png"
+    },
+    {
+      "slot": "04-sky-blue-slit-skirt",
+      "prompt": "prompts/04-sky-blue-slit-skirt.md",
+      "prompt_sha256": "4e183181cefd002c17bb274710f7256256d37424e85c1b0b3113b4cf15d4c072",
+      "run_prompt": "generate-runs/04-sky-blue-slit-skirt/prompt.md",
+      "status": "generated",
+      "output": "generated/04-sky-blue-slit-skirt.png",
+      "qa": {
+        "status": "PARTIAL",
+        "notes": "Identity, single four-string ukulele, safe terrace scene and outfit generally match, but the side slit opens above the requested below-knee limit."
+      },
+      "file_sha256": "aafbe55d67eac5cb27cff94516895ea373c67a943d6c5e3892eab0f87b2a0a58",
+      "source_output": "generate-runs/04-sky-blue-slit-skirt/generated/01.png"
+    }
+  ],
+  "trend_sources": [
+    {
+      "title": "Tory Burch Spring/Summer 2026",
+      "url": "https://www.toryburch.com/en-eu/new/runway/spring-summer-2026/",
+      "type": "official brand collection"
+    },
+    {
+      "title": "ELLE Japan 2026 SS fashion trend",
+      "url": "https://www.elle.com/jp/fashion/trends/a68070284/2026ss-fashion-trend-2509/",
+      "type": "editorial"
+    }
+  ],
+  "google_chat": {
+    "space": "spaces/AAQA_tGGPuw",
+    "thread": "spaces/AAQA_tGGPuw/threads/BlzyUXRc890",
+    "url": "https://chat.google.com/room/AAQA_tGGPuw?cls=7",
+    "summary_message": "spaces/AAQA_tGGPuw/messages/BlzyUXRc890.BlzyUXRc890",
+    "prompt_chunks_sent": 8,
+    "verified": true
+  },
+  "factcheck": {
+    "status": "completed",
+    "model": "claude-opus-5",
+    "adequacy": "insufficient",
+    "coverage_score": 0.24,
+    "note": "Fashion references are retained only as bounded directional context; no trend or product-copy claim is made."
+  }
+}
