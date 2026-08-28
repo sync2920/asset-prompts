@@ -1,0 +1,153 @@
+{
+  "run": 287,
+  "slug": "golden-palace-maid-c-fantasy-morning-five",
+  "person_reference": {
+    "path": "references/person-reference.png",
+    "sha256": "e79bdad2be27163a406d42d49ecc8978d2a4075fb553726e61eb7d56d137779e"
+  },
+  "author": {
+    "tool": "agy",
+    "model": "gemini-3.7-flash-high",
+    "effort": "high",
+    "status": "success"
+  },
+  "jobs": [
+    {
+      "slot": "01",
+      "prompt": "prompts/01.md",
+      "prompt_sha256": "a45f5bd70c7929cce90cd1b0e5b7b0f23ba33c071d82916d8406f41d5e029b4c",
+      "output": "generated/01.png",
+      "output_sha256": "ac4830fc09f06bf999b035b91e35cc6472ca132e1defb733efb0153eab020c5e",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "request_id": "call_waSVj35A4DMIxSvWwbIM34Td",
+      "qa": {
+        "status": "accept",
+        "notes": [
+          "C-v2 garment coherent; semi-sheer tights; keys/duster visible",
+          "floating cloud palace and segmented louver visible",
+          "louver motion implied more than explicit"
+        ]
+      }
+    },
+    {
+      "slot": "02",
+      "prompt": "prompts/02.md",
+      "prompt_sha256": "22e732b3b15318e0e6399e6d3588034dd72eafa293334c96c9984a28614542e9",
+      "output": "generated/02.png",
+      "output_sha256": "e225feaf59a2e4d4ac92f579704d7f3a9b1a04975d49f1b0a07d68936fbfd263",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "request_id": "call_0tCJOo4bXUELFdR6OvvuYBug",
+      "qa": {
+        "status": "accept",
+        "notes": [
+          "ledger/key task and suspended geared stairs are clear",
+          "same uniform and adult identity impression",
+          "apron side placement varies slightly due rear angle"
+        ]
+      }
+    },
+    {
+      "slot": "03",
+      "prompt": "prompts/03.md",
+      "prompt_sha256": "fee62b5e287a55d618e711100a9e7dce3067ceb59638bd7fc26fd574dfeaa101",
+      "output": "generated/03.png",
+      "output_sha256": "bb3151705df3cb5074a1b01088e55e7618be6c61fbd505b6f083c5835fd43ec8",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "request_id": "call_VoHWSgZTV2mKzv5qgii3MjqG",
+      "qa": {
+        "status": "accept",
+        "notes": [
+          "linen trolley, open service lift, chains/counterweights clear",
+          "same C-v2 uniform and tights",
+          "hand operates keyed control rather than a separate lever"
+        ]
+      }
+    },
+    {
+      "slot": "04",
+      "prompt": "prompts/04.md",
+      "prompt_sha256": "7f3ea41ea0dab128a2c8a9b952e189d560ec6a57b2476c179a6f95f32765a1fd",
+      "output": "generated/04.png",
+      "output_sha256": "ea81c0b091ebc93ae2b785eb3dcba66560c20e669fba2fb4a0ce610117955044",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "request_id": "call_0K47mLwlLEKPeBcdHlCXqpkG",
+      "qa": {
+        "status": "accept",
+        "notes": [
+          "prism-cleaning cause/effect and fantasy skyline are strong",
+          "same uniform, apron, keys and tights",
+          "architectural prism reads clearly"
+        ]
+      }
+    },
+    {
+      "slot": "05",
+      "prompt": "prompts/05.md",
+      "prompt_sha256": "1e11af1fc6a6f362adb0ec8ef42a73037162b11e158ef4c24fd0b0c767c9348a",
+      "output": "generated/05.png",
+      "output_sha256": "60eb1b4a7255a0e317942fa70eb8ae9bb245366defd9e035f3ebe43ade0723dd",
+      "dimensions": [
+        1086,
+        1448
+      ],
+      "request_id": "call_Vuc5Ec3pBVcKLaHg3Ih6ol4m",
+      "qa": {
+        "status": "accept_with_deviation",
+        "notes": [
+          "key/duster and moving rail-mounted wall mechanism clear",
+          "same uniform and floating palace vista",
+          "renders a moving gallery rather than the requested throne hall"
+        ]
+      }
+    }
+  ],
+  "contact_sheet": "qa/contact-sheet.jpg",
+  "x_posted": false,
+  "google_chat_delivery": {
+    "success": true,
+    "thread": "spaces/AAQA_tGGPuw/threads/1GUzfwSh0v0",
+    "message_ids": [
+      "spaces/AAQA_tGGPuw/messages/1GUzfwSh0v0.1GUzfwSh0v0",
+      "spaces/AAQA_tGGPuw/messages/1GUzfwSh0v0.cp7jGkFuQZY",
+      "spaces/AAQA_tGGPuw/messages/1GUzfwSh0v0.C-hvKaHYLpQ",
+      "spaces/AAQA_tGGPuw/messages/1GUzfwSh0v0.m7MJaVAD2NI",
+      "spaces/AAQA_tGGPuw/messages/1GUzfwSh0v0.s4K70HoIWhA",
+      "spaces/AAQA_tGGPuw/messages/1GUzfwSh0v0.kCCUhWXtELA",
+      "spaces/AAQA_tGGPuw/messages/1GUzfwSh0v0.-3urcooGOCQ"
+    ],
+    "prompt_messages": 5,
+    "url": "https://chat.google.com/room/AAQA_tGGPuw/1GUzfwSh0v0?cls=7"
+  },
+  "selected_image": {
+    "status": "adopted",
+    "source_message_id": "1542688882137763890",
+    "relative_path": "generated/01-user-selected.png",
+    "sha256": "58208ff7d5045e3593f143ca04d61267c81a75d04d63530db9a417e7c3588b3a",
+    "dimensions": [
+      1086,
+      1448
+    ],
+    "source_prompt": "prompts/01.md",
+    "selection_note": "User explicitly adopted this exact attached render. It is distinct from generated/01.png and is now the canonical person, C-v2 uniform, Golden Palace architecture, and morning-key scene reference for continuations.",
+    "google_chat": {
+      "success": true,
+      "thread": "spaces/AAQA_tGGPuw/threads/1GUzfwSh0v0",
+      "message_ids": [
+        "spaces/AAQA_tGGPuw/messages/1GUzfwSh0v0.9JYcje5sCIQ",
+        "spaces/AAQA_tGGPuw/messages/1GUzfwSh0v0.KrbpqSuqv28"
+      ]
+    }
+  }
+}
