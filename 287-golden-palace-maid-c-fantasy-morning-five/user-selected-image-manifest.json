@@ -13,5 +13,10 @@
   "mode": "RGB",
   "sha256": "58208ff7d5045e3593f143ca04d61267c81a75d04d63530db9a417e7c3588b3a",
   "source_prompt": "prompts/01.md",
-  "selection_note": "User explicitly adopted this exact attached render. It is distinct from generated/01.png and is now the canonical person, C-v2 uniform, Golden Palace architecture, and morning-key scene reference for continuations."
+  "selection_note": "User explicitly adopted this exact attached render. It is distinct from generated/01.png and is now the canonical person, C-v2 uniform, Golden Palace architecture, and morning-key scene reference for continuations.",
+  "drive": {
+    "status": "verified",
+    "remote": "personal-drive:X/asset-prompts/287-golden-palace-maid-c-fantasy-morning-five/generated/01-user-selected.png",
+    "md5": "2b1fc256c50fcbbbd6cb11176cab323b"
+  }
 }
