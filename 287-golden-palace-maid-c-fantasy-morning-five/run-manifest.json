@@ -140,7 +140,7 @@
       1448
     ],
     "source_prompt": "prompts/01.md",
-    "selection_note": "User explicitly adopted this exact attached render. It is distinct from generated/01.png and is now the canonical person, C-v2 uniform, Golden Palace architecture, and morning-key scene reference for continuations.",
+    "selection_note": "User explicitly adopted this exact attached render for the 2026-08-28 Golden Palace Maid day only. It is distinct from generated/01.png. It may be used as the person/outfit/palace reference only for later time slots on that same day; it does not replace the global person reference and must not carry this occupation, uniform, or palace into future dates.",
     "google_chat": {
       "success": true,
       "thread": "spaces/AAQA_tGGPuw/threads/1GUzfwSh0v0",
@@ -153,6 +153,13 @@
       "status": "verified",
       "remote": "personal-drive:X/asset-prompts/287-golden-palace-maid-c-fantasy-morning-five/generated/01-user-selected.png",
       "md5": "2b1fc256c50fcbbbd6cb11176cab323b"
+    },
+    "scope": {
+      "date": "2026-08-28",
+      "series": "Golden Palace Maid",
+      "applies_to": "same-day later time slots only",
+      "replaces_global_person_reference": false,
+      "carry_to_future_dates": false
     }
   }
 }
