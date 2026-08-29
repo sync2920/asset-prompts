@@ -1,0 +1,49 @@
+{
+  "prompt_author": "agy",
+  "model": "gemini-3.7-flash-high",
+  "effort": "high",
+  "conversation_id": "b64bd6a1-14f2-4df4-8c6c-b8ad9a43caa3",
+  "source_ideas": "/home/natrial/_work/X/asset-prompts/292-fantasy-jobs-higher-exposure-spectacle/ideas-10.md",
+  "files": [
+    {
+      "filename": "prompts/01.md",
+      "sha256": "d0dcfc8cdae2d9b8dc92a62bb25d2b803c80852d39e2484dc6e0fb2fcf0dc629"
+    },
+    {
+      "filename": "prompts/02.md",
+      "sha256": "445e1634ecb502439170e95b594ec137d57fa5ed5c90a6c4b93030d1c6c1ed21"
+    },
+    {
+      "filename": "prompts/03.md",
+      "sha256": "f81fd1682125eaa933041e3d904b68837002acc03db44fee8a8e1111c6bbc17d"
+    },
+    {
+      "filename": "prompts/04.md",
+      "sha256": "40af305d5b80c4b47388f8d30f4f73db11c62115e58dc0ddb91e90dd1d9d2864"
+    },
+    {
+      "filename": "prompts/05.md",
+      "sha256": "14edbc1527e29c1c4ba378d215da5f4621f2441c503cb38359edfff31648fab4"
+    },
+    {
+      "filename": "prompts/06.md",
+      "sha256": "c1ef0b7dd36d73b6ee8ae0218893ffcd0808d6b226251ede4b82c39777555bbd"
+    },
+    {
+      "filename": "prompts/07.md",
+      "sha256": "7fbcc2b9347ffb8830757eb5eca2d0df2696256902e68fe782710bb5e3f5b3a2"
+    },
+    {
+      "filename": "prompts/08.md",
+      "sha256": "ec8ccc961edc78033247182f0afb9899dd42273caa9474152f2cd10187054e4e"
+    },
+    {
+      "filename": "prompts/09.md",
+      "sha256": "cc59a7e46eb83613bb105bdd03cccbbed5a06029ab753cc8ff14141f8270c3e7"
+    },
+    {
+      "filename": "prompts/10.md",
+      "sha256": "bf31506394ec1f76f0d2367aaeeb3fc9f6f4c9c43208099f21858e3961e5d9c1"
+    }
+  ]
+}

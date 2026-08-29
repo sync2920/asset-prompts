@@ -1,0 +1,48 @@
+You are the final prompt author for X image run 292, a direct correction of run 291 after the user said all ten images lacked visual impact and every outfit needed somewhat more exposure. The user explicitly requested regeneration.
+
+ROLE
+- Use agy Gemini 3.7 Flash High at high effort.
+- Edit files only. Do not generate images and do not post anywhere.
+
+READ FIRST
+1. /home/natrial/_work/X/asset-prompts/AGENTS.md
+2. /home/natrial/_work/X/asset-prompts/.claude/skills/image-ideas/SKILL.md
+3. /home/natrial/_work/X/asset-prompts/ideas/README.md
+4. /home/natrial/_work/X/asset-prompts/expression/README.md
+5. /home/natrial/_work/X/asset-prompts/292-fantasy-jobs-higher-exposure-spectacle/ideas-10.md
+6. /home/natrial/_work/X/asset-prompts/291-fantasy-jobs-top-ten-preview/prompts/01.md through 10.md
+7. /home/natrial/_work/X/asset-prompts/main/_profile/reference-manifest.json
+Hermes verified the canonical reference as a clearly adult person. Do not inspect or describe its pixels.
+
+OUTPUT under `/home/natrial/_work/X/asset-prompts/292-fantasy-jobs-higher-exposure-spectacle/`:
+- prompts/01.md through prompts/10.md
+- copy-ready-prompts.md with all ten complete prompts under concise Japanese title headings
+- prompt-author-manifest.json with author/model/effort/conversation ID/source ideas and SHA-256 per prompt
+
+SLOTS
+01 転移門の番人
+02 竜騎士
+03 魔王軍参謀
+04 魔導書司書
+05 ダンジョン管理人
+06 宮廷道化師
+07 魔法列車の車掌
+08 魔獣使い
+09 宮廷魔導師
+10 祓魔師
+
+PROMPT CONTRACT
+- Write one standalone English prompt per slot for exactly ONE continuous full-frame 9:16 photorealistic fantasy editorial image; no collage/grid/split panels/insets/duplicate person/text/logos.
+- Include the full canonical identity and physique preservation block from ideas/README exactly once. Preserve apparent adult age, face, hair, skin texture, height impression, natural chest and hip shape/fullness. No age shift, beautification, pointed chin, slimming, enlargement, exaggeration, reshaping or bust compression.
+- Supplied person reference is identity/physique only. Never copy reference clothing/background/pose/composition/drink/props. Copy-ready prompt says only “the supplied person reference image,” never paths, filenames or reference numbers.
+- This is a direct redesign, not a new occupation set. Preserve each slot's occupation while raising exposure on EVERY outfit and spectacle in EVERY environment exactly as ideas-10.md specifies.
+- Exposure must come from coherent adult garment architecture: deep but securely contained neckline, bare shoulders/arms/back, short hem or one controlled high slit, visible legs. Opaque structural support and complete intimate coverage are mandatory. No bikini armor, lingerie-only look, transparent intimate zones, nipple/genital visibility, underboob, sideboob spill, accidental exposure or wardrobe malfunction.
+- One coherent wearable outfit per slot. No detached sleeves, random patchwork pieces, multi-skirt clutter, maid drift, school-uniform drift or childish costume styling.
+- Fantasy spectacle must be causally attached to the job action: collapsing portals, dragon takeoff, living war map, rotating archive, transforming maze, opened throne ceiling, suspended rail split, bowing colossal beast, palace shield dome, kilometer mirror hall. Do not reduce these to generic circles or static portraits.
+- Preserve exact 0.5-second action geometry, tool contacts, camera direction, feet visibility and environmental scale. Person must remain large enough for identity even in wide scenes.
+- Visible hands/tools: distinct fingers, no fused props/animals, extra limbs or malformed anatomy. Dragon/beast remain secondary to the person.
+- Clearly adult and non-explicit. No gore.
+- Keep each prompt under roughly 4300 characters while retaining canonical block and unique positive geometry. Add concise scene-specific Avoid line.
+- Each slot will receive exactly one Codex built-in image-generation call; first success fixed; no variants or retries.
+
+After writing, print compact JSON listing ten files and SHA-256. Do not generate images.

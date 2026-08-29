@@ -1,0 +1,213 @@
+{
+  "run": 292,
+  "slug": "fantasy-jobs-higher-exposure-spectacle",
+  "source_run": 291,
+  "source_feedback_message_id": "1543023756828606465",
+  "request": "全10職業の露出度と見応えを上げ、実画像も生成",
+  "account": "@akinonnon_kan",
+  "prompt_author": {
+    "name": "agy",
+    "model": "gemini-3.7-flash-high",
+    "effort": "high",
+    "conversation_id": "b64bd6a1-14f2-4df4-8c6c-b8ad9a43caa3"
+  },
+  "generation_route": "Codex built-in image_generation",
+  "model": "gpt-5.6-sol",
+  "reasoning_effort": "medium",
+  "execution": {
+    "maximum_concurrency": 5,
+    "batches": [
+      [
+        "01",
+        "02",
+        "03",
+        "04",
+        "05"
+      ],
+      [
+        "06",
+        "07",
+        "08",
+        "09",
+        "10"
+      ]
+    ]
+  },
+  "requested_count": 10,
+  "attempted_count": 10,
+  "successful_count": 4,
+  "failed_count": 6,
+  "first_success_fixed": true,
+  "retried_count": 0,
+  "provider_fallback": false,
+  "canonical_person_reference": {
+    "path": "/home/natrial/_work/X/asset-prompts/main/_profile/01.png",
+    "reference_id": "x-person-reference-2026-08-19",
+    "sha256": "e79bdad2be27163a406d42d49ecc8978d2a4075fb553726e61eb7d56d137779e",
+    "verified": true,
+    "position": "first and only attached image"
+  },
+  "outputs": [
+    {
+      "slot": "01",
+      "title": "転移門の番人",
+      "prompt": "prompts/01.md",
+      "prompt_sha256": "d0dcfc8cdae2d9b8dc92a62bb25d2b803c80852d39e2484dc6e0fb2fcf0dc629",
+      "codex_thread_id": "01a04a7e-6b3c-70f3-b04a-44347ada4b9c",
+      "status": "moderation_blocked",
+      "image": null,
+      "request_id": "89b8ad58-5b22-4076-b75e-e2253982783e",
+      "moderation_stage": "output",
+      "moderation_category": "sexual"
+    },
+    {
+      "slot": "02",
+      "title": "竜騎士",
+      "prompt": "prompts/02.md",
+      "prompt_sha256": "445e1634ecb502439170e95b594ec137d57fa5ed5c90a6c4b93030d1c6c1ed21",
+      "codex_thread_id": "01a04a7e-6b95-7e30-9cf0-855184b4631c",
+      "status": "moderation_blocked",
+      "image": null,
+      "request_id": "9bb42af1-ac98-4ec3-9c5f-85fa0a6d1789",
+      "moderation_stage": "output",
+      "moderation_category": "sexual"
+    },
+    {
+      "slot": "03",
+      "title": "魔王軍参謀",
+      "prompt": "prompts/03.md",
+      "prompt_sha256": "f81fd1682125eaa933041e3d904b68837002acc03db44fee8a8e1111c6bbc17d",
+      "codex_thread_id": "01a04a7e-6b38-7881-8c52-3a59f50bee3c",
+      "status": "moderation_blocked",
+      "image": null,
+      "request_id": "30665916-2340-40fa-905b-9d410c6b604e",
+      "moderation_stage": "output",
+      "moderation_category": "sexual"
+    },
+    {
+      "slot": "04",
+      "title": "魔導書司書",
+      "prompt": "prompts/04.md",
+      "prompt_sha256": "40af305d5b80c4b47388f8d30f4f73db11c62115e58dc0ddb91e90dd1d9d2864",
+      "codex_thread_id": "01a04a7e-6bb3-7a23-9838-f38bb8ce1ba8",
+      "status": "success_first_output_fixed",
+      "image": "generated/04.png",
+      "image_sha256": "abec61e10ecaf2279af53b3ff32d4f386b76813452b37115aa047509a690802c",
+      "format": "PNG",
+      "dimensions": [
+        941,
+        1672
+      ]
+    },
+    {
+      "slot": "05",
+      "title": "ダンジョン管理人",
+      "prompt": "prompts/05.md",
+      "prompt_sha256": "14edbc1527e29c1c4ba378d215da5f4621f2441c503cb38359edfff31648fab4",
+      "codex_thread_id": "01a04a7e-6bf0-7211-a71e-70f72dcf96cd",
+      "status": "moderation_blocked",
+      "image": null,
+      "request_id": "fed7568e-e349-4764-80ad-1de8e4b5ca15",
+      "moderation_stage": "output",
+      "moderation_category": "sexual"
+    },
+    {
+      "slot": "06",
+      "title": "宮廷道化師",
+      "prompt": "prompts/06.md",
+      "prompt_sha256": "c1ef0b7dd36d73b6ee8ae0218893ffcd0808d6b226251ede4b82c39777555bbd",
+      "codex_thread_id": "01a04a82-fb17-72d1-b758-a8bf63886b9e",
+      "status": "moderation_blocked",
+      "image": null,
+      "request_id": "e4d2d9dc-b69b-4772-b12a-e6e267508d2c",
+      "moderation_stage": "output",
+      "moderation_category": "sexual"
+    },
+    {
+      "slot": "07",
+      "title": "魔法列車の車掌",
+      "prompt": "prompts/07.md",
+      "prompt_sha256": "7fbcc2b9347ffb8830757eb5eca2d0df2696256902e68fe782710bb5e3f5b3a2",
+      "codex_thread_id": "01a04a82-fb2b-77d3-b0ca-abc2354fe4f0",
+      "status": "success_first_output_fixed",
+      "image": "generated/07.png",
+      "image_sha256": "5bf9abd46c88f55cbfacf2aba6b32ea5c08a88e8b4af27f4150fa00cc5e13c85",
+      "format": "PNG",
+      "dimensions": [
+        941,
+        1672
+      ]
+    },
+    {
+      "slot": "08",
+      "title": "魔獣使い",
+      "prompt": "prompts/08.md",
+      "prompt_sha256": "ec8ccc961edc78033247182f0afb9899dd42273caa9474152f2cd10187054e4e",
+      "codex_thread_id": "01a04a82-fb9b-7fa3-80f3-d0ed2be19bbf",
+      "status": "success_first_output_fixed",
+      "image": "generated/08.png",
+      "image_sha256": "0ee7ddfe2efefb99390828d18d41995d196e8c878cf99e8cc21cf17ecf813303",
+      "format": "PNG",
+      "dimensions": [
+        941,
+        1672
+      ]
+    },
+    {
+      "slot": "09",
+      "title": "宮廷魔導師",
+      "prompt": "prompts/09.md",
+      "prompt_sha256": "cc59a7e46eb83613bb105bdd03cccbbed5a06029ab753cc8ff14141f8270c3e7",
+      "codex_thread_id": "01a04a82-fbdd-7b12-bef6-8930030b3a7d",
+      "status": "moderation_blocked",
+      "image": null,
+      "request_id": "58004622-ce8a-4740-81bc-3e237fa2a4ff",
+      "moderation_stage": "output",
+      "moderation_category": "sexual"
+    },
+    {
+      "slot": "10",
+      "title": "祓魔師",
+      "prompt": "prompts/10.md",
+      "prompt_sha256": "bf31506394ec1f76f0d2367aaeeb3fc9f6f4c9c43208099f21858e3961e5d9c1",
+      "codex_thread_id": "01a04a82-fc25-7923-a094-4f774d58dde2",
+      "status": "success_first_output_fixed",
+      "image": "generated/10.png",
+      "image_sha256": "66c5e95b7fe616bbdf000d23b02d930ddcab9272ad8b0d4f7ee3775164528af5",
+      "format": "PNG",
+      "dimensions": [
+        941,
+        1672
+      ]
+    }
+  ],
+  "qa": {
+    "report": "qa/report.md",
+    "contact_sheet": "qa/contact-sheet-success-4.jpg",
+    "passed": [
+      "04",
+      "07",
+      "08",
+      "10"
+    ],
+    "critical_failures_in_successes": 0
+  },
+  "google_chat": {
+    "success": true,
+    "thread": "spaces/AAQA_tGGPuw/threads/F4-dRk1ylcY",
+    "url": "https://chat.google.com/room/AAQA_tGGPuw/F4-dRk1ylcY?cls=7",
+    "prompt_messages": 10,
+    "reference_uploaded": true,
+    "contact_sheet_uploaded": true,
+    "delivery_verified": true,
+    "titled_prompt_messages": 10,
+    "titled_prompts_delivery_verified": true
+  },
+  "x_posted": false,
+  "copy_ready_titled": {
+    "file": "copy-ready-prompts-titled.md",
+    "sha256": "12539bc35c4b4365cb2ec5d8b09adb8780e62477724f7c304f181e27a4f1397f",
+    "header_format": "TITLE: NN｜職業名｜生成結果",
+    "per_prompt_files": "prompts-titled/NN.md"
+  }
+}
