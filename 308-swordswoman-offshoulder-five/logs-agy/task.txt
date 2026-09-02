@@ -1,0 +1,36 @@
+あなたはX画像生成の完成プロンプト作者です。画像は生成せず、指定ファイルだけ作成してください。
+
+作業ディレクトリ: /home/natrial/_work/X/asset-prompts
+対象run: /home/natrial/_work/X/asset-prompts/308-swordswoman-offshoulder-five
+
+必ず読む:
+- AGENTS.md
+- .claude/skills/image-ideas/SKILL.md
+- ideas/README.md
+- expression/README.md
+- 308-swordswoman-offshoulder-five/selected-ideas.md
+- 明示参照 /home/natrial/.hermes/cache/images/img_2467913448af.png
+
+成果物:
+1. prompts/01.md〜05.mdへ、selected-ideasの5案に1対1対応する英語完成プロンプト。
+2. copy-ready/01.md〜05.mdへ同じ本文。
+3. logs-agy/prompt-author-summary.mdへモデル、effort、ファイル一覧、監査メモ。
+
+絶対条件:
+- 各promptは4000文字未満。冒頭 `TITLE: NN｜日本語タイトル｜生成予定`。
+- ideas/README.mdの人物保持ブロックを省略せず1回含める。
+- 今回はユーザー添付画像1枚が、人物、衣装、剣、白鞘、場面、色、素材、世界観の唯一の正本。既定人物参照や他画像を想定しない。
+- 添付画像の成人女性の同一性、顔、髪、肌、見た目年齢、自然な体型を保持。添付の黒身頃、細い白縁、黒ベルトと真鍮金具、深緑の前後分割ロングパネル、完全不透明な黒ブルマ型フィットスパッツ、黒レースアップ・サイハイブーツ、白銀直剣1本、白鞘1本を維持。
+- 変更の主役は肩線・ネックライン・上胸の仕立てだけ。selected-ideas指定の5構造を1対1で描く。
+- 全案で左右の肩先を衣装から明確に露出する genuine off-the-shoulder neckline。首を覆う高襟、肩上バトー、ホルター、通常のノースリーブへ戻さない。
+- 付け袖、アームバンド、別体ストラップ、フリル、レース、リボン、メイド、制服、チア、体操服、コスプレ、ビスチェ、下着、コルセット、透け、重鎧を追加しない。
+- 黒身頃は完全不透明な構築的外衣。胸、骨盤、臀部を安全に収める。自然で控えめなデコルテ、深すぎる谷間やワードローブ事故なし。
+- 真昼の山頂湖。透明な水分身との数回の打ち合いの末、白銀直剣で水分身の胴を水平に斬り抜けた0.5秒後。水平な斬線から上半身が非暴力的な飛沫、水の帯、大粒の雫へほどけ、下半身は湖へ戻る。血・傷・肉体損傷なし。静かな安堵と澄んだ自信。
+- ちょうど一つの0.5秒を一枚にする。実在人物1人、水分身1体、実剣1本、白鞘1本。水分身は同じ成人同一性と衣装外郭を水の層で示し、裸に見せない。
+- 全身、両肩のオフショルダー線、黒身頃、深緑ロングパネル、黒スパッツ、サイハイブーツがフレーム内に見える9:16。指定構図差を守る。
+- 人物、剣、手足、水分身の輪郭を分離。余分な剣、人物、四肢、融合を避ける。
+- exactly ONE continuous full-frame photorealistic image; no collage/contact sheet/grid/split panels/multiple views/text/logo/anime/3D/plastic skin。
+- 外側で各slot1回生成するためversions/variationsや複数画像指示を書かない。
+- 画像生成、API、git、通知は行わない。
+
+完了後、5 promptの文字数がすべて4000未満であることを一覧確認してください。

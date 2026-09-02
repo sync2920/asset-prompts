@@ -1,0 +1,39 @@
+{
+  "status": "adopted",
+  "source": "Discord user attachment",
+  "source_message_id": "1544535534960123924",
+  "source_cache_path": "/home/natrial/.hermes/cache/images/img_2d3c851e8f20.png",
+  "saved_path": "/home/natrial/_work/X/asset-prompts/308-swordswoman-offshoulder-five/generated/01-user-selected.png",
+  "relative_path": "generated/01-user-selected.png",
+  "format": "PNG",
+  "dimensions": [
+    941,
+    1672
+  ],
+  "mode": "RGB",
+  "sha256": "0e002ac18d44050eb4ac1f7d367830f97283d2c1ca7f0798a466cbdc81128adf",
+  "source_prompt": null,
+  "closest_design": "Run 308 off-shoulder family; exact render was user-attached and is preserved verbatim",
+  "selection_note": "User explicitly adopted this exact attached render as the canonical outfit reference for 2026-09-02 only. Use it for the same adult person, off-shoulder black bodice and fitted elbow sleeves, black fitted short spats, deep-green split long panels, black belt, silver sword and ornate white scabbard, and black lace-up high boots in later same-day posts. It does not replace the global person reference and must not carry this outfit into future dates.",
+  "outfit_lock": {
+    "bodice": "matte black structured off-shoulder bodice with a shallow sweetheart/V center and folded black edge",
+    "sleeves": "fitted black off-shoulder sleeves ending near the elbows, integrated with the bodice styling",
+    "bottom": "fully opaque matte-black high-waisted fitted short spats",
+    "panels": "deep forest-green long split front/back overskirt panels, open at the front to show the black spats",
+    "belt": "wide black belt with a rectangular antique-brass buckle",
+    "weapon": "one silver straight sword and one ornate white scabbard with gold/brass filigree fittings",
+    "boots": "black knee-high lace-up high boots with block heels"
+  },
+  "drive": {
+    "status": "verified",
+    "remote": "personal-drive:X/asset-prompts/308-swordswoman-offshoulder-five/generated/01-user-selected.png",
+    "md5": "b5c0fb991f679765b6422112f8d51143"
+  },
+  "scope": {
+    "date": "2026-09-02",
+    "series": "Swordswoman mountain-lake day",
+    "applies_to": "same-day later time slots only",
+    "replaces_global_person_reference": false,
+    "carry_to_future_dates": false
+  }
+}

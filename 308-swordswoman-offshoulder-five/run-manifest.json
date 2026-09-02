@@ -1,0 +1,166 @@
+{
+  "run": 308,
+  "title": "Explicit-reference Swordswoman Off-Shoulder — 5 Variants",
+  "user_message_id": "1544511069874294824",
+  "requested_count": 5,
+  "concurrency": 5,
+  "execution": "5 parallel x 1 wave",
+  "generation_route": "Codex built-in image_generation",
+  "model": "gpt-5.6-sol",
+  "aspect": "9:16",
+  "prompt_author": {
+    "agent": "agy",
+    "model": "gemini-3.7-flash-high",
+    "effort": "high",
+    "status": "SUCCESS"
+  },
+  "advisories": {
+    "x_agy_ideas": "success"
+  },
+  "references": [
+    {
+      "role": "sole explicit reference for person, outfit, sword, scene, and action",
+      "path": "/home/natrial/.hermes/cache/images/img_2467913448af.png",
+      "sha256": "46db774409e9e934d7b6c550d67d0df105a63610ddc01a2cbf624968ce567b91",
+      "overrides_default_person_reference": true
+    }
+  ],
+  "slots": [
+    {
+      "slot": "01",
+      "title": "TITLE: 01｜ダブル白縁ワイド・バルドー｜生成予定",
+      "prompt": "/home/natrial/_work/X/asset-prompts/308-swordswoman-offshoulder-five/prompts/01.md",
+      "prompt_sha256": "877a7915028917e062972feb0e55cc3692d8f57e3fa4004b784d3533308261f1",
+      "status": "success",
+      "codex_thread_id": "01a05fa3-fe83-7a62-906a-68c3d156db1c",
+      "cli_exit": "01 0",
+      "thread_cache_candidates": [
+        "/home/natrial/.codex/generated_images/01a05fa3-fe83-7a62-906a-68c3d156db1c/call_B0YWIcfqElGWZQMBkjloSvL3.png"
+      ],
+      "source": "/home/natrial/.codex/generated_images/01a05fa3-fe83-7a62-906a-68c3d156db1c/call_B0YWIcfqElGWZQMBkjloSvL3.png",
+      "output": "/home/natrial/_work/X/asset-prompts/308-swordswoman-offshoulder-five/generated/01.png",
+      "format": "PNG",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "image_sha256": "c3138ae0672f726eb2bb6164a5f89c8b5854c3c311b5c08e358784a6eb7c59f5",
+      "source_sha256": "c3138ae0672f726eb2bb6164a5f89c8b5854c3c311b5c08e358784a6eb7c59f5",
+      "qa_status": "PASS",
+      "qa": "左右の肩先が明確に露出し、幅広い黒のバルドー折り返しと白縁が読める。正本衣装の他要素も維持。"
+    },
+    {
+      "slot": "02",
+      "title": "TITLE: 02｜立体ソフト・スウィートハート｜生成予定",
+      "prompt": "/home/natrial/_work/X/asset-prompts/308-swordswoman-offshoulder-five/prompts/02.md",
+      "prompt_sha256": "4d4abff86c06127cbf6f105747bad11c87335ab8391b8aa5f1773e57b1e08d27",
+      "status": "success",
+      "codex_thread_id": "01a05fa3-fe7e-7aa2-b66f-5f75a6ed752e",
+      "cli_exit": "02 0",
+      "thread_cache_candidates": [
+        "/home/natrial/.codex/generated_images/01a05fa3-fe7e-7aa2-b66f-5f75a6ed752e/call_8jqHhOpqHzt9Enc1cURmLReV.png"
+      ],
+      "source": "/home/natrial/.codex/generated_images/01a05fa3-fe7e-7aa2-b66f-5f75a6ed752e/call_8jqHhOpqHzt9Enc1cURmLReV.png",
+      "output": "/home/natrial/_work/X/asset-prompts/308-swordswoman-offshoulder-five/generated/02.png",
+      "format": "PNG",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "image_sha256": "fc165e8f2d4cf093439ea79347ada835d3287611f3f39411dde79655c247b862",
+      "source_sha256": "fc165e8f2d4cf093439ea79347ada835d3287611f3f39411dde79655c247b862",
+      "qa_status": "PASS",
+      "qa": "浅いソフト・スウィートハート曲線と白縁が明瞭。構築的な外衣として成立し、下着化していない。"
+    },
+    {
+      "slot": "03",
+      "title": "TITLE: 03｜斜行ドレープ・オフショルダー｜生成予定",
+      "prompt": "/home/natrial/_work/X/asset-prompts/308-swordswoman-offshoulder-five/prompts/03.md",
+      "prompt_sha256": "2684f5fdd7be3c042d25905b912b212717783aa6158662dc998de55b1ba68abb",
+      "status": "success",
+      "codex_thread_id": "01a05fa3-fee4-7b23-bdc3-ef451f121432",
+      "cli_exit": "03 0",
+      "thread_cache_candidates": [
+        "/home/natrial/.codex/generated_images/01a05fa3-fee4-7b23-bdc3-ef451f121432/call_g46yIEIbnlAulnRdS6hXiHtP.png"
+      ],
+      "source": "/home/natrial/.codex/generated_images/01a05fa3-fee4-7b23-bdc3-ef451f121432/call_g46yIEIbnlAulnRdS6hXiHtP.png",
+      "output": "/home/natrial/_work/X/asset-prompts/308-swordswoman-offshoulder-five/generated/03.png",
+      "format": "PNG",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "image_sha256": "65570484e7304fdfd6c5c1166a41879ac41487f21815111f329c77c002d8d574",
+      "source_sha256": "65570484e7304fdfd6c5c1166a41879ac41487f21815111f329c77c002d8d574",
+      "qa_status": "PARTIAL",
+      "qa": "両肩を露出した斜行上端は読めるが、左右差とドレープの重なりが控えめで、01との差が小さい。"
+    },
+    {
+      "slot": "04",
+      "title": "TITLE: 04｜Vノッチ付きロー・バトー｜生成予定",
+      "prompt": "/home/natrial/_work/X/asset-prompts/308-swordswoman-offshoulder-five/prompts/04.md",
+      "prompt_sha256": "1878541212b480652f91ef29f9d0c1ca7798034360104599a32a3c1c312db687",
+      "status": "success",
+      "codex_thread_id": "01a05fa3-fe48-7433-b66c-d4bf9942919c",
+      "cli_exit": "04 0",
+      "thread_cache_candidates": [
+        "/home/natrial/.codex/generated_images/01a05fa3-fe48-7433-b66c-d4bf9942919c/call_EX2o9xm4N7NJPMVbUceOPmWA.png"
+      ],
+      "source": "/home/natrial/.codex/generated_images/01a05fa3-fe48-7433-b66c-d4bf9942919c/call_EX2o9xm4N7NJPMVbUceOPmWA.png",
+      "output": "/home/natrial/_work/X/asset-prompts/308-swordswoman-offshoulder-five/generated/04.png",
+      "format": "PNG",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "image_sha256": "6532fb84e873d291b4ca8e14467f5f61f8eebc3b43a4c31883830566e0dc4d32",
+      "source_sha256": "6532fb84e873d291b4ca8e14467f5f61f8eebc3b43a4c31883830566e0dc4d32",
+      "qa_status": "PARTIAL",
+      "qa": "低いワイドオフショルダーは成立するが、中央Vノッチが非常に浅く、一覧では判別しにくい。"
+    },
+    {
+      "slot": "05",
+      "title": "TITLE: 05｜白縁アングル・オフショルダー｜生成予定",
+      "prompt": "/home/natrial/_work/X/asset-prompts/308-swordswoman-offshoulder-five/prompts/05.md",
+      "prompt_sha256": "29651686c0b3eac8b151035b3101c8ab5c743c19433432356b8453f0f25a23de",
+      "status": "success",
+      "codex_thread_id": "01a05fa3-fe52-7033-b09d-5cb1cfeed8d9",
+      "cli_exit": "05 0",
+      "thread_cache_candidates": [
+        "/home/natrial/.codex/generated_images/01a05fa3-fe52-7033-b09d-5cb1cfeed8d9/call_gTogl3HGII4NYgasz0x9M9Xl.png"
+      ],
+      "source": "/home/natrial/.codex/generated_images/01a05fa3-fe52-7033-b09d-5cb1cfeed8d9/call_gTogl3HGII4NYgasz0x9M9Xl.png",
+      "output": "/home/natrial/_work/X/asset-prompts/308-swordswoman-offshoulder-five/generated/05.png",
+      "format": "PNG",
+      "dimensions": [
+        941,
+        1672
+      ],
+      "image_sha256": "09d3689cc9abd978b019a6dc912940883f7556a0f24bfc0ea0cd4780ca45328f",
+      "source_sha256": "09d3689cc9abd978b019a6dc912940883f7556a0f24bfc0ea0cd4780ca45328f",
+      "qa_status": "PASS",
+      "qa": "中央が高く左右へ鋭角に下がる白縁アングルが明瞭。肩先露出と正本衣装の連続性も良好。"
+    }
+  ],
+  "success_count": 5,
+  "failure_count": 0,
+  "postprocess_notes": [],
+  "qa_summary": {
+    "PASS": 3,
+    "PARTIAL": 2,
+    "FAIL": 0,
+    "successful_nonblank_images": 5,
+    "retry_performed": false,
+    "overall": "5枚すべて両肩先を露出するオフショルダーとして成立。正本の人物、黒身頃、白縁、深緑分割ロングパネル、黒スパッツ、黒レースアップ・サイハイブーツ、白銀剣、白鞘、山頂湖、水分身を維持。露出事故、下着・コスプレ化、重大解剖破綻、余分な実在人物・剣、全黒、コラージュなし。"
+  },
+  "final_selection": {
+    "status": "adopted",
+    "source_message_id": "1544535534960123924",
+    "relative_image_path": "generated/01-user-selected.png",
+    "image_sha256": "0e002ac18d44050eb4ac1f7d367830f97283d2c1ca7f0798a466cbdc81128adf",
+    "selection_manifest": "user-selected-image-manifest.json",
+    "scope": "2026-09-02 same-day later time slots only",
+    "replaces_global_person_reference": false,
+    "x_posted": false
+  }
+}
